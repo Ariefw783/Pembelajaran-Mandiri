@@ -10,9 +10,20 @@
         body { 
             font-family: 'Plus Jakarta Sans', sans-serif; 
             scroll-behavior: smooth;
+            overflow: hidden;
         }
         
-        /* 1. Motif Batik Parang */
+        .scroll-container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-content {
+            flex: 1;
+            overflow-y: auto;
+        }
+
         .bg-batik {
             background-color: #f8fafc;
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%2364748b' fill-opacity='0.08'%3E%3Cpath d='M0 0l50 50L0 100V80l30-30L0 20V0zm100 0L50 50l50 50V80L70 50l30-30V0z'/%3E%3C/g%3E%3C/svg%3E");
@@ -23,25 +34,12 @@
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23b45309' fill-opacity='0.1'%3E%3Cpath d='M0 0l40 40L0 80V60l20-20L0 20V0zm80 0L40 40l40 40V60L60 40l20-20V0z'/%3E%3C/g%3E%3C/svg%3E");
         }
 
-        .fade-in {
-            animation: fadeIn 0.5s ease-out forwards;
-        }
+        .fade-in { animation: fadeIn 0.5s ease-out forwards; }
+        .slide-up { animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
 
-        .slide-up {
-            animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-        }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes slideUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        /* Ikon Persegi Berkedip */
         .blink-square {
             width: 8px;
             height: 8px;
@@ -52,172 +50,268 @@
             vertical-align: middle;
         }
 
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0; }
-        }
-
-        .secret-border {
-            border: 2px solid #b45309;
-            position: relative;
-        }
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
 
         .no-scrollbar::-webkit-scrollbar { display: none; }
     </style>
 </head>
-<body class="bg-batik min-h-screen flex flex-col transition-all duration-700" id="main-body">
+<body class="bg-batik transition-all duration-700" id="main-body">
 
-    <!-- Header Statis -->
-    <header class="w-full bg-white/80 backdrop-blur-md border-b border-slate-200 py-3 px-6 sticky top-0 z-[100] transition-colors duration-500" id="global-header">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold shadow-sm">📝</div>
-                <div>
-                    <h4 class="text-sm font-bold text-slate-800 leading-none">SD NEGERI 02</h4>
-                    <span class="text-[10px] text-slate-500 font-medium tracking-tight">BASE FROM KURIKULUM MERDEKA</span>
-                </div>
-            </div>
-            <!-- 3. Tanggal & Jam Digital -->
-            <div class="text-right">
-                <div id="digital-clock" class="text-lg font-bold font-mono text-slate-700 leading-none">00:00:00</div>
-                <div id="current-date" class="text-[10px] text-slate-500 font-bold uppercase tracking-wider">Memuat Tanggal...</div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Main Content Wrapper -->
-    <main class="flex-grow flex flex-col">
-        <!-- Screen 1: Home Page -->
-        <div id="screen-home" class="flex flex-col items-center justify-center min-h-[80vh] p-6 fade-in">
-            <div class="text-center mb-12 slide-up">
-                <div class="inline-block px-4 py-1.5 mb-4 rounded-full bg-blue-100 text-blue-700 text-xs font-bold tracking-widest uppercase shadow-sm border border-blue-200">
-                    SEMESTER 2 | TAHUN 2025/2026
-                </div>
-                <h1 class="text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">Pembelajaran <span class="text-blue-600">Mandiri</span></h1>
-                <p class="text-slate-600 text-lg max-w-lg mx-auto">Akses materi dan verifikasi jawaban dalam satu platform terpadu.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl slide-up" style="animation-delay: 0.2s;">
-                <!-- Button Materi -->
-                <button onclick="enterApp('materi')" class="group relative bg-white p-10 rounded-3xl shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 flex flex-col items-center">
-                    <div class="w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-200 group-hover:rotate-3 transition-transform">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                        </svg>
+    <div class="scroll-container">
+        <!-- Header -->
+        <header class="w-full bg-white/80 backdrop-blur-md border-b border-slate-200 py-3 px-6 shrink-0 z-[100] transition-colors duration-500" id="global-header">
+            <div class="max-w-7xl mx-auto flex justify-between items-center">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold shadow-sm">📝</div>
+                    <div>
+                        <h4 class="text-sm font-bold text-slate-800 leading-none">SD NEGERI 02</h4>
+                        <span class="text-[10px] text-slate-500 font-medium tracking-tight uppercase">Base from Kurikulum Merdeka</span>
                     </div>
-                    <h2 class="text-2xl font-bold text-slate-800 uppercase tracking-wide">Materi + Soal</h2>
-                    <p class="text-slate-500 mt-2 text-center text-sm italic">Eksplorasi modul dan latihan siswa.</p>
-                </button>
-
-                <!-- 2. Button Kunci Jawaban (Gembok & Putih) -->
-                <button onclick="enterApp('kunci')" class="group relative bg-white p-10 rounded-3xl shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-amber-200 flex flex-col items-center">
-                    <div class="absolute top-4 right-4 text-[10px] font-bold text-amber-600 bg-amber-50 px-2 py-1 rounded border border-amber-100 uppercase tracking-tighter">Terproteksi</div>
-                    <div class="w-20 h-20 bg-amber-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-amber-200 group-hover:rotate-3 transition-transform">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 00-2 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                        </svg>
-                    </div>
-                    <h2 class="text-2xl font-bold text-amber-600 uppercase tracking-widest"></h2>
-                    <p class="text-slate-500 mt-2 text-center text-sm italic">Akses khusus orang tua.</p>
-                </button>
-            </div>
-        </div>
-
-        <!-- Screen 2: Main App Content -->
-        <div id="screen-app" class="hidden flex flex-col flex-grow fade-in">
-            <nav id="app-nav-bar" class="bg-white/90 backdrop-blur-md border-b border-slate-200 transition-all duration-500">
-                <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-                    <button onclick="goHome()" class="flex items-center gap-2 px-3 py-1.5 rounded-lg hover:bg-slate-100 transition-all font-bold text-xs text-slate-600 group">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 group-hover:-translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-                        </svg>
-                        BERANDA
-                    </button>
-                    <div class="text-center">
-                        <h2 id="mode-title" class="text-sm font-black text-slate-900 tracking-widest uppercase">JUDUL MODUL</h2>
-                    </div>
-                    <div class="w-20"></div>
                 </div>
-                <div class="border-t border-slate-100 py-3 px-4 overflow-x-auto no-scrollbar" id="subject-container">
-                    <div class="max-w-7xl mx-auto flex gap-3" id="subject-nav"></div>
-                </div>
-            </nav>
-
-            <div class="p-4 md:p-8 flex-grow">
-                <div id="loader" class="hidden flex flex-col items-center justify-center h-[40vh] fade-in">
-                    <div class="w-10 h-10 border-4 border-slate-200 border-t-blue-500 rounded-full animate-spin mb-4"></div>
-                    <p id="loader-text" class="text-slate-400 font-bold text-[10px] uppercase tracking-widest">Memuat Berkas...</p>
-                </div>
-
-                <div id="content-placeholder" class="max-w-4xl mx-auto flex flex-col items-center justify-center h-[40vh] text-center slide-up">
-                    <div class="w-16 h-16 rounded-full bg-white shadow-inner flex items-center justify-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-700 uppercase">Silakan Pilih Mapel</h3>
-                    <p class="text-slate-500 mt-1 text-sm">Klik sub-menu untuk melihat konten resmi.</p>
-                </div>
-                
-                <div id="iframe-wrapper" class="hidden max-w-5xl mx-auto h-[75vh] bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-200 fade-in">
-                    <iframe id="main-frame" class="w-full h-full" src=""></iframe>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <!-- 2 & 4. Footer -->
-    <footer class="w-full bg-white border-t border-slate-200 py-6 px-6 mt-auto transition-colors duration-500" id="global-footer">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
-            <div class="text-[10px] text-slate-400 font-bold uppercase tracking-widest leading-relaxed">
-                Copyright &copy; 2026<br>
-                DESIGN & DEVELOPMENT BY ARFWCVK<span class="blink-square"></span>
-            </div>
-            <div class="flex gap-6">
                 <div class="text-right">
-                    <p class="text-[9px] font-black text-slate-300 uppercase tracking-widest">Pembelajaran Mandiri</p>
-                    <p class="text-[10px] font-bold text-slate-500 uppercase"></p>
-                </div>
-                <div class="text-right border-l border-slate-100 pl-6">
-                    <p class="text-[9px] font-black text-slate-300 uppercase tracking-widest">Build</p>
-                    <p class="text-[10px] font-bold text-slate-500 uppercase">v4.0.2-Stable</p>
+                    <div id="digital-clock" class="text-lg font-bold font-mono text-slate-700 leading-none">00:00:00</div>
+                    <div id="current-date" class="text-[10px] text-slate-500 font-bold uppercase tracking-wider">Memuat Tanggal...</div>
                 </div>
             </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content flex flex-col">
+            <!-- Screen 1: Home Page -->
+            <div id="screen-home" class="flex flex-col items-center justify-center min-h-full p-6 fade-in">
+                <div class="text-center mb-12 slide-up">
+                    <div class="inline-block px-4 py-1.5 mb-4 rounded-full bg-blue-100 text-blue-700 text-xs font-bold tracking-widest uppercase shadow-sm border border-blue-200">
+                        SEMESTER 2 | TAHUN 2025/2026
+                    </div>
+                    <h1 class="text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">Pembelajaran <span class="text-blue-600">Mandiri</span></h1>
+                    <p class="text-slate-600 text-lg max-w-lg mx-auto">Akses materi dan verifikasi jawaban dalam satu platform terpadu.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl slide-up" style="animation-delay: 0.2s;">
+                    <button onclick="enterApp('materi')" class="group relative bg-white p-10 rounded-3xl shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 flex flex-col items-center">
+                        <div class="w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-200 group-hover:rotate-3 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                        </div>
+                        <h2 class="text-2xl font-bold text-slate-800 uppercase tracking-wide">Materi + Soal</h2>
+                        <p class="text-slate-500 mt-2 text-center text-sm italic">Eksplorasi modul dan latihan siswa.</p>
+                    </button>
+
+                    <button onclick="showSchedule()" class="group relative bg-white p-10 rounded-3xl shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 flex flex-col items-center">
+                        <div class="w-20 h-20 bg-emerald-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-emerald-200 group-hover:rotate-3 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2-2v12a2 2 0 00-2 2z" /></svg>
+                        </div>
+                        <h2 class="text-2xl font-bold text-slate-800 uppercase tracking-wide">Jadwal Pembelajaran</h2>
+                        <p class="text-slate-500 mt-2 text-center text-sm italic">Cek jadwal harian mingguan.</p>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Screen 2: Main App Content (with Dropdown Navigation) -->
+            <div id="screen-app" class="hidden flex flex-col flex-grow fade-in">
+                <nav id="app-nav-bar" class="bg-white/90 backdrop-blur-md border-b border-slate-200 transition-all duration-500 shrink-0 sticky top-0 z-50 px-4 py-4">
+                    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+                        <button onclick="goHome()" class="flex items-center gap-2 px-3 py-2 rounded-xl hover:bg-slate-100 transition-all font-bold text-[10px] text-slate-600 group border border-slate-200 shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 group-hover:-translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+                            KEMBALI
+                        </button>
+                        
+                        <div class="relative flex-grow max-w-md">
+                            <button id="dropdown-btn" onclick="toggleDropdown()" class="w-full flex items-center justify-between px-5 py-3 bg-slate-50 border border-slate-200 rounded-2xl text-slate-700 font-bold uppercase text-[11px] tracking-widest hover:bg-white transition-all shadow-sm">
+                                <span id="dropdown-label">Pilih Mata Pelajaran</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-slate-400 transition-transform duration-300" id="dropdown-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                            </button>
+                            <div id="dropdown-menu" class="hidden absolute top-full left-0 w-full mt-2 bg-white border border-slate-200 rounded-2xl shadow-2xl z-[150] overflow-hidden fade-in py-2">
+                                <div id="subject-list" class="max-h-[60vh] overflow-y-auto no-scrollbar"></div>
+                            </div>
+                        </div>
+
+                        <div class="hidden md:block text-right shrink-0">
+                            <h2 id="mode-title" class="text-[10px] font-black text-slate-900 tracking-[0.2em] uppercase">JUDUL MODUL</h2>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="p-4 md:p-8 flex-grow">
+                    <div id="loader" class="hidden flex flex-col items-center justify-center h-[40vh] fade-in">
+                        <div class="w-10 h-10 border-4 border-slate-200 border-t-blue-500 rounded-full animate-spin mb-4"></div>
+                        <p class="text-slate-400 font-bold text-[10px] uppercase tracking-widest">Memuat Berkas...</p>
+                    </div>
+
+                    <div id="content-placeholder" class="max-w-4xl mx-auto flex flex-col items-center justify-center h-[40vh] text-center slide-up">
+                        <div class="w-16 h-16 rounded-full bg-white shadow-inner flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-700 uppercase">Silakan Pilih Mapel</h3>
+                        <p class="text-slate-500 mt-1 text-sm">Gunakan dropdown di atas untuk memilih materi.</p>
+                    </div>
+                    
+                    <div id="iframe-wrapper" class="hidden max-w-5xl mx-auto h-[75vh] bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-200 fade-in">
+                        <iframe id="main-frame" class="w-full h-full" src=""></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Screen 3: Schedule Page -->
+            <div id="screen-schedule" class="hidden flex flex-col flex-grow p-6 md:p-12 fade-in">
+                <div class="max-w-6xl mx-auto w-full">
+                    <div class="flex items-center justify-between mb-8">
+                        <button onclick="goHome()" class="flex items-center gap-2 px-4 py-2 bg-white rounded-xl shadow-sm border border-slate-200 font-bold text-xs text-slate-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+                            KEMBALI
+                        </button>
+                        <h2 class="text-2xl font-black text-slate-900 tracking-tight uppercase">JADWAL PEMBELAJARAN</h2>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
+                            <div class="bg-blue-600 p-4 text-center">
+                                <h3 class="text-white font-bold tracking-widest uppercase text-sm">JADWAL A (22 - 28 DESEMBER 2025)</h3>
+                            </div>
+                            <div class="p-6 space-y-3">
+                                <div class="flex justify-between border-b pb-2"><span class="font-bold text-slate-400 text-xs uppercase tracking-tighter">SENIN</span><span class="text-xs font-semibold text-slate-700">PAIBP</span></div>
+                                <div class="flex justify-between border-b pb-2"><span class="font-bold text-slate-400 text-xs uppercase tracking-tighter">SELASA</span><span class="text-xs font-semibold text-slate-700">MATEMATIKA</span></div>
+                                <div class="flex justify-between border-b pb-2"><span class="font-bold text-slate-400 text-xs uppercase tracking-tighter">RABU</span><span class="text-xs font-semibold text-slate-700">PENDIDIKAN PANCASILA</span></div>
+                                <div class="flex justify-between border-b pb-2"><span class="font-bold text-slate-400 text-xs uppercase tracking-tighter">KAMIS</span><span class="text-xs font-semibold text-slate-700">PJOK</span></div>
+                                <div class="flex justify-between border-b pb-2"><span class="font-bold text-slate-400 text-xs uppercase tracking-tighter">JUMAT</span><span class="text-xs font-semibold text-slate-700">MATEMATIKA</span></div>
+                                <div class="flex justify-between border-b pb-2"><span class="font-bold text-slate-400 text-xs uppercase tracking-tighter">SABTU</span><span class="text-xs font-semibold text-slate-700 text-right">HAFALAN KOSAKATA INGGRIS</span></div>
+                                <div class="flex justify-between text-rose-500"><span class="font-bold text-xs uppercase tracking-tighter">MINGGU</span><span class="text-xs font-bold uppercase">Libur</span></div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
+                            <div class="bg-indigo-600 p-4 text-center">
+                                <h3 class="text-white font-bold tracking-widest uppercase text-sm">JADWAL B (29 DES - 04 JANUARI 2025)</h3>
+                            </div>
+                            <div class="p-6 space-y-3">
+                                <div class="flex justify-between border-b pb-2"><span class="font-bold text-slate-400 text-xs uppercase tracking-tighter">SENIN</span><span class="text-xs font-semibold text-slate-700">BAHASA INGGRIS</span></div>
+                                <div class="flex justify-between border-b pb-2"><span class="font-bold text-slate-400 text-xs uppercase tracking-tighter">SELASA</span><span class="text-xs font-semibold text-slate-700">BAHASA INDONESIA</span></div>
+                                <div class="flex justify-between border-b pb-2"><span class="font-bold text-slate-400 text-xs uppercase tracking-tighter">RABU</span><span class="text-xs font-semibold text-slate-700">SENI BUDAYA (RUPA)</span></div>
+                                <div class="flex justify-between border-b pb-2"><span class="font-bold text-slate-400 text-xs uppercase tracking-tighter">KAMIS</span><span class="text-xs font-semibold text-slate-700">BAHASA INDONESIA</span></div>
+                                <div class="flex justify-between border-b pb-2"><span class="font-bold text-slate-400 text-xs uppercase tracking-tighter">JUMAT</span><span class="text-xs font-semibold text-slate-700">IPAS</span></div>
+                                <div class="flex justify-between border-b pb-2"><span class="font-bold text-slate-400 text-xs uppercase tracking-tighter">SABTU</span><span class="text-xs font-semibold text-slate-700 text-right">HAFALAN KOSAKATA INGGRIS</span></div>
+                                <div class="flex justify-between text-rose-500"><span class="font-bold text-xs uppercase tracking-tighter">MINGGU</span><span class="text-xs font-bold uppercase">Libur</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="w-full bg-white border-t border-slate-200 py-6 px-6 shrink-0 z-50 transition-colors duration-500" id="global-footer">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+                <div class="text-[10px] text-slate-400 font-bold uppercase tracking-widest leading-relaxed">
+                    Copyright &copy; 2026<br>
+                    DESIGN & DEVELOPMENT BY ARFWCVK<span class="blink-square"></span>
+                </div>
+                <div class="flex items-center gap-6">
+                    <button onclick="handleKunciAuth()" class="flex items-center gap-2 px-3 py-1.5 bg-amber-50 text-amber-700 border border-amber-200 rounded-lg text-[10px] font-bold hover:bg-amber-100 transition-all uppercase tracking-tighter">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 00-2 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+                        KUNCI JAWABAN
+                    </button>
+                    <div class="text-right border-l border-slate-100 pl-6">
+                        <p class="text-[9px] font-black text-slate-300 uppercase tracking-widest">Build</p>
+                        <p class="text-[10px] font-bold text-slate-500 uppercase">v4.0.2-Stable</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Password Modal -->
+    <div id="password-modal" class="hidden fixed inset-0 z-[200] flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm">
+        <div class="bg-white rounded-3xl shadow-2xl p-8 w-full max-w-sm border border-slate-200 fade-in">
+            <div class="flex flex-col items-center mb-6">
+                <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-amber-600 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 00-2 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-800 uppercase tracking-tight">Verifikasi Akses</h3>
+                <p class="text-slate-500 text-xs text-center mt-1">Gunakan kode keamanan khusus.</p>
+            </div>
+            <input type="password" id="pass-input" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-center text-xl font-bold tracking-[0.5em] focus:ring-2 focus:ring-amber-400 outline-none mb-4" placeholder="••••">
+            <div class="flex gap-3">
+                <button onclick="closeModal()" class="flex-1 py-3 text-xs font-bold text-slate-500 hover:text-slate-800 uppercase tracking-widest">Batal</button>
+                <button onclick="checkPass()" class="flex-1 py-3 bg-amber-500 text-white rounded-xl text-xs font-bold uppercase tracking-widest shadow-lg shadow-amber-200 transition-all active:scale-95">Akses</button>
+            </div>
         </div>
-    </footer>
+    </div>
 
     <script>
-        // Data Mata Pelajaran
         const subjects = [
             { id: 'pai', name: 'PAI' },
             { id: 'pancasila', name: 'Pancasila' },
             { id: 'pjok', name: 'PJOK' },
             { id: 'matematika', name: 'Matematika' },
             { id: 'inggris', name: 'B. Inggris' },
-            { id: 'seni', name: 'Seni Budaya' },
+            { id: 'seni', name: 'Seni' },
             { id: 'indonesia', name: 'B. Indonesia' },
             { id: 'ipas', name: 'IPAS' }
         ];
 
         let selectedMode = ''; 
+        let dropdownOpen = false;
 
-        // 3. Update Jam Digital & Tanggal
         function updateClock() {
             const now = new Date();
             const h = String(now.getHours()).padStart(2, '0');
             const m = String(now.getMinutes()).padStart(2, '0');
             const s = String(now.getSeconds()).padStart(2, '0');
-            document.getElementById('digital-clock').innerText = `${h}:${m}:${s}`;
-
+            if (document.getElementById('digital-clock')) document.getElementById('digital-clock').innerText = `${h}:${m}:${s}`;
             const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-            document.getElementById('current-date').innerText = now.toLocaleDateString('id-ID', options);
+            if (document.getElementById('current-date')) document.getElementById('current-date').innerText = now.toLocaleDateString('id-ID', options);
         }
         setInterval(updateClock, 1000);
         updateClock();
 
+        function showSchedule() {
+            document.getElementById('screen-home').classList.add('hidden');
+            document.getElementById('screen-app').classList.add('hidden');
+            document.getElementById('screen-schedule').classList.remove('hidden');
+        }
+
+        function handleKunciAuth() {
+            document.getElementById('password-modal').classList.remove('hidden');
+            document.getElementById('pass-input').focus();
+        }
+
+        function closeModal() {
+            document.getElementById('password-modal').classList.add('hidden');
+            document.getElementById('pass-input').value = '';
+        }
+
+        function checkPass() {
+            const input = document.getElementById('pass-input').value;
+            if(input === '2426') {
+                closeModal();
+                enterApp('kunci');
+            } else {
+                alert('Kode akses salah!');
+                document.getElementById('pass-input').value = '';
+            }
+        }
+
+        function toggleDropdown() {
+            dropdownOpen = !dropdownOpen;
+            const menu = document.getElementById('dropdown-menu');
+            const arrow = document.getElementById('dropdown-arrow');
+            if(dropdownOpen) {
+                menu.classList.remove('hidden');
+                arrow.classList.add('rotate-180');
+            } else {
+                menu.classList.add('hidden');
+                arrow.classList.remove('rotate-180');
+            }
+        }
+
+        function closeDropdown() {
+            dropdownOpen = false;
+            document.getElementById('dropdown-menu').classList.add('hidden');
+            document.getElementById('dropdown-arrow').classList.remove('rotate-180');
+        }
+
         function enterApp(mode) {
             selectedMode = mode;
             document.getElementById('screen-home').classList.add('hidden');
+            document.getElementById('screen-schedule').classList.add('hidden');
             document.getElementById('screen-app').classList.remove('hidden');
             
             const body = document.getElementById('main-body');
@@ -225,53 +319,50 @@
             const footer = document.getElementById('global-footer');
             const navBar = document.getElementById('app-nav-bar');
             const modeTitle = document.getElementById('mode-title');
+            const dropdownLabel = document.getElementById('dropdown-label');
+
+            dropdownLabel.innerText = "PILIH MATA PELAJARAN";
+            closeDropdown();
 
             if(mode === 'materi') {
-                body.className = 'bg-batik min-h-screen flex flex-col transition-all duration-700';
-                header.className = 'w-full bg-white/80 backdrop-blur-md border-b border-slate-200 py-3 px-6 sticky top-0 z-[100] transition-colors';
-                footer.className = 'w-full bg-white border-t border-slate-200 py-6 px-6 mt-auto transition-colors';
-                navBar.className = 'bg-white/90 backdrop-blur-md border-b border-slate-200';
-                modeTitle.innerText = 'ARSIP MODUL PEMBELAJARAN';
-                modeTitle.className = 'text-sm font-black text-blue-700 tracking-widest uppercase';
+                body.className = 'bg-batik transition-all duration-700';
+                header.className = 'w-full bg-white/80 backdrop-blur-md border-b border-slate-200 py-3 px-6 shrink-0 z-[100] transition-colors';
+                footer.className = 'w-full bg-white border-t border-slate-200 py-6 px-6 shrink-0 transition-colors';
+                navBar.className = 'bg-white/90 backdrop-blur-md border-b border-slate-200 shrink-0 sticky top-0 z-50 px-4 py-4';
+                modeTitle.innerText = 'MODUL PEMBELAJARAN';
+                modeTitle.className = 'text-[10px] font-black text-blue-700 tracking-[0.2em] uppercase';
             } else {
-                body.className = 'bg-batik-official min-h-screen flex flex-col transition-all duration-700';
-                header.className = 'w-full bg-amber-50/80 backdrop-blur-md border-b border-amber-200 py-3 px-6 sticky top-0 z-[100] transition-colors';
-                footer.className = 'w-full bg-amber-50 border-t border-amber-200 py-6 px-6 mt-auto transition-colors';
-                navBar.className = 'bg-white/90 backdrop-blur-md border-b border-amber-100';
-                modeTitle.innerText = 'ARSIP KUNCI JAWABAN RESMI';
-                modeTitle.className = 'text-sm font-black text-amber-600 tracking-[0.2em] uppercase';
+                body.className = 'bg-batik-official transition-all duration-700';
+                header.className = 'w-full bg-amber-50/80 backdrop-blur-md border-b border-amber-200 py-3 px-6 shrink-0 z-[100] transition-colors';
+                footer.className = 'w-full bg-amber-50 border-t border-amber-200 py-6 px-6 shrink-0 transition-colors';
+                navBar.className = 'bg-white/90 backdrop-blur-md border-b border-amber-100 shrink-0 sticky top-0 z-50 px-4 py-4';
+                modeTitle.innerText = 'KUNCI JAWABAN RESMI';
+                modeTitle.className = 'text-[10px] font-black text-amber-600 tracking-[0.2em] uppercase';
             }
-
-            renderSubjectNav();
+            renderSubjectList();
             resetContent();
         }
 
-        function renderSubjectNav() {
-            const nav = document.getElementById('subject-nav');
-            const isKunci = selectedMode === 'kunci';
-            
-            nav.innerHTML = subjects.map(s => `
-                <button onclick="loadPage('${s.id}')" 
-                        id="nav-${s.id}"
-                        class="flex items-center justify-center px-5 py-2.5 rounded-xl border ${isKunci ? 'bg-white border-amber-100 text-amber-700 hover:border-amber-400' : 'bg-white border-slate-200 text-slate-700 hover:border-blue-400'} shadow-sm transition-all min-w-[140px] font-bold uppercase text-[10px] tracking-wider">
-                    ${s.name}
+        function renderSubjectList() {
+            const list = document.getElementById('subject-list');
+            list.innerHTML = subjects.map(s => `
+                <button onclick="loadPage('${s.id}', '${s.name}')" 
+                        class="w-full text-left px-6 py-4 hover:bg-slate-50 text-[11px] font-bold text-slate-600 hover:text-slate-900 border-b border-slate-50 last:border-0 transition-all flex items-center gap-3">
+                    <span class="w-2 h-2 rounded-full ${selectedMode === 'kunci' ? 'bg-amber-400' : 'bg-blue-500'}"></span>
+                    ${s.name.toUpperCase()}
                 </button>
             `).join('');
         }
 
-        function loadPage(subjectId) {
+        function loadPage(subjectId, subjectName) {
             const placeholder = document.getElementById('content-placeholder');
             const wrapper = document.getElementById('iframe-wrapper');
             const frame = document.getElementById('main-frame');
             const loader = document.getElementById('loader');
-            const isKunci = selectedMode === 'kunci';
+            const dropdownLabel = document.getElementById('dropdown-label');
 
-            document.querySelectorAll('#subject-nav button').forEach(b => {
-                b.className = `flex items-center justify-center px-5 py-2.5 rounded-xl border ${isKunci ? 'bg-white border-amber-100 text-amber-700' : 'bg-white border-slate-200 text-slate-700'} shadow-sm transition-all min-w-[140px] font-bold uppercase text-[10px] tracking-wider`;
-            });
-            
-            const activeBtn = document.getElementById(`nav-${subjectId}`);
-            activeBtn.classList.add('ring-2', isKunci ? 'ring-amber-500' : 'ring-blue-500', isKunci ? 'border-amber-500' : 'border-blue-500');
+            dropdownLabel.innerText = subjectName.toUpperCase();
+            closeDropdown();
 
             placeholder.classList.add('hidden');
             wrapper.classList.add('hidden');
@@ -294,10 +385,21 @@
         function goHome() {
             document.getElementById('screen-home').classList.remove('hidden');
             document.getElementById('screen-app').classList.add('hidden');
-            document.getElementById('main-body').className = 'bg-batik min-h-screen flex flex-col transition-all duration-700';
-            document.getElementById('global-header').className = 'w-full bg-white/80 backdrop-blur-md border-b border-slate-200 py-3 px-6 sticky top-0 z-[100] transition-colors';
-            document.getElementById('global-footer').className = 'w-full bg-white border-t border-slate-200 py-6 px-6 mt-auto transition-colors';
+            document.getElementById('screen-schedule').classList.add('hidden');
+            document.getElementById('main-body').className = 'bg-batik transition-all duration-700';
+            document.getElementById('global-header').className = 'w-full bg-white/80 backdrop-blur-md border-b border-slate-200 py-3 px-6 shrink-0 z-[100] transition-colors';
+            document.getElementById('global-footer').className = 'w-full bg-white border-t border-slate-200 py-6 px-6 shrink-0 transition-colors';
+            closeDropdown();
         }
+
+        // Close dropdown when clicking outside
+        window.addEventListener('click', (e) => {
+            const dropdown = document.getElementById('dropdown-btn');
+            const menu = document.getElementById('dropdown-menu');
+            if (dropdownOpen && !dropdown.contains(e.target) && !menu.contains(e.target)) {
+                closeDropdown();
+            }
+        });
     </script>
 </body>
 </html>
