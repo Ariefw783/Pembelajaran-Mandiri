@@ -3,207 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Materi & Soal Matematika Bab 5 - Pecahan</title>
+    <title>Matematika Bab 5 Tahap 2 - Pecahan</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { font-family: sans-serif; }
-        .grid-asset { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 8px; }
-        .asset-box { width: 30px; height: 30px; }
+        body { font-family: 'Segoe UI', sans-serif; }
+        .item-svg { width: 40px; height: 40px; transition: transform 0.2s; }
+        .item-svg:hover { transform: scale(1.1); }
+        .grid-container { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; padding: 15px; background: #f8fafc; border-radius: 12px; }
     </style>
 </head>
-<body class="bg-gray-50 p-4 md:p-8">
-    <div class="max-w-3xl mx-auto bg-white shadow-lg border border-gray-200 rounded-lg overflow-hidden">
-        <!-- Header -->
-        <header class="bg-blue-700 text-white p-6 text-center border-b-4 border-yellow-500">
-            <h1 class="text-xl font-bold uppercase tracking-wider">KEMENDIKDASMEN</h1>
-            <h2 class="text-lg font-semibold">KURIKULUM MERDEKA</h2>
-            <div class="mt-2 text-sm border-t border-blue-400 pt-2">
-                Selasa, 30 Desember 2025 | Matematika - Sesi 2
+<body class="bg-slate-50 p-4 md:p-10">
+    <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-xl overflow-hidden border border-slate-200">
+        <!-- Header Profesional -->
+        <header class="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 text-center border-b-2 border-blue-500">
+            <h1 class="text-xs font-bold text-slate-500 tracking-[0.3em] uppercase mb-2">Pemerintah Republik Indonesia</h1>
+            <h2 class="text-2xl font-light text-slate-800 tracking-tight">MATEMATIKA <span class="font-bold text-blue-600">| BAB 5 (TAHAP 2)</span></h2>
+            <div class="mt-4 flex justify-center gap-4 text-[10px] text-slate-500 uppercase font-medium">
+                <span class="bg-white px-3 py-1 rounded-full shadow-sm">Kamis, 15 Januari 2026</span>
+                <span class="bg-white px-3 py-1 rounded-full shadow-sm">Sesi 2</span>
+                <span class="bg-white px-3 py-1 rounded-full shadow-sm">Kurikulum Merdeka</span>
             </div>
         </header>
 
-        <!-- Identitas Siswa -->
-        <div class="p-4 bg-gray-100 grid grid-cols-2 gap-4 border-b text-xs">
-            <div>
-                <p><span class="font-bold">Nama Siswa:</span> KAYLA ZAHRA SAFITRI</p>
-                <p><span class="font-bold">Kelas:</span> 2 (Dua)</p>
-            </div>
-            <div class="text-right">
-                <p><span class="font-bold">Topik:</span> Setengah dari Kumpulan Benda</p>
-                <p><span class="font-bold">Mata Pelajaran:</span> Matematika + English</p>
-            </div>
+        <!-- Identitas -->
+        <div class="px-8 py-4 bg-slate-50 flex justify-between items-center border-b text-[11px] text-slate-600 italic">
+            <div>Nama: <span class="font-bold text-slate-800 uppercase">Kayla Zahra Safitri</span></div>
+            <div>Materi: <span class="font-bold text-slate-800">Setengah dari Kumpulan Benda</span></div>
         </div>
 
-        <!-- Bagian Materi -->
-        <main class="p-8 leading-relaxed text-gray-800 border-b-2 border-dashed border-gray-300">
-            <div class="mb-4 text-center italic text-blue-600 font-bold border-b pb-2">
-                MATERI SETENGAH DARI KUMPULAN BENDA: APA ITU SETENGAH?
-            </div>
-            
-            <div class="space-y-4 text-sm mb-6">
-                <p>Setengah artinya <span class="font-bold">satu benda dibagi menjadi dua bagian yang sama besar</span>. 
-                Atau, sekumpulan benda dibagi menjadi <span class="font-bold">dua kelompok dengan jumlah yang sama</span>.</p>
-                
-                <div class="flex flex-col items-center bg-blue-50 p-4 rounded-lg">
-                    <p class="font-bold mb-2">Contoh: Setengah dari 4 apel</p>
-                    <div class="grid-asset">
-                        <!-- 4 Apel -->
-                        <svg viewBox="0 0 24 24" class="asset-box text-red-500 fill-current"><path d="M20,15C20,17.76 17.76,20 15,20C13.56,20 12.27,19.39 11.36,18.42C10.45,19.39 9.16,20 7.72,20C4.96,20 2.72,17.76 2.72,15C2.72,12.24 4.96,10 7.72,10C8.1,10 8.47,10.05 8.82,10.14C9.5,8.27 11.08,7 13,7C14.15,7 15.19,7.45 15.95,8.19C16.85,7.45 18,7 19.25,7C21.87,7 24,9.13 24,11.75C24,13.11 23.43,14.33 22.5,15.2C22.82,15.13 23.15,15.1 23.5,15.1H24V16H23.5C21.57,16 20,14.43 20,12.5V12C20,10.9 19.1,10 18,10C16.9,10 16,10.9 16,12V12.5C16,14.43 14.43,16 12.5,16H12V15.1H12.5C14,15.1 15.1,14 15.1,12.5V12C15.1,10.9 16,10 17.1,10H17.2C18.3,10 19.2,10.9 19.2,12V12.5C19.2,14 18.1,15.1 16.6,15.1H16V16H16.6C18.5,16 20,14.43 20,12.5V15Z"/></svg>
-                        <svg viewBox="0 0 24 24" class="asset-box text-red-500 fill-current"><path d="M20,15C20,17.76 17.76,20 15,20C13.56,20 12.27,19.39 11.36,18.42C10.45,19.39 9.16,20 7.72,20C4.96,20 2.72,17.76 2.72,15C2.72,12.24 4.96,10 7.72,10C8.1,10 8.47,10.05 8.82,10.14C9.5,8.27 11.08,7 13,7C14.15,7 15.19,7.45 15.95,8.19C16.85,7.45 18,7 19.25,7C21.87,7 24,9.13 24,11.75C24,13.11 23.43,14.33 22.5,15.2C22.82,15.13 23.15,15.1 23.5,15.1H24V16H23.5C21.57,16 20,14.43 20,12.5V12C20,10.9 19.1,10 18,10C16.9,10 16,10.9 16,12V12.5C16,14.43 14.43,16 12.5,16H12V15.1H12.5C14,15.1 15.1,14 15.1,12.5V12C15.1,10.9 16,10 17.1,10H17.2C18.3,10 19.2,10.9 19.2,12V12.5C19.2,14 18.1,15.1 16.6,15.1H16V16H16.6C18.5,16 20,14.43 20,12.5V15Z"/></svg>
-                        <span class="text-2xl mx-2">|</span>
-                        <svg viewBox="0 0 24 24" class="asset-box text-red-500 fill-current"><path d="M20,15C20,17.76 17.76,20 15,20C13.56,20 12.27,19.39 11.36,18.42C10.45,19.39 9.16,20 7.72,20C4.96,20 2.72,17.76 2.72,15C2.72,12.24 4.96,10 7.72,10C8.1,10 8.47,10.05 8.82,10.14C9.5,8.27 11.08,7 13,7C14.15,7 15.19,7.45 15.95,8.19C16.85,7.45 18,7 19.25,7C21.87,7 24,9.13 24,11.75C24,13.11 23.43,14.33 22.5,15.2C22.82,15.13 23.15,15.1 23.5,15.1H24V16H23.5C21.57,16 20,14.43 20,12.5V12C20,10.9 19.1,10 18,10C16.9,10 16,10.9 16,12V12.5C16,14.43 14.43,16 12.5,16H12V15.1H12.5C14,15.1 15.1,14 15.1,12.5V12C15.1,10.9 16,10 17.1,10H17.2C18.3,10 19.2,10.9 19.2,12V12.5C19.2,14 18.1,15.1 16.6,15.1H16V16H16.6C18.5,16 20,14.43 20,12.5V15Z"/></svg>
-                        <svg viewBox="0 0 24 24" class="asset-box text-red-500 fill-current"><path d="M20,15C20,17.76 17.76,20 15,20C13.56,20 12.27,19.39 11.36,18.42C10.45,19.39 9.16,20 7.72,20C4.96,20 2.72,17.76 2.72,15C2.72,12.24 4.96,10 7.72,10C8.1,10 8.47,10.05 8.82,10.14C9.5,8.27 11.08,7 13,7C14.15,7 15.19,7.45 15.95,8.19C16.85,7.45 18,7 19.25,7C21.87,7 24,9.13 24,11.75C24,13.11 23.43,14.33 22.5,15.2C22.82,15.13 23.15,15.1 23.5,15.1H24V16H23.5C21.57,16 20,14.43 20,12.5V12C20,10.9 19.1,10 18,10C16.9,10 16,10.9 16,12V12.5C16,14.43 14.43,16 12.5,16H12V15.1H12.5C14,15.1 15.1,14 15.1,12.5V12C15.1,10.9 16,10 17.1,10H17.2C18.3,10 19.2,10.9 19.2,12V12.5C19.2,14 18.1,15.1 16.6,15.1H16V16H16.6C18.5,16 20,14.43 20,12.5V15Z"/></svg>
-                    </div>
-                    <p class="mt-2">Jadi, setengah dari 4 adalah <span class="font-bold">2</span>.</p>
+        <main class="p-8">
+            <!-- Ringkasan Materi -->
+            <section class="mb-10">
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="h-6 w-1 bg-blue-600"></div>
+                    <h3 class="text-sm font-bold text-blue-800 uppercase">Materi: Membagi Kumpulan Besar</h3>
                 </div>
-            </div>
+                <div class="p-6 bg-blue-50 rounded-lg border border-blue-100 text-xs leading-relaxed text-slate-700">
+                    <p class="mb-3">Kemarin Kayla sudah belajar membagi benda sedikit. Sekarang, bagaimana jika bendanya banyak? Caranya sama: <span class="font-bold text-blue-600 underline">Bagi menjadi 2 kelompok yang isinya sama banyak!</span></p>
+                    <div class="flex flex-col md:flex-row items-center justify-around bg-white p-4 rounded-xl shadow-sm border border-blue-100">
+                        <div class="text-center">
+                            <p class="font-bold mb-2">Ada 6 Es Krim</p>
+                            <div class="flex gap-1 mb-2">🍦🍦🍦🍦🍦🍦</div>
+                        </div>
+                        <div class="text-2xl font-bold text-blue-400">➡️</div>
+                        <div class="text-center bg-green-50 p-2 rounded-lg">
+                            <p class="font-bold text-green-700">Setengahnya adalah 3</p>
+                            <div class="flex gap-1">🍦🍦🍦 | 🍦🍦🍦</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            <!-- Extra Materi: English Corner -->
-            <div class="bg-purple-100 p-4 rounded-lg border-2 border-purple-400 mb-4">
-                <h4 class="font-bold text-purple-800 flex items-center mb-2">
-                    <span class="mr-2">🇬🇧</span> ENGLISH CORNER (Kosakata Matematika)
-                </h4>
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="bg-white p-2 rounded text-center shadow-sm">
-                        <p class="text-xs text-gray-500">Bahasa Indonesia</p>
-                        <p class="font-bold text-lg">Satu</p>
-                        <p class="text-purple-600 font-bold italic">One</p>
+            <!-- English Corner -->
+            <section class="mb-10 p-6 bg-indigo-50 rounded-xl border border-indigo-100">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="text-xl">🇬🇧</span>
+                    <h3 class="text-sm font-bold text-indigo-900 uppercase tracking-wide">English Corner</h3>
+                </div>
+                <div class="grid grid-cols-2 gap-4 text-center">
+                    <div class="bg-white p-3 rounded-lg border border-indigo-200">
+                        <p class="text-[10px] text-slate-400 uppercase italic">Setengah</p>
+                        <p class="text-indigo-600 font-black text-lg italic tracking-tight">Half</p>
                     </div>
-                    <div class="bg-white p-2 rounded text-center shadow-sm">
-                        <p class="text-xs text-gray-500">Bahasa Indonesia</p>
-                        <p class="font-bold text-lg">Dua</p>
-                        <p class="text-purple-600 font-bold italic">Two</p>
+                    <div class="bg-white p-3 rounded-lg border border-indigo-200">
+                        <p class="text-[10px] text-slate-400 uppercase italic">Banyak / Lebih</p>
+                        <p class="text-indigo-600 font-black text-lg italic tracking-tight">More</p>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <!-- Soal Evaluasi -->
+            <section class="space-y-12">
+                <h3 class="text-xs font-black text-slate-400 uppercase tracking-widest text-center">Evaluasi Matematika (19 Soal)</h3>
+
+                <!-- Bagian I: Pilihan Ganda -->
+                <div class="space-y-8">
+                    <p class="text-xs font-bold text-slate-500 italic underline uppercase">I. Pilihan Ganda (10 Soal)</p>
+                    
+                    <!-- Soal 1 -->
+                    <div class="text-sm space-y-3">
+                        <p class="font-semibold">1. Perhatikan gambar stroberi ini. Berapa setengah dari jumlahnya?</p>
+                        <div class="grid-container">
+                            <svg class="item-svg text-red-500 fill-current" viewBox="0 0 24 24"><path d="M12,22C12,22 4,16 4,10C4,6 7,3 12,3C17,3 20,6 20,10C20,16 12,22 12,22Z"/></svg>
+                            <svg class="item-svg text-red-500 fill-current" viewBox="0 0 24 24"><path d="M12,22C12,22 4,16 4,10C4,6 7,3 12,3C17,3 20,6 20,10C20,16 12,22 12,22Z"/></svg>
+                            <svg class="item-svg text-red-500 fill-current" viewBox="0 0 24 24"><path d="M12,22C12,22 4,16 4,10C4,6 7,3 12,3C17,3 20,6 20,10C20,16 12,22 12,22Z"/></svg>
+                            <svg class="item-svg text-red-500 fill-current" viewBox="0 0 24 24"><path d="M12,22C12,22 4,16 4,10C4,6 7,3 12,3C17,3 20,6 20,10C20,16 12,22 12,22Z"/></svg>
+                        </div>
+                        <div class="grid grid-cols-3 ml-4 text-xs font-medium"><span>A. 2 Stroberi</span><span>B. 3 Stroberi</span><span>C. 4 Stroberi</span></div>
+                    </div>
+
+                    <!-- Soal 2 -->
+                    <div class="text-sm space-y-3">
+                        <p class="font-semibold">2. Setengah dari 12 permen adalah...</p>
+                        <div class="grid grid-cols-3 ml-4 text-xs font-medium"><span>A. 5 Permen</span><span>B. 6 Permen</span><span>C. 7 Permen</span></div>
+                    </div>
+
+                    <!-- Soal 3 -->
+                    <div class="text-sm space-y-3">
+                        <p class="font-semibold">3. Lihat koleksi kelereng ini. Setengah dari 10 kelereng adalah...</p>
+                        <div class="grid-container">
+                            <div class="w-4 h-4 bg-blue-500 rounded-full"></div><div class="w-4 h-4 bg-blue-500 rounded-full"></div><div class="w-4 h-4 bg-blue-500 rounded-full"></div><div class="w-4 h-4 bg-blue-500 rounded-full"></div><div class="w-4 h-4 bg-blue-500 rounded-full"></div><div class="w-4 h-4 bg-blue-500 rounded-full"></div><div class="w-4 h-4 bg-blue-500 rounded-full"></div><div class="w-4 h-4 bg-blue-500 rounded-full"></div><div class="w-4 h-4 bg-blue-500 rounded-full"></div><div class="w-4 h-4 bg-blue-500 rounded-full"></div>
+                        </div>
+                        <div class="grid grid-cols-3 ml-4 text-xs font-medium"><span>A. 4 Kelereng</span><span>B. 5 Kelereng</span><span>C. 6 Kelereng</span></div>
+                    </div>
+
+                    <!-- Soal 4 -->
+                    <div class="text-sm space-y-3">
+                        <p class="font-semibold">4. Kayla memiliki 14 buku. Setengahnya dipinjam teman. Berapa buku yang dipinjam?</p>
+                        <div class="grid grid-cols-3 ml-4 text-xs font-medium"><span>A. 7 Buku</span><span>B. 8 Buku</span><span>C. 6 Buku</span></div>
+                    </div>
+
+                    <!-- Soal 5 -->
+                    <div class="text-sm space-y-3">
+                        <p class="font-semibold">5. Setengah dari 20 apel adalah...</p>
+                        <div class="grid grid-cols-3 ml-4 text-xs font-medium"><span>A. 10 Apel</span><span>B. 5 Apel</span><span>C. 15 Apel</span></div>
+                    </div>
+
+                    <!-- Soal 6 -->
+                    <div class="text-sm space-y-3">
+                        <p class="font-semibold">6. Ada 16 pensil. Setengah bagian dari 16 adalah...</p>
+                        <div class="grid grid-cols-3 ml-4 text-xs font-medium"><span>A. 7</span><span>B. 8</span><span>C. 9</span></div>
+                    </div>
+
+                    <!-- Soal 7 -->
+                    <div class="text-sm space-y-3">
+                        <p class="font-semibold">7. Gambar manakah yang menunjukkan kumpulan benda berjumlah 18?</p>
+                        <div class="grid grid-cols-3 ml-4 text-xs font-medium"><span>A. 9 + 9</span><span>B. 8 + 8</span><span>C. 7 + 7</span></div>
+                    </div>
+
+                    <!-- Soal 8 -->
+                    <div class="text-sm space-y-3">
+                        <p class="font-semibold">8. Setengah dari 2 adalah...</p>
+                        <div class="grid grid-cols-3 ml-4 text-xs font-medium"><span>A. 2</span><span>B. 1</span><span>C. 0</span></div>
+                    </div>
+
+                    <!-- English Corner PG -->
+                    <div class="pt-6 border-t border-indigo-100">
+                        <p class="text-indigo-600 font-bold italic mb-4">English Corner (Matematika)</p>
+                        <div class="text-sm space-y-6">
+                            <p>9. "Setengah" dalam Bahasa Inggris disebut...</p>
+                            <div class="grid grid-cols-3 ml-4 text-xs font-bold text-indigo-700"><span>A. Full</span><span>B. Half</span><span>C. Quarter</span></div>
+
+                            <p>10. Kayla ingin membagi "More" (lebih banyak) buah. Apa arti "More"?</p>
+                            <div class="grid grid-cols-3 ml-4 text-xs font-bold text-indigo-700"><span>A. Sedikit</span><span>B. Lebih banyak</span><span>C. Habis</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian II: Uraian -->
+                <div class="mt-12 space-y-8 p-8 border-2 border-dotted border-blue-200 rounded-2xl bg-blue-50/20">
+                    <p class="text-xs font-bold text-slate-500 italic underline uppercase">II. Isian Singkat (9 Soal)</p>
+                    
+                    <div class="text-sm space-y-6">
+                        <p>11. Setengah dari 8 burung adalah ......................... ekor.</p>
+                        <p>12. Setengah dari 18 bintang adalah ......................... buah.</p>
+                        <p>13. Jika 10 kelereng dibagi dua sama banyak, maka satu bagian berisi .........................</p>
+                        <p>14. Setengah dari kumpulan 12 boneka adalah .........................</p>
+                        <p>15. Ada 20 balon. Setengahnya meletus. Sisa balon adalah .........................</p>
+                        <p>16. Setengah dari 4 adalah .........................</p>
+                        <p>17. Setengah dari 14 jeruk adalah ......................... jeruk.</p>
+
+                        <!-- English Writing -->
+                        <div class="pt-4 border-t border-indigo-100">
+                            <p class="text-indigo-600 font-bold italic mb-3">English Writing</p>
+                            <p>18. Salinlah kata <span class="font-bold">"Half"</span> sebanyak 2 kali!</p>
+                            <div class="mt-1 border-b border-dotted border-slate-300 h-6"></div>
+                            
+                            <p class="mt-4">19. Apa arti kata <span class="font-bold italic">"More"</span> dalam Bahasa Indonesia?</p>
+                            <div class="mt-1 border-b border-dotted border-slate-300 h-6"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Kalkulator Nilai -->
+            <section class="mt-16 p-8 bg-slate-900 rounded-3xl text-white shadow-2xl border-4 border-blue-600">
+                <div class="text-center mb-8">
+                    <h3 class="text-xl font-black uppercase tracking-widest text-blue-400">Kalkulator Nilai Kayla</h3>
+                    <p class="text-[10px] text-slate-500 mt-2">Masukkan jumlah jawaban benar untuk menghitung skor</p>
+                </div>
+                
+                <div class="max-w-xs mx-auto space-y-6">
+                    <div class="relative">
+                        <input type="number" id="inputBenar" min="0" max="19" placeholder="0" 
+                               class="w-full bg-slate-800 border-2 border-slate-700 p-4 rounded-2xl text-center text-4xl font-black focus:border-blue-500 focus:outline-none transition-all">
+                        <p class="text-center text-[10px] mt-2 text-slate-500">Jumlah Benar (Maksimal 19)</p>
+                    </div>
+                    
+                    <button onclick="hitungNilai()" 
+                            class="w-full bg-blue-600 hover:bg-blue-500 p-4 rounded-2xl font-bold uppercase tracking-widest shadow-lg active:scale-95 transition-all">
+                        CEK NILAI SEKARANG
+                    </button>
+
+                    <div id="displayHasil" class="hidden text-center pt-6 animate-pulse">
+                        <p class="text-xs uppercase text-slate-400">Skor Kamu:</p>
+                        <div id="skorBesar" class="text-7xl font-black text-yellow-400">0</div>
+                        <p id="pesan" class="mt-4 text-sm font-medium text-blue-200"></p>
+                    </div>
+                </div>
+            </section>
         </main>
 
-        <!-- Bagian Soal -->
-        <div class="p-8">
-            <h3 class="font-bold mb-4 text-center text-lg bg-blue-100 py-1 rounded uppercase">Bagian I: Pilihan Ganda</h3>
-            
-            <div class="space-y-8 text-sm">
-                <!-- Soal 1 -->
-                <div>
-                    <p>1. Lihat gambar jeruk di bawah! Setengah dari jumlah jeruk adalah...</p>
-                    <div class="grid-asset bg-gray-50 p-2 rounded w-max">
-                        <span class="text-2xl">🍊🍊</span>
-                    </div>
-                    <div class="ml-4 mt-2"><p>A. 1 Jeruk | B. 2 Jeruk | C. 3 Jeruk</p></div>
-                </div>
-
-                <!-- Soal 2 -->
-                <div>
-                    <p>2. Ada 4 balon. Kayla ingin membagi setengahnya untuk adiknya. Berapa balon untuk adik?</p>
-                    <div class="grid-asset bg-gray-50 p-2 rounded w-max">
-                        <span class="text-2xl">🎈🎈🎈🎈</span>
-                    </div>
-                    <div class="ml-4 mt-2"><p>A. 1 Balon | B. 2 Balon | C. 4 Balon</p></div>
-                </div>
-
-                <!-- Soal 3 -->
-                <div>
-                    <p>3. Setengah dari 6 bintang adalah...</p>
-                    <div class="grid-asset bg-gray-50 p-2 rounded w-max">
-                        <span class="text-2xl">⭐⭐⭐⭐⭐⭐</span>
-                    </div>
-                    <div class="ml-4 mt-2"><p>A. 2 Bintang | B. 3 Bintang | C. 4 Bintang</p></div>
-                </div>
-
-                <!-- Soal 4 -->
-                <div>
-                    <p>4. Gambar manakah yang menunjukkan pecahan <span class="font-bold">setengah</span>?</p>
-                    <div class="flex gap-4 mt-2">
-                        <div class="text-center">A. <div class="w-10 h-10 border-2 border-black bg-blue-500 rounded-full inline-block"></div></div>
-                        <div class="text-center">B. <div class="w-10 h-10 border-2 border-black bg-gradient-to-r from-blue-400 to-white rounded-full inline-block"></div></div>
-                    </div>
-                    <div class="ml-4 mt-2"><p>A. Gambar A | B. Gambar B | C. Salah semua</p></div>
-                </div>
-
-                <!-- Soal 5 -->
-                <div>
-                    <p>5. Jika sebuah roti dipotong menjadi dua bagian <span class="font-bold text-red-600">sama besar</span>, maka satu bagian disebut...</p>
-                    <div class="ml-4 mt-2"><p>A. Setengah | B. Satu | C. Tiga</p></div>
-                </div>
-
-                <!-- Soal 6 -->
-                <div>
-                    <p>6. Setengah dari 8 pensil adalah...</p>
-                    <div class="grid-asset bg-gray-50 p-2 rounded w-max">
-                        <span class="text-2xl">✏️✏️✏️✏️✏️✏️✏️✏️</span>
-                    </div>
-                    <div class="ml-4 mt-2"><p>A. 3 Pensil | B. 4 Pensil | C. 5 Pensil</p></div>
-                </div>
-
-                <!-- Soal 7 -->
-                <div>
-                    <p>7. Ibu punya 10 permen. Setengahnya diberikan kepada Kayla. Berapa permen Kayla?</p>
-                    <div class="ml-4 mt-2"><p>A. 5 Permen | B. 6 Permen | C. 2 Permen</p></div>
-                </div>
-
-                <!-- Soal 8 -->
-                <div>
-                    <p>8. Setengah dari 2 kupu-kupu adalah...</p>
-                    <div class="grid-asset bg-gray-50 p-2 rounded w-max">
-                        <span class="text-2xl">🦋🦋</span>
-                    </div>
-                    <div class="ml-4 mt-2"><p>A. 0 | B. 1 | C. 2</p></div>
-                </div>
-
-                <!-- 2 Soal English PG -->
-                <div class="border-t-2 border-purple-200 pt-4">
-                    <p class="font-bold text-purple-700 underline">Khusus: English Vocabulary</p>
-                    <p class="mt-4">9. Kayla memiliki "Satu" pensil. Dalam Bahasa Inggris disebut...</p>
-                    <div class="ml-4 mt-1"><p>A. Two | B. One | C. Ten</p></div>
-
-                    <p class="mt-4">10. Angka "2" jika ditulis dalam Bahasa Inggris adalah...</p>
-                    <div class="ml-4 mt-1"><p>A. Three | B. One | C. Two</p></div>
-                </div>
-            </div>
-
-            <h3 class="font-bold mt-10 mb-4 text-center text-lg bg-yellow-100 py-1 rounded uppercase">Bagian II: Uraian Singkat</h3>
-            <div class="space-y-8 text-sm">
-                <div>
-                    <p>1. Gambarlah lingkaran, lalu arsir (warnai) <span class="font-bold">setengah</span> bagiannya!</p>
-                    <p class="text-gray-300 italic">Jawab: (Gambarkan di buku catatanmu)</p>
-                </div>
-                <div>
-                    <p>2. Setengah dari 4 ikan adalah ......................... ekor.</p>
-                </div>
-                <div>
-                    <p>3. Setengah dari 6 permen adalah ......................... biji.</p>
-                </div>
-                <div>
-                    <p>4. Jika ada 12 kelereng, maka setengahnya adalah .........................</p>
-                </div>
-                <div>
-                    <p>5. Untuk mendapatkan setengah, benda harus dibagi menjadi dua bagian yang ......................... besar.</p>
-                </div>
-                <div>
-                    <p>6. Setengah dari 8 adalah .........................</p>
-                </div>
-                <div>
-                    <p>7. Setengah dari 20 adalah .........................</p>
-                </div>
-
-                <!-- 2 Soal English Writing -->
-                <div class="border-t-2 border-purple-200 pt-4">
-                    <p class="font-bold text-purple-700 underline">Khusus: English Writing</p>
-                    <p class="mt-4">8. Tulislah kata "One" (Satu) sebanyak dua kali!</p>
-                    <p class="text-gray-300 italic">Jawab: .......................................</p>
-
-                    <p class="mt-4">9. Tulislah kata "Two" (Dua) sebanyak dua kali!</p>
-                    <p class="text-gray-300 italic">Jawab: .......................................</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Footer -->
-        <footer class="bg-blue-700 text-white p-4 text-center text-xs border-t border-yellow-500">
-            <p>Siswa: KAYLA ZAHRA SAFITRI | Matematika Bergambar + English</p>
-            <p class="mt-1 font-bold">KEMENDIKDASMEN - KURIKULUM MERDEKA</p>
+        <footer class="bg-slate-50 p-6 text-center border-t border-slate-200">
+            <p class="text-[9px] text-slate-400 font-bold tracking-[0.3em] uppercase">MATEMATIKA CERIA • KAYLA ZAHRA SAFITRI • 2026</p>
         </footer>
     </div>
+
+    <script>
+        function hitungNilai() {
+            const benar = parseInt(document.getElementById('inputBenar').value);
+            const total = 19;
+            const display = document.getElementById('displayHasil');
+            const skor = document.getElementById('skorBesar');
+            const pesan = document.getElementById('pesan');
+
+            if (isNaN(benar) || benar < 0 || benar > total) {
+                alert("Ups! Masukkan angka antara 0 sampai 19 ya!");
+                return;
+            }
+
+            const hasil = Math.round((benar / total) * 100);
+            display.classList.remove('hidden');
+            skor.innerText = hasil;
+
+            if (hasil >= 90) {
+                pesan.innerText = "SANGAT JENIUS! Kayla luar biasa pintar! 🌈✨";
+            } else if (hasil >= 75) {
+                pesan.innerText = "HEBAT! Kayla sudah paham konsep pecahan! 🌟";
+            } else {
+                pesan.innerText = "AYO SEMANGAT! Belajar lagi pasti bisa! 💪📚";
+            }
+        }
+    </script>
 </body>
 </html>
 
