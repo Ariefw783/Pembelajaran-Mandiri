@@ -3,157 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bahasa Indonesia - Antonim - Kayla</title>
+    <title>Bahasa Indonesia - Bijak Memakai Uang - Kayla</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; }
         @keyframes blink {
-            0% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.5; transform: scale(1.05); background-color: #ef4444; color: white; }
-            100% { opacity: 1; transform: scale(1); }
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
         }
-        .notice-blink {
+        .flash-notice {
             animation: blink 0.8s infinite;
-            border: 4px solid #dc2626;
+            border: 4px solid #ef4444;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .date-badge {
+            background: #1e293b;
+            color: #f8fafc;
+            padding: 10px 30px;
+            border-radius: 50px;
+            display: inline-block;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            border: 2px solid #3b82f6;
         }
     </style>
 </head>
 <body class="bg-slate-50 p-4 md:p-10">
-    <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-xl overflow-hidden border border-slate-200">
-        <!-- Header -->
-        <header class="bg-gradient-to-r from-rose-50 to-red-50 p-8 text-center border-b-4 border-red-400">
-            <h1 class="text-xs font-bold text-slate-500 tracking-[0.3em] uppercase mb-2">Kurikulum Merdeka Dasar</h1>
-            <h2 class="text-2xl font-light text-slate-800 tracking-tight">BAHASA INDONESIA <span class="font-bold text-red-600">| BAB 5 (TAHAP 4)</span></h2>
-            <div class="mt-4 flex justify-center gap-4 text-[10px] text-slate-500 uppercase font-medium">
-                <span class="bg-white px-3 py-1 rounded-full shadow-sm">Senin, 02 Februari 2026</span>
-                <span class="bg-white px-3 py-1 rounded-full shadow-sm">Sesi 2</span>
-                <span class="bg-white px-3 py-1 rounded-full shadow-sm font-bold text-red-600">Materi Antonim</span>
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden border border-slate-200">
+        
+        <!-- Header Menonjol -->
+        <header class="bg-gradient-to-b from-blue-600 to-blue-800 p-10 text-center text-white">
+            <div class="date-badge mb-6">
+                <h2 class="text-xl font-black tracking-tighter">RABU, 04 FEBRUARI 2026</h2>
             </div>
+            <h1 class="text-xs font-bold text-blue-200 tracking-[0.4em] uppercase mb-2">Kurikulum Merdeka Dasar</h1>
+            <h3 class="text-3xl font-light tracking-tight">BAHASA INDONESIA <span class="font-bold text-yellow-400">| BAB 6 (SESI 2)</span></h3>
+            <p class="mt-4 text-sm font-medium bg-blue-900/40 inline-block px-6 py-2 rounded-full border border-blue-400/30">
+                TAHAP 1: BIJAK MEMAKAI UANG (Mengenal Uang & Pekerjaan)
+            </p>
         </header>
 
-        <!-- Identitas -->
-        <div class="px-8 py-4 bg-slate-50/50 flex justify-between items-center border-b text-[11px] text-slate-600 italic">
-            <div>Nama: <span class="font-bold text-slate-800 uppercase">Kayla Zahra Safitri</span></div>
-            <div>Materi: <span class="font-bold text-slate-800 text-red-700">Antonim (Lawan Kata)</span></div>
+        <!-- Identitas Siswa -->
+        <div class="px-8 py-4 bg-slate-100 flex justify-between items-center border-b text-[11px] text-slate-600 font-bold uppercase tracking-widest">
+            <div>Siswa: <span class="text-blue-700">Kayla Zahra Safitri</span></div>
+            <div>Materi: <span class="text-blue-700">Uang & Pekerjaan</span></div>
         </div>
 
         <main class="p-8">
             <!-- Materi Ringkas -->
             <section class="mb-10">
-                <h3 class="text-sm font-bold text-red-800 mb-4 border-l-4 border-red-500 pl-3 uppercase">Apa itu Antonim?</h3>
-                <div class="p-6 bg-red-50 rounded-lg border border-red-100 text-xs leading-relaxed text-slate-700 space-y-4">
-                    <p class="text-sm">Kayla, <span class="font-bold text-red-600 uppercase">Antonim</span> adalah kata yang artinya <span class="font-bold underline">Berlawanan</span> atau Terbalik.</p>
-                    <p>Contohnya dalam pertemanan:</p>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-2 font-bold text-center">
-                        <div class="p-2 bg-white rounded shadow-sm border">Besar X Kecil</div>
-                        <div class="p-2 bg-white rounded shadow-sm border">Tinggi X Rendah</div>
-                        <div class="p-2 bg-white rounded shadow-sm border">Senang X Sedih</div>
-                        <div class="p-2 bg-white rounded shadow-sm border">Jauh X Dekat</div>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="h-8 w-2 bg-yellow-400 rounded-full"></div>
+                    <h3 class="text-lg font-bold text-slate-800 uppercase">Ayo Belajar Tentang Uang!</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="p-6 bg-green-50 rounded-2xl border border-green-200">
+                        <p class="text-xs font-bold text-green-700 uppercase mb-2">1. Apa itu Uang?</p>
+                        <p class="text-sm leading-relaxed text-slate-700">
+                            Uang adalah alat untuk <span class="font-bold">membeli</span> barang atau membayar jasa. Di Indonesia, uang kita namanya <span class="font-bold text-green-600 italic underline">Rupiah (Rp)</span>. Ada uang kertas dan ada uang logam.
+                        </p>
                     </div>
-                    <p class="italic text-[10px]">Ingat: Perbedaan antonim membuat dunia jadi ramai dan indah!</p>
+                    <div class="p-6 bg-blue-50 rounded-2xl border border-blue-200">
+                        <p class="text-xs font-bold text-blue-700 uppercase mb-2">2. Apa itu Pekerjaan?</p>
+                        <p class="text-sm leading-relaxed text-slate-700">
+                            Untuk mendapatkan uang, orang dewasa harus <span class="font-bold">bekerja</span>. Contoh pekerjaan: Guru (mengajar), Dokter (mengobati), dan Petani (menanam padi).
+                        </p>
+                    </div>
                 </div>
             </section>
 
-            <!-- English Corner - Mencolok -->
+            <!-- English Corner - NOTICE KERAS -->
             <section class="mb-10">
-                <div class="notice-blink p-6 rounded-xl text-center shadow-lg">
-                    <h3 class="text-sm font-black uppercase tracking-tighter mb-2">⚠️ NOTICE KERAS! WAJIB HAFAL HARI INI! ⚠️</h3>
-                    <div class="bg-white py-6 rounded-lg border-2 border-red-200">
-                        <p class="text-xs text-slate-400 uppercase italic mb-1">Bahasa Inggris dari: Wajah</p>
-                        <p class="text-5xl font-black text-red-600 tracking-tighter">FACE</p>
-                        <p class="mt-4 text-[10px] font-bold text-slate-500 uppercase italic italic">Cara baca: Feis</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Lembar Soal -->
-            <section class="space-y-10">
-                <h3 class="text-xs font-black text-slate-400 uppercase tracking-widest text-center">Evaluasi Bahasa Indonesia (19 Soal)</h3>
-                
-                <!-- Bagian I -->
-                <div class="space-y-6">
-                    <p class="text-xs font-bold text-slate-500 italic underline uppercase">I. Pilihan Ganda (10 Soal)</p>
-                    <div class="text-sm space-y-6">
-                        <p>1. Apa yang dimaksud dengan antonim?</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Lawan kata</span><span>B. Persamaan kata</span><span>C. Nama orang</span></div>
-
-                        <p>2. Lawan kata dari <span class="font-bold text-red-600">"Besar"</span> adalah...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Luas</span><span>B. Kecil</span><span>C. Lebar</span></div>
-
-                        <p>3. Antonim dari kata <span class="font-bold text-red-600">"Senang"</span> adalah...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Bahagia</span><span>B. Gembira</span><span>C. Sedih</span></div>
-
-                        <p>4. Baju Kayla bersih. Antonim dari kata <span class="font-bold text-red-600">"Bersih"</span> adalah...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Kotor</span><span>B. Wangi</span><span>C. Rapi</span></div>
-
-                        <p>5. Jerapah itu tinggi. Lawan kata dari <span class="font-bold text-red-600">"Tinggi"</span> adalah...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Panjang</span><span>B. Rendah / Pendek</span><span>C. Gendut</span></div>
-
-                        <p>6. "Siang hari matahari bersinar." Antonim dari <span class="font-bold text-red-600">"Siang"</span> adalah...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Pagi</span><span>B. Sore</span><span>C. Malam</span></div>
-
-                        <p>7. Es rasanya dingin. Antonim dari kata <span class="font-bold text-red-600">"Dingin"</span> adalah...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Beku</span><span>B. Panas</span><span>C. Sejuk</span></div>
-
-                        <p>8. Antonim dari kata <span class="font-bold text-red-600">"Kanan"</span> adalah...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Kiri</span><span>B. Depan</span><span>C. Belakang</span></div>
-
-                        <p class="text-red-600 font-bold italic border-t pt-4">9. Kayla washes her "Face" every morning. Face means...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4 text-red-700 font-bold"><span>A. Rambut</span><span>B. Wajah</span><span>C. Tangan</span></div>
-
-                        <p class="text-red-600 font-bold italic">10. Wajah dalam Bahasa Inggris adalah...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4 text-red-700 font-bold"><span>A. Face</span><span>B. Food</span><span>C. Foot</span></div>
-                    </div>
-                </div>
-
-                <!-- Bagian II -->
-                <div class="mt-12 space-y-6 p-6 border-2 border-dotted border-red-200 rounded-xl bg-red-50/20">
-                    <p class="text-xs font-bold text-slate-500 italic underline uppercase">II. Isian Singkat (9 Soal)</p>
-                    <div class="text-sm space-y-6">
-                        <p>11. Lawan kata dari <span class="font-bold text-red-600">Cepat</span> adalah .........................</p>
-                        <p>12. Antonim dari <span class="font-bold text-red-600">Penuh</span> adalah .........................</p>
-                        <p>13. Lawan kata dari <span class="font-bold text-red-600">Keras</span> adalah .........................</p>
-                        <p>14. Antonim dari <span class="font-bold text-red-600">Gemuk</span> adalah .........................</p>
-                        <p>15. Kayla rajin belajar. Lawan kata dari <span class="font-bold text-red-600">Rajin</span> adalah .........................</p>
-                        <p>16. Lawan kata dari <span class="font-bold text-red-600">Tebal</span> adalah .........................</p>
-                        <p>17. "Gelap" adalah lawan kata dari .........................</p>
-
-                        <div class="pt-4 border-t border-red-100">
-                            <p class="text-red-600 font-bold italic text-xs">English Writing</p>
-                            <p>18. Tulis kata <span class="font-bold">"FACE"</span> sebanyak 3 kali!</p>
-                            <div class="mt-2 border-b border-dotted border-slate-300 h-6"></div>
-                            <p class="mt-4">19. <span class="italic">"Smile on your ..............."</span> (Isi dengan kata Wajah dalam bahasa Inggris)</p>
-                            <div class="mt-2 border-b border-dotted border-slate-300 h-6"></div>
+                <div class="flash-notice bg-red-600 p-1 rounded-2xl overflow-hidden shadow-lg">
+                    <div class="bg-white p-6 rounded-xl">
+                        <h4 class="text-center text-red-600 font-black text-sm uppercase tracking-tighter mb-4">
+                            ⚠️ NOTICE KERAS: WAJIB DIHAFAL HARI INI! ⚠️
+                        </h4>
+                        <div class="flex flex-col md:flex-row items-center justify-around gap-6">
+                            <div class="text-center">
+                                <p class="text-[10px] text-slate-400 uppercase font-bold">Kosakata Hari Ini:</p>
+                                <p class="text-5xl font-black text-slate-900 tracking-tighter italic">CAT</p>
+                                <p class="text-lg font-medium text-red-500">Kucing</p>
+                            </div>
+                            <div class="h-px w-20 bg-slate-200 md:h-20 md:w-px"></div>
+                            <div class="text-center opacity-50">
+                                <p class="text-[8px] text-slate-400 uppercase font-bold italic">Review Kemarin:</p>
+                                <p class="text-xs font-bold text-slate-600 uppercase">Foot, Face, Hair</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Kalkulator -->
-            <section class="mt-16 p-8 bg-slate-900 rounded-2xl text-white border-4 border-red-600">
-                <div class="text-center mb-6 text-red-400 font-bold uppercase">Skor Kayla</div>
-                <div class="flex flex-col items-center space-y-4">
-                    <input type="number" id="inputBenar" min="0" max="19" placeholder="0" class="w-24 p-4 rounded bg-slate-800 text-center text-3xl font-bold border border-slate-600 text-white focus:outline-none">
-                    <button onclick="hitung()" class="px-8 py-2 bg-red-600 hover:bg-red-500 rounded-full font-bold uppercase">Cek Nilai</button>
-                    <div id="hasil" class="hidden text-center mt-4">
-                        <div id="nilai" class="text-6xl font-black text-yellow-400">0</div>
-                        <p id="msg" class="text-xs mt-2"></p>
+            <!-- Soal Evaluasi -->
+            <section class="space-y-12">
+                <div class="text-center">
+                    <span class="bg-slate-800 text-white text-[10px] px-4 py-1 rounded-full font-bold uppercase tracking-[0.3em]">Lembar Evaluasi</span>
+                </div>
+
+                <!-- Bagian I: Pilihan Ganda -->
+                <div class="space-y-8">
+                    <p class="text-xs font-bold text-slate-400 italic underline uppercase">I. Pilihan Ganda (10 Soal)</p>
+                    
+                    <div class="text-sm space-y-6">
+                        <p>1. Nama mata uang negara Indonesia adalah...</p>
+                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Ringgit</span><span>B. Rupiah</span><span>C. Dollar</span></div>
+
+                        <p>2. Uang digunakan sebagai alat untuk...</p>
+                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Bermain</span><span>B. Tukar Menukar</span><span>C. Membeli barang</span></div>
+
+                        <p>3. Orang yang pekerjaannya menangkap ikan di laut disebut...</p>
+                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Petani</span><span>B. Nelayan</span><span>C. Sopir</span></div>
+
+                        <p>4. Jika ingin membeli buku di koperasi sekolah, kita harus membayar menggunakan...</p>
+                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Uang</span><span>B. Daun</span><span>C. Kertas kosong</span></div>
+
+                        <p>5. Ibu bekerja di rumah sakit dan mengobati orang sakit. Pekerjaan Ibu adalah...</p>
+                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Polisi</span><span>B. Guru</span><span>C. Dokter</span></div>
+
+                        <p>6. Kegiatan menyisihkan sebagian uang untuk kebutuhan masa depan disebut...</p>
+                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Jajan</span><span>B. Menabung</span><span>C. Boros</span></div>
+
+                        <p>7. Ayah bekerja mengemudikan pesawat terbang. Pekerjaan Ayah adalah...</p>
+                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Masinis</span><span>B. Pilot</span><span>C. Nahkoda</span></div>
+
+                        <p>8. Tempat untuk menabung uang yang paling aman adalah di...</p>
+                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Bawah kasur</span><span>B. Bank</span><span>C. Saku celana</span></div>
+
+                        <p class="text-red-600 font-bold italic border-t pt-4">9. Kayla has a pet "CAT". Apa arti "CAT"?</p>
+                        <div class="grid grid-cols-3 text-xs ml-4 text-red-700 font-bold"><span>A. Anjing</span><span>B. Kucing</span><span>C. Burung</span></div>
+
+                        <p class="text-red-600 font-bold italic">10. "Kucing" dalam bahasa Inggris adalah...</p>
+                        <div class="grid grid-cols-3 text-xs ml-4 text-red-700 font-bold"><span>A. CAT</span><span>B. DOG</span><span>C. BIRD</span></div>
+                    </div>
+                </div>
+
+                <!-- Bagian II: Isian -->
+                <div class="mt-12 space-y-6 p-8 border-2 border-blue-100 rounded-3xl bg-blue-50/30">
+                    <p class="text-xs font-bold text-slate-400 italic underline uppercase">II. Isian Singkat (9 Soal)</p>
+                    <div class="text-sm space-y-6">
+                        <p>11. Sebelum membeli barang, kita harus melihat ......................... (harga/warna) barang tersebut.</p>
+                        <p>12. Supaya punya banyak uang saat dewasa, kita harus rajin .........................</p>
+                        <p>13. Orang yang bekerja memadamkan api saat kebakaran disebut .........................</p>
+                        <p>14. Uang logam biasanya terbuat dari bahan .........................</p>
+                        <p>15. Orang yang bekerja mengajar murid di sekolah adalah .........................</p>
+                        <p>16. Kebalikan dari kata "Hemat" adalah .........................</p>
+                        <p>17. Kita harus bijak memakai uang, artinya tidak boleh .........................</p>
+
+                        <div class="pt-6 border-t border-red-200">
+                            <p class="text-red-600 font-bold italic text-xs uppercase">English Corner Task (WAJIB)</p>
+                            <p>18. Tulis kata <span class="font-bold">"CAT"</span> sebanyak 5 kali di sini:</p>
+                            <div class="mt-2 border-b border-dotted border-slate-300 h-8"></div>
+                            
+                            <p class="mt-4">19. <span class="font-bold italic text-red-600">Cat</span> is an animal that says ......................... (suaranya)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Penghitung Nilai -->
+            <section class="mt-16 p-10 bg-slate-900 rounded-[2.5rem] text-white shadow-2xl border-4 border-blue-500 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-4 opacity-10">
+                    <svg width="100" height="100" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.31-8.86c-1.77-.45-2.34-.94-2.34-1.67 0-.84.79-1.39 2.1-1.39 1.47 0 2.01.59 2.06 1.47h1.73c-.06-1.57-1.16-2.61-2.67-2.94V5h-2v1.59c-1.49.32-2.73 1.25-2.73 2.72 0 1.79 1.49 2.69 3.66 3.21 1.96.47 2.49 1.13 2.49 1.9 0 .68-.56 1.45-2.26 1.45-1.63 0-2.31-.73-2.42-1.73H7.43c.12 1.79 1.5 2.74 2.88 3.07V19h2v-1.6c1.55-.26 2.81-1.15 2.81-2.75 0-2.25-1.87-2.88-3.82-3.36z"/></svg>
+                </div>
+                <div class="text-center mb-8">
+                    <h3 class="text-xl font-black uppercase tracking-widest text-blue-400">Skor Kayla Hari Ini</h3>
+                </div>
+                <div class="flex flex-col items-center space-y-6">
+                    <input type="number" id="inputBenar" min="0" max="19" placeholder="?" 
+                           class="w-24 h-24 rounded-3xl bg-slate-800 border-2 border-blue-500 text-center text-5xl font-black text-white focus:outline-none focus:ring-4 focus:ring-blue-400/50 transition-all">
+                    <p class="text-[10px] text-slate-400 uppercase font-bold">Masukkan Jumlah Benar (Maks 19)</p>
+                    
+                    <button onclick="hitungNilai()" 
+                            class="px-12 py-4 bg-blue-600 hover:bg-blue-500 rounded-2xl font-black uppercase tracking-widest shadow-lg shadow-blue-500/30 active:scale-95 transition-all">
+                        CEK HASIL
+                    </button>
+
+                    <div id="hasilNilai" class="mt-8 text-center hidden">
+                        <div id="skorAngka" class="text-8xl font-black text-yellow-400 drop-shadow-lg">0</div>
+                        <p id="pesanNilai" class="mt-6 text-sm font-bold text-blue-200 uppercase tracking-tight"></p>
                     </div>
                 </div>
             </section>
         </main>
+
+        <footer class="bg-slate-50 p-8 text-center border-t border-slate-100">
+            <p class="text-[9px] text-slate-400 font-bold tracking-[0.5em] uppercase italic">Bahasa Indonesia • Bijak Memakai Uang • Kayla Zahra • 2026</p>
+        </footer>
     </div>
 
     <script>
-        function hitung() {
-            const b = parseInt(document.getElementById('inputBenar').value);
-            const n = Math.round((b/19)*100);
-            document.getElementById('hasil').classList.remove('hidden');
-            document.getElementById('nilai').innerText = n;
-            const m = document.getElementById('msg');
-            if(n >= 90) m.innerText = "HEBAT SEKALI! Kayla bintang kelas! 🌟";
-            else if(n >= 70) m.innerText = "BAGUS! Kayla mengerti lawan kata! 👍";
-            else m.innerText = "Ayo belajar lagi sama Mama, Kayla pasti bisa! 💪";
+        function hitungNilai() {
+            const benar = parseInt(document.getElementById('inputBenar').value);
+            const total = 19;
+            const container = document.getElementById('hasilNilai');
+            const skor = document.getElementById('skorAngka');
+            const pesan = document.getElementById('pesanNilai');
+
+            if (isNaN(benar) || benar < 0 || benar > total) {
+                alert("Kayla, masukkan angka 0 sampai 19 ya!");
+                return;
+            }
+
+            const nilai = Math.round((benar / total) * 100);
+            container.classList.remove('hidden');
+            skor.innerText = nilai;
+
+            if (nilai >= 90) pesan.innerText = "Sempurna! Kayla sudah pintar mengelola uang! 💰🌟";
+            else if (nilai >= 75) pesan.innerText = "Bagus sekali! Teruslah rajin menabung! 🐷💎";
+            else pesan.innerText = "Ayo belajar lagi! Pasti bisa lebih hemat! 📚💪";
         }
     </script>
 </body>
