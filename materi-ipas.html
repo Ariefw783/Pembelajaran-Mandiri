@@ -3,179 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IPAS Bab 1 Topik B - Kayla</title>
+    <title>IPAS Bab 1 - Bentuk Tubuh Hewan - Kayla</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { font-family: 'Segoe UI', sans-serif; }
+        @keyframes blink {
+            0% { background-color: #ef4444; color: white; }
+            50% { background-color: #fef08a; color: #991b1b; }
+            100% { background-color: #ef4444; color: white; }
+        }
+        .notice-flash {
+            animation: blink 1s infinite;
+            padding: 10px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 8px;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body class="bg-slate-50 p-4 md:p-10">
-    <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-xl overflow-hidden border border-slate-200">
-        <!-- Header -->
-        <header class="bg-gradient-to-r from-teal-50 to-emerald-50 p-8 text-center border-b-2 border-emerald-500">
-            <h1 class="text-xs font-bold text-slate-500 tracking-[0.3em] uppercase mb-2">Kurikulum Merdeka Indonesia</h1>
-            <h2 class="text-2xl font-light text-slate-800 tracking-tight">IPAS <span class="font-bold text-emerald-600">| BAB 1 (Topik B)</span></h2>
-            <div class="mt-4 flex justify-center gap-4 text-[10px] text-slate-500 uppercase font-medium">
-                <span class="bg-white px-3 py-1 rounded-full shadow-sm">Jumat, 23 Januari 2026</span>
-                <span class="bg-white px-3 py-1 rounded-full shadow-sm">Sesi 2</span>
-                <span class="bg-white px-3 py-1 rounded-full shadow-sm">Apakah Semua Hewan Sama?</span>
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-2xl overflow-hidden border-2 border-slate-200">
+        <!-- Header Menonjol -->
+        <header class="bg-slate-900 p-10 text-center border-b-8 border-green-500">
+            <h1 class="text-white text-4xl font-black tracking-tighter mb-2">KAMIS, 05 FEBRUARI 2026</h1>
+            <h2 class="text-green-400 text-xl font-bold tracking-[0.2em] uppercase">IPAS | SESI 1 | KELAS 2 SD</h2>
+            <div class="mt-4 flex justify-center">
+                <span class="bg-green-600 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">BAB 1: Mari Kenali Hewan di Sekitar Kita</span>
             </div>
         </header>
 
-        <!-- Identitas Siswa -->
-        <div class="px-8 py-4 bg-slate-50/50 flex justify-between items-center border-b text-[11px] text-slate-600 italic">
+        <!-- Identitas -->
+        <div class="px-8 py-4 bg-slate-50 flex justify-between items-center border-b text-[11px] text-slate-600 italic">
             <div>Nama: <span class="font-bold text-slate-800 uppercase">Kayla Zahra Safitri</span></div>
-            <div>Materi: <span class="font-bold text-slate-800">Perbedaan Ciri Hewan</span></div>
+            <div>Materi: <span class="font-bold text-slate-800 underline italic">Mengapa Bentuk Tubuh Hewan Berbeda-beda?</span></div>
         </div>
 
         <main class="p-8">
             <!-- Materi Ringkas -->
             <section class="mb-10">
-                <h3 class="text-sm font-bold text-emerald-800 mb-4 border-l-4 border-emerald-500 pl-3 uppercase">Materi: Apakah Semua Hewan Sama?</h3>
-                <div class="p-6 bg-emerald-50/50 rounded-lg border border-emerald-100 text-xs leading-relaxed text-slate-700 space-y-4">
-                    <p>Ternyata, hewan-hewan di sekitar kita itu <span class="font-bold text-emerald-600">Berbeda-beda</span> lho, Kayla! Kita bisa membedakan mereka dari:</p>
+                <h3 class="text-sm font-black text-slate-800 mb-4 border-l-4 border-green-500 pl-3 uppercase">Pelajaran Hari Ini</h3>
+                <div class="p-6 bg-green-50 rounded-xl border border-green-100 text-sm leading-relaxed text-slate-700 space-y-4">
+                    <p>Halo Kayla! Pernahkah kamu berpikir kenapa burung punya sayap tapi kucing tidak? Atau kenapa gajah punya belalai yang sangat panjang?</p>
+                    <p class="font-bold text-green-800">Hewan memiliki bentuk tubuh berbeda karena:</p>
                     <ul class="list-disc ml-5 space-y-2">
-                        <li><span class="font-bold">Penutup Tubuh:</span> Ada yang berbulu (ayam), berambut (kucing), bersisik (ikan), atau bercangkang (siput).</li>
-                        <li><span class="font-bold">Tempat Hidup:</span> Ada yang di darat (kelinci), di air (ikan), atau di keduanya (katak).</li>
-                        <li><span class="font-bold">Cara Bergerak:</span> Ada yang berjalan, berenang, terbang, atau melompat.</li>
+                        <li><span class="font-bold">Tempat Tinggal:</span> Ikan punya sirip untuk berenang di air, burung punya sayap untuk terbang di udara.</li>
+                        <li><span class="font-bold">Cara Mencari Makan:</span> Elang punya kuku tajam untuk menangkap mangsa, sapi punya gigi rata untuk mengunyah rumput.</li>
+                        <li><span class="font-bold">Cara Melindungi Diri:</span> Landak punya duri agar tidak dimakan hewan lain, kura-kura punya cangkang keras untuk bersembunyi.</li>
                     </ul>
-                    <p class="italic text-emerald-800 font-medium">Meskipun berbeda, semua hewan adalah ciptaan Tuhan yang harus kita sayangi!</p>
+                    <p class="italic bg-white p-3 rounded-lg border border-green-200">Jadi, Tuhan menciptakan tubuh hewan sesuai dengan kebutuhan mereka agar bisa bertahan hidup!</p>
                 </div>
             </section>
 
-            <!-- English Corner -->
-            <section class="mb-10 p-6 bg-indigo-50 rounded-xl border border-indigo-100">
-                <div class="flex items-center gap-3 mb-4">
-                    <span class="text-xl">🇬🇧</span>
-                    <h3 class="text-sm font-bold text-indigo-900 uppercase tracking-wide">English Corner</h3>
+            <!-- English Corner dengan Notice Keras -->
+            <section class="mb-12">
+                <div class="notice-flash mb-4">
+                    ⚠️ PENTING: KAYLA HARUS HAFAL KATA INI SEBELUM TIDUR MALAM INI! ⚠️
                 </div>
-                <div class="grid grid-cols-2 gap-4 text-center">
-                    <div class="bg-white p-3 rounded-lg border border-indigo-200">
-                        <p class="text-[10px] text-slate-400 uppercase italic">Hewan</p>
-                        <p class="text-indigo-600 font-black text-lg italic tracking-tight">Animal</p>
-                    </div>
-                    <div class="bg-white p-3 rounded-lg border border-indigo-200">
-                        <p class="text-[10px] text-slate-400 uppercase italic">Burung</p>
-                        <p class="text-indigo-600 font-black text-lg italic tracking-tight">Bird</p>
+                <div class="p-6 bg-amber-50 rounded-xl border-2 border-amber-200 text-center">
+                    <p class="text-[10px] text-amber-600 uppercase font-bold tracking-widest mb-1 italic">English Corner Hari Ini</p>
+                    <p class="text-4xl font-black text-slate-900 tracking-tighter">DOG</p>
+                    <p class="text-lg font-medium text-amber-800">ANJING</p>
+                    <div class="mt-4 pt-4 border-t border-amber-200">
+                        <p class="text-[10px] text-slate-400 italic">Ingat juga kata sebelumnya: Foot, Face, Hair, Cat.</p>
                     </div>
                 </div>
             </section>
 
             <!-- Latihan Soal -->
-            <section class="space-y-10">
-                <h3 class="text-xs font-black text-slate-400 uppercase tracking-widest text-center">Lembar Evaluasi (19 Butir Soal)</h3>
+            <section class="space-y-12">
+                <h3 class="text-xs font-black text-slate-400 uppercase tracking-widest text-center italic">Evaluasi Tahap Akhir (19 Soal)</h3>
                 
                 <!-- Bagian I -->
                 <div class="space-y-6">
                     <p class="text-xs font-bold text-slate-500 italic underline uppercase">I. Pilihan Ganda (10 Soal)</p>
                     
                     <div class="text-sm space-y-6">
-                        <p>1. Hewan yang memiliki rambut halus di tubuhnya adalah...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Ikan</span><span>B. Kucing</span><span>C. Burung</span></div>
+                        <p>1. Burung memiliki sayap yang berbeda dengan kucing karena burung perlu...</p>
+                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Berlari</span><span>B. Berenang</span><span>C. Terbang</span></div>
 
-                        <p>2. Ikan dapat hidup di air karena memiliki alat pernapasan berupa...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Paru-paru</span><span>B. Insang</span><span>C. Hidung</span></div>
+                        <p>2. Hewan yang memiliki sirip untuk hidup di air adalah...</p>
+                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Kucing</span><span>B. Ikan</span><span>C. Ayam</span></div>
 
-                        <p>3. Hewan yang bergerak dengan cara melompat adalah...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Ular</span><span>B. Katak</span><span>C. Siput</span></div>
+                        <p>3. Landak memiliki duri di punggungnya untuk...</p>
+                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Berenang</span><span>B. Melindungi diri</span><span>C. Menarik perhatian</span></div>
 
-                        <p>4. Burung menggunakan sayapnya untuk bergerak dengan cara...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Terbang</span><span>B. Berjalan</span><span>C. Berenang</span></div>
+                        <p>4. Bebek memiliki selaput pada kakinya agar mudah saat...</p>
+                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Memanjat pohon</span><span>B. Berenang di air</span><span>C. Berlari kencang</span></div>
 
-                        <p>5. Tubuh ikan tertutup oleh ... agar terlindung di air.</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Bulu</span><span>B. Sisik</span><span>C. Rambut</span></div>
+                        <p>5. Gajah memiliki belalai yang panjang untuk membantu...</p>
+                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Makan dan minum</span><span>B. Mendengar suara</span><span>C. Melihat jauh</span></div>
 
-                        <p>6. Hewan yang hidup di darat contohnya adalah...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Cumi-cumi</span><span>B. Ayam</span><span>C. Udang</span></div>
+                        <p>6. Kura-kura bersembunyi dari bahaya di dalam...</p>
+                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Lubang tanah</span><span>B. Cangkang keras</span><span>C. Daun pohon</span></div>
 
-                        <p>7. Bebek dapat berenang di air karena memiliki kaki yang...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Panjang</span><span>B. Berselaput</span><span>C. Tajam</span></div>
+                        <p>7. Kenapa kaki sapi dan macan berbeda bentuknya?</p>
+                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Karena warna kulit</span><span>B. Karena cara cari makan</span><span>C. Hanya hiasan</span></div>
 
-                        <p>8. Hewan yang memiliki cangkang keras untuk melindungi tubuhnya adalah...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Kelinci</span><span>B. Siput</span><span>C. Kupu-kupu</span></div>
+                        <p>8. Bentuk tubuh hewan diciptakan agar hewan bisa...</p>
+                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Tidur terus</span><span>B. Bertahan hidup</span><span>C. Menjadi cantik</span></div>
 
-                        <p class="text-indigo-600 font-bold italic border-t pt-4">9. Kayla melihat seekor "Bird" di pohon. Apa arti "Bird"?</p>
-                        <div class="grid grid-cols-3 text-xs ml-4 text-indigo-700 font-bold"><span>A. Ikan</span><span>B. Burung</span><span>C. Kucing</span></div>
+                        <p class="text-amber-700 font-bold italic border-t pt-4">9. What is "DOG" in Indonesian?</p>
+                        <div class="grid grid-cols-3 text-xs ml-4 font-bold text-amber-900"><span>A. Kucing</span><span>B. Kelinci</span><span>C. Anjing</span></div>
 
-                        <p class="text-indigo-600 font-bold italic">10. Kita harus menyayangi setiap "Animal". Apa arti "Animal"?</p>
-                        <div class="grid grid-cols-3 text-xs ml-4 text-indigo-700 font-bold"><span>A. Hewan</span><span>B. Tanaman</span><span>C. Manusia</span></div>
+                        <p class="text-amber-700 font-bold italic">10. Jika Kayla melihat "Anjing" di taman, Kayla menyebutnya...</p>
+                        <div class="grid grid-cols-3 text-xs ml-4 font-bold text-amber-900"><span>A. Dog</span><span>B. Cat</span><span>C. Fish</span></div>
                     </div>
                 </div>
 
                 <!-- Bagian II -->
-                <div class="mt-12 space-y-6 p-6 border-2 border-dotted border-emerald-200 rounded-xl bg-emerald-50/20">
+                <div class="mt-12 space-y-6 p-8 border-2 border-slate-200 rounded-2xl bg-slate-50">
                     <p class="text-xs font-bold text-slate-500 italic underline uppercase">II. Isian Singkat (9 Soal)</p>
-                    
                     <div class="text-sm space-y-6">
-                        <p>11. Kucing dan anjing bernapas menggunakan .........................</p>
-                        <p>12. Ikan bergerak menggunakan .........................</p>
-                        <p>13. Ayam dan burung memiliki penutup tubuh berupa .........................</p>
-                        <p>14. Hewan yang bisa hidup di air dan darat contohnya .........................</p>
-                        <p>15. Kura-kura memiliki rumah keras yang disebut .........................</p>
-                        <p>16. Ular bergerak dengan cara ......................... (melata)</p>
-                        <p>17. Tempat hidup hewan disebut juga .........................</p>
+                        <p>11. Tubuh ikan tertutup oleh ......................... agar mudah berenang.</p>
+                        <p>12. Cicak bisa menempel di dinding karena punya ......................... di kakinya.</p>
+                        <p>13. Jerapah memiliki leher panjang untuk makan daun di .........................</p>
+                        <p>14. Sayap pada burung digunakan untuk bergerak di .........................</p>
+                        <p>15. Harimau memiliki taring dan cakar tajam untuk ......................... mangsa.</p>
+                        <p>16. Perbedaan bentuk tubuh hewan dipengaruhi oleh tempat .........................</p>
+                        <p>17. Hewan yang tubuhnya ditutupi rambut tebal biasanya tinggal di tempat .........................</p>
 
-                        <div class="pt-4 border-t border-indigo-100">
-                            <p class="text-indigo-600 font-bold italic">English Writing</p>
-                            <p>18. Salin kata <span class="font-bold">"Animal"</span> dengan rapi!</p>
-                            <div class="mt-2 border-b border-dotted border-slate-300 h-6"></div>
-
-                            <p class="mt-4">19. Apa bahasa Inggris dari kata <span class="font-bold">"Burung"</span>?</p>
-                            <div class="mt-2 border-b border-dotted border-slate-300 h-6"></div>
+                        <div class="pt-4 border-t border-amber-200">
+                            <p class="text-amber-700 font-bold italic text-xs">English Writing Practice</p>
+                            <p>18. Tulis kata <span class="font-bold">"DOG"</span> sebanyak 5 kali agar hafal!</p>
+                            <div class="mt-2 border-b border-dotted border-slate-400 h-10"></div>
+                            
+                            <p class="mt-6">19. "My pet is a ........................." (Hewan peliharaanku adalah Anjing)</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Penghitung Nilai -->
-            <section class="mt-16 p-8 bg-slate-800 rounded-2xl text-white shadow-2xl border-4 border-emerald-500">
+            <!-- Kalkulator Skor -->
+            <section class="mt-16 p-8 bg-green-900 rounded-3xl text-white shadow-xl border-t-8 border-green-400">
                 <div class="text-center mb-6">
-                    <h3 class="text-lg font-bold uppercase tracking-widest text-emerald-300">Penghitung Nilai Otomatis</h3>
+                    <h3 class="text-xl font-black uppercase tracking-widest text-green-300">Skor IPAS Kayla</h3>
+                    <p class="text-[10px] text-green-200 opacity-70">Masukkan jumlah jawaban yang benar</p>
                 </div>
                 
                 <div class="flex flex-col items-center space-y-4">
-                    <input type="number" id="inputBenar" min="0" max="19" placeholder="Jumlah Benar" 
-                           class="w-full max-w-[200px] p-4 rounded-lg bg-slate-700 border border-slate-600 text-center text-3xl font-black text-white focus:outline-none focus:ring-2 focus:ring-emerald-400">
+                    <input type="number" id="skorInput" min="0" max="19" placeholder="0" 
+                           class="w-32 p-4 rounded-2xl bg-green-800 border-2 border-green-700 text-center text-4xl font-black text-white focus:outline-none focus:border-green-400">
                     
-                    <button onclick="hitungNilai()" 
-                            class="px-10 py-3 bg-emerald-600 hover:bg-emerald-500 rounded-full font-bold uppercase tracking-widest transition-all active:scale-95">
-                        Lihat Skor
+                    <button onclick="hitungIPAS()" 
+                            class="w-full max-w-xs py-4 bg-green-500 hover:bg-green-400 rounded-2xl font-bold uppercase tracking-widest transition-all shadow-lg">
+                        LIHAT HASIL
                     </button>
 
-                    <div id="hasilNilai" class="mt-8 text-center hidden">
-                        <p class="text-[10px] text-slate-400 uppercase tracking-widest mb-2">Skor Kayla:</p>
-                        <h4 id="skorAngka" class="text-7xl font-black text-yellow-400">0</h4>
-                        <p id="pesanNilai" class="mt-4 text-sm font-semibold text-emerald-200"></p>
+                    <div id="hasilBox" class="mt-8 text-center hidden animate-bounce">
+                        <div id="nilaiBesar" class="text-8xl font-black text-yellow-300">0</div>
+                        <p id="feedback" class="mt-4 font-bold text-green-100 italic"></p>
                     </div>
                 </div>
             </section>
         </main>
 
-        <footer class="bg-slate-100 p-6 text-center border-t border-slate-200">
-            <p class="text-[9px] text-slate-400 font-medium tracking-[0.4em] uppercase">IPAS Kelas 2 SD • Kayla Zahra Safitri • 2026</p>
+        <footer class="bg-slate-900 p-6 text-center">
+            <p class="text-[10px] text-slate-500 font-medium tracking-[0.3em] uppercase">IPAS KELAS 2 • KENALI HEWAN • 2026</p>
         </footer>
     </div>
 
     <script>
-        function hitungNilai() {
-            const benar = parseInt(document.getElementById('inputBenar').value);
+        function hitungIPAS() {
+            const benar = parseInt(document.getElementById('skorInput').value);
             const total = 19;
-            const container = document.getElementById('hasilNilai');
-            const skor = document.getElementById('skorAngka');
-            const pesan = document.getElementById('pesanNilai');
+            const container = document.getElementById('hasilBox');
+            const nilai = document.getElementById('nilaiBesar');
+            const feedback = document.getElementById('feedback');
 
             if (isNaN(benar) || benar < 0 || benar > total) {
-                alert("Masukkan angka antara 0-19 ya!");
+                alert("Kayla, masukkan angka 0 sampai 19 ya!");
                 return;
             }
 
-            const nilai = Math.round((benar / total) * 100);
+            const hasil = Math.round((benar / total) * 100);
             container.classList.remove('hidden');
-            skor.innerText = nilai;
+            nilai.innerText = hasil;
 
-            if (nilai >= 90) pesan.innerText = "HEBAT! Kayla sudah jadi ahli hewan! 🐾🦁";
-            else if (nilai >= 75) pesan.innerText = "BAGUS! Pengetahuan Kayla sangat luas! 🌟";
-            else pesan.innerText = "SEMANGAT! Yuk, amati hewan lagi di sekitar rumah! 🐕🐥";
+            if (hasil >= 90) feedback.innerText = "KAYLA SANGAT HEBAT! Kamu pecinta hewan sejati! 🦁✨";
+            else if (hasil >= 70) feedback.innerText = "BAGUS SEKALI! Teruskan belajarnya ya Kayla! 🐘⭐";
+            else feedback.innerText = "SEMANGAT! Ayo baca lagi materi tentang tubuh hewan! 🦒📖";
         }
     </script>
 </body>
