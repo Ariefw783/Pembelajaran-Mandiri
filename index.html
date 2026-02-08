@@ -89,14 +89,14 @@
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                         </div>
                         <div class="flex-grow">
-                            <h5 class="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-1">Persiapan Belajar Esok Hari</h5>
+                            <h5 class="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-1">Pengingat Jadwal Hari Ini</h5>
                             <div class="flex items-center gap-2">
                                 <p id="today-lesson" class="text-sm md:text-base font-bold text-slate-800 uppercase">Memuat Jadwal...</p>
                                 <span id="week-badge" class="px-2 py-0.5 bg-slate-100 text-slate-500 rounded text-[9px] font-bold uppercase tracking-tighter">--</span>
                             </div>
                         </div>
                         <div class="hidden md:block text-right">
-                            <p id="next-day-name" class="text-[10px] font-bold text-blue-600 uppercase tracking-widest">Target Hari</p>
+                            <p id="next-day-name" class="text-[10px] font-bold text-blue-600 uppercase tracking-widest">Waktu Sekarang</p>
                         </div>
                     </div>
                 </div>
@@ -188,27 +188,15 @@
                     
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
                         <div class="bg-white rounded-[2.5rem] shadow-xl border border-slate-100 overflow-hidden flex flex-col">
-                            <div class="bg-blue-600 p-5 text-center"><h3 class="text-white font-black tracking-[0.3em] uppercase text-xs">JADWAL A</h3></div>
+                            <div class="bg-blue-600 p-5 text-center"><h3 class="text-white font-black tracking-[0.3em] uppercase text-xs">JADWAL SIKLUS</h3></div>
                             <div class="p-8 space-y-4">
-                                <div class="flex justify-between border-b border-slate-50 pb-2 text-xs font-bold uppercase"><span class="text-slate-400">Senin</span><span class="text-slate-700">PAIBP</span></div>
-                                <div class="flex justify-between border-b border-slate-50 pb-2 text-xs font-bold uppercase"><span class="text-slate-400">Selasa</span><span class="text-slate-700">Matematika</span></div>
-                                <div class="flex justify-between border-b border-slate-50 pb-2 text-xs font-bold uppercase"><span class="text-slate-400">Rabu</span><span class="text-slate-700">Pendidikan Pancasila</span></div>
-                                <div class="flex justify-between border-b border-slate-50 pb-2 text-xs font-bold uppercase"><span class="text-slate-400">Kamis</span><span class="text-slate-700">PJOK</span></div>
-                                <div class="flex justify-between border-b border-slate-50 pb-2 text-xs font-bold uppercase"><span class="text-slate-400">Jumat</span><span class="text-slate-700">Matematika</span></div>
-                                <div class="flex justify-between border-b border-slate-50 pb-2 text-xs font-bold uppercase"><span class="text-slate-400">Sabtu</span><span class="text-slate-700">Kosakata Inggris</span></div>
-                                <div class="flex justify-between text-rose-500 font-black text-xs uppercase pt-2"><span>Minggu</span><span>Istirahat</span></div>
-                            </div>
-                        </div>
-                        <div class="bg-white rounded-[2.5rem] shadow-xl border border-slate-100 overflow-hidden flex flex-col">
-                            <div class="bg-indigo-600 p-5 text-center"><h3 class="text-white font-black tracking-[0.3em] uppercase text-xs">JADWAL B</h3></div>
-                            <div class="p-8 space-y-4">
-                                <div class="flex justify-between border-b border-slate-50 pb-2 text-xs font-bold uppercase"><span class="text-slate-400">Senin</span><span class="text-slate-700">B. Inggris</span></div>
-                                <div class="flex justify-between border-b border-slate-50 pb-2 text-xs font-bold uppercase"><span class="text-slate-400">Selasa</span><span class="text-slate-700">B. Indonesia</span></div>
-                                <div class="flex justify-between border-b border-slate-50 pb-2 text-xs font-bold uppercase"><span class="text-slate-400">Rabu</span><span class="text-slate-700">Seni Rupa</span></div>
-                                <div class="flex justify-between border-b border-slate-50 pb-2 text-xs font-bold uppercase"><span class="text-slate-400">Kamis</span><span class="text-slate-700">B. Indonesia</span></div>
-                                <div class="flex justify-between border-b border-slate-50 pb-2 text-xs font-bold uppercase"><span class="text-slate-400">Jumat</span><span class="text-slate-700">IPAS</span></div>
-                                <div class="flex justify-between border-b border-slate-50 pb-2 text-xs font-bold uppercase"><span class="text-slate-400">Sabtu</span><span class="text-slate-700">Kosakata Inggris</span></div>
-                                <div class="flex justify-between text-rose-500 font-black text-xs uppercase pt-2"><span>Minggu</span><span>Istirahat</span></div>
+                                <div class="flex justify-between border-b border-slate-50 pb-2 text-xs font-bold uppercase"><span class="text-slate-400">Minggu</span><span class="text-slate-700 text-right">PAI BP & B. Inggris</span></div>
+                                <div class="flex justify-between border-b border-slate-50 pb-2 text-xs font-bold uppercase"><span class="text-slate-400">Senin</span><span class="text-slate-700 text-right">Matematika & B. Indonesia</span></div>
+                                <div class="flex justify-between border-b border-slate-50 pb-2 text-xs font-bold uppercase"><span class="text-slate-400">Selasa</span><span class="text-slate-700 text-right">Pendidikan Pancasila & Seni</span></div>
+                                <div class="flex justify-between border-b border-slate-50 pb-2 text-xs font-bold uppercase"><span class="text-slate-400">Rabu</span><span class="text-slate-700 text-right">IPAS & B. Indonesia</span></div>
+                                <div class="flex justify-between border-b border-slate-50 pb-2 text-xs font-bold uppercase"><span class="text-slate-400">Kamis</span><span class="text-slate-700 text-right">Matematika & B. Indonesia</span></div>
+                                <div class="flex justify-between border-b border-slate-50 pb-2 text-xs font-bold uppercase"><span class="text-slate-400">Jumat</span><span class="text-slate-700 text-right">Kosakata B. Inggris</span></div>
+                                <div class="flex justify-between text-rose-500 font-black text-xs uppercase pt-2"><span>Sabtu</span><span>Istirahat</span></div>
                             </div>
                         </div>
                     </div>
@@ -268,12 +256,24 @@
             { id: 'ipas', name: 'IPAS' }
         ];
 
-        // Definisi Jadwal A & B
-        // Index 0=Senin, 1=Selasa, 2=Rabu, 3=Kamis, 4=Jumat, 5=Sabtu, 6=Minggu
-        const scheduleData = {
-            A: ["PAIBP", "Matematika", "Pendidikan Pancasila", "PJOK", "Matematika", "Kosakata Inggris", "Istirahat"],
-            B: ["B. Inggris", "B. Indonesia", "Seni Rupa", "B. Indonesia", "IPAS", "Kosakata Inggris", "Istirahat"]
-        };
+        /** * JADWAL SIKLUS BARU:
+         * 0=Minggu: PENDIDIKAN AGAMA ISLAM BUDI PEKERTI & BAHASA INGGRIS
+         * 1=Senin: MATEMATIKA & BAHASA INDONESIA
+         * 2=Selasa: PENDIDIKAN PANCASILA & SENI
+         * 3=Rabu: IPAS & BAHASA INDONESIA
+         * 4=Kamis: MATEMATIKA & BAHASA INDONESIA
+         * 5=Jumat: KOSAKATA BAHASA INGGRIS
+         * 6=Sabtu: ISTIRAHAT
+         */
+        const scheduleCycle = [
+            "PAI BP & B. INGGRIS",
+            "MATEMATIKA & B. INDONESIA",
+            "PENDIDIKAN PANCASILA & SENI",
+            "IPAS & B. INDONESIA",
+            "MATEMATIKA & B. INDONESIA",
+            "KOSAKATA B. INGGRIS",
+            "ISTIRAHAT"
+        ];
 
         const dayNames = ["MINGGU", "SENIN", "SELASA", "RABU", "KAMIS", "JUMAT", "SABTU"];
 
@@ -290,45 +290,28 @@
             const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
             if (document.getElementById('current-date')) document.getElementById('current-date').innerText = now.toLocaleDateString('id-ID', options);
 
-            calculateNextLesson(now);
+            calculateTodayLesson(now);
         }
 
-        function calculateNextLesson(now) {
-            // Logika Jadwal: Jika Hari Ini Senin, Tampilkan Selasa Jadwal A.
-            // Setelah Jadwal A selesai (sampai Minggu), pindah ke Jadwal B.
+        function calculateTodayLesson(now) {
+            // Mengambil index hari saat ini (0=Minggu, 1=Senin, dst)
+            const todayIndex = now.getDay();
             
-            // 1. Tentukan target hari esok
-            const tomorrow = new Date(now);
-            tomorrow.setDate(now.getDate() + 1);
-            
-            const tomorrowDayIndex = tomorrow.getDay(); // 0=Minggu, 1=Senin, dst.
-            const targetIndex = tomorrowDayIndex === 0 ? 6 : tomorrowDayIndex - 1; // Konversi ke index 0-6 (Senin-Minggu)
+            // Mengambil nama pelajaran dari array siklus
+            const lessonName = scheduleCycle[todayIndex];
+            const currentDayName = dayNames[todayIndex];
 
-            // 2. Tentukan Siklus A atau B berdasarkan jumlah minggu kalender
-            // Agar bergantian tiap minggu secara otomatis
-            const startOfYear = new Date(now.getFullYear(), 0, 1);
-            const pastDaysOfYear = (now - startOfYear) / 86400000;
-            const weekNumber = Math.ceil((pastDaysOfYear + startOfYear.getDay() + 1) / 7);
-            
-            // Siklus: Jika weekNumber ganjil = A, genap = B
-            const currentCycle = (weekNumber % 2 !== 0) ? 'A' : 'B';
-            
-            const lessonName = scheduleData[currentCycle][targetIndex];
-            const nextDayName = dayNames[tomorrowDayIndex];
-
-            // 3. Update UI
+            // Update UI Home Pengingat
             const lessonEl = document.getElementById('today-lesson');
             const badgeEl = document.getElementById('week-badge');
             const nextDayEl = document.getElementById('next-day-name');
 
-            if(lessonEl) lessonEl.innerText = `${nextDayName}: ${lessonName}`;
+            if(lessonEl) lessonEl.innerText = `${currentDayName}: ${lessonName}`;
             if(badgeEl) {
-                badgeEl.innerText = `JADWAL ${currentCycle}`;
-                badgeEl.className = currentCycle === 'A' ? 
-                    "px-2 py-0.5 bg-blue-100 text-blue-600 rounded text-[9px] font-bold uppercase tracking-tighter" :
-                    "px-2 py-0.5 bg-indigo-100 text-indigo-600 rounded text-[9px] font-bold uppercase tracking-tighter";
+                badgeEl.innerText = `JADWAL AKTIF`;
+                badgeEl.className = "px-2 py-0.5 bg-blue-100 text-blue-600 rounded text-[9px] font-bold uppercase tracking-tighter";
             }
-            if(nextDayEl) nextDayEl.innerText = `Target: ${nextDayName}`;
+            if(nextDayEl) nextDayEl.innerText = `HARI INI`;
         }
 
         setInterval(updateClock, 1000);
