@@ -3,183 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAIBP Bab 7 - Mengenal Malaikat Allah</title>
+    <title>PAIBP Bab 7 - Mengenal Malaikat</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { font-family: 'Segoe UI', sans-serif; }
+        @keyframes blink { 
+            0% { opacity: 1; transform: scale(1); } 
+            50% { opacity: 0.5; transform: scale(1.05); color: #dc2626; } 
+            100% { opacity: 1; transform: scale(1); } 
+        }
+        .warning-blink { animation: blink 1s infinite; }
+        .word-bank-item { transition: all 0.2s; }
+        .word-bank-item:hover { transform: translateY(-2px); background-color: #d1fae5; }
     </style>
 </head>
 <body class="bg-slate-50 p-4 md:p-10">
     <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-xl overflow-hidden border border-slate-200">
-        <!-- Header -->
-        <header class="bg-gradient-to-r from-green-50 to-emerald-50 p-8 text-center border-b-2 border-green-600">
-            <h1 class="text-xs font-bold text-slate-500 tracking-[0.3em] uppercase mb-2">Pendidikan Agama Islam & Budi Pekerti</h1>
-            <h2 class="text-2xl font-light text-slate-800 tracking-tight">PAIBP <span class="font-bold text-green-700">| BAB 7</span></h2>
-            <div class="mt-4 flex justify-center gap-4 text-[10px] text-slate-500 uppercase font-medium">
-                <span class="bg-white px-3 py-1 rounded-full shadow-sm">Minggu, 25 Januari 2026</span>
-                <span class="bg-white px-3 py-1 rounded-full shadow-sm">Sesi 2</span>
-                <span class="bg-white px-3 py-1 rounded-full shadow-sm">Mengenal Malaikat</span>
+        
+        <!-- Header Menonjol -->
+        <header class="bg-gradient-to-r from-green-600 to-emerald-600 p-8 text-center text-white border-b-4 border-yellow-400">
+            <div class="inline-block bg-yellow-400 text-green-900 font-black px-6 py-2 rounded-full text-lg mb-4 shadow-lg transform -rotate-1">
+                KAMIS, 05 FEBRUARI 2026
+            </div>
+            <h1 class="text-xs font-bold tracking-[0.3em] uppercase mb-1 opacity-90">Pendidikan Agama Islam & Budi Pekerti</h1>
+            <h2 class="text-3xl font-light tracking-tight">BAB 7 <span class="font-bold">| MENGENAL MALAIKAT</span></h2>
+            <div class="mt-4 flex justify-center gap-3 text-[10px] uppercase font-bold text-green-800">
+                <span class="bg-green-100 px-3 py-1 rounded shadow-sm">Sesi 5</span>
+                <span class="bg-green-100 px-3 py-1 rounded shadow-sm">Kelas 2 SD</span>
+                <span class="bg-green-100 px-3 py-1 rounded shadow-sm">Tahap 1 dari 4</span>
             </div>
         </header>
 
         <!-- Identitas -->
-        <div class="px-8 py-4 bg-slate-50/50 flex justify-between items-center border-b text-[11px] text-slate-600 italic">
-            <div>Nama: <span class="font-bold text-slate-800 uppercase">Kayla Zahra Safitri</span></div>
-            <div>Materi: <span class="font-bold text-slate-800 text-green-700">Siapakah Malaikat Itu?</span></div>
+        <div class="px-8 py-4 bg-green-50 flex justify-between items-center border-b text-[11px] text-green-800 italic">
+            <div>Nama Siswa: <span class="font-bold uppercase text-black">Kayla Zahra Safitri</span></div>
+            <div>Fokus: <span class="font-bold text-black">Pengertian & Sifat Malaikat</span></div>
         </div>
 
         <main class="p-8">
-            <!-- Materi Ringkas -->
+            <!-- Materi -->
             <section class="mb-10">
-                <h3 class="text-sm font-bold text-green-800 mb-4 border-l-4 border-green-500 pl-3 uppercase">Ringkasan Materi</h3>
-                <div class="p-6 bg-green-50 rounded-lg border border-green-100 text-xs leading-relaxed text-slate-700 space-y-4">
-                    <p>Malaikat adalah makhluk Allah yang <span class="font-bold">Gaib</span> (tidak terlihat oleh mata manusia). Kita wajib mengimani atau percaya kepada adanya malaikat.</p>
-                    <p>Berikut adalah ciri-ciri utama Malaikat:</p>
+                <h3 class="text-sm font-bold text-green-800 mb-4 border-l-4 border-green-500 pl-3 uppercase">Materi: Siapakah Malaikat itu?</h3>
+                <div class="p-6 bg-white rounded-lg border-2 border-green-100 text-xs leading-relaxed text-slate-700 space-y-4 shadow-sm">
+                    <p>Anak-anak yang sholeh, tahukah kalian siapa Malaikat itu?</p>
                     <ul class="list-disc ml-5 space-y-2">
-                        <li>Diciptakan oleh Allah dari <span class="font-bold text-green-700">Nur</span> atau <span class="font-bold text-green-700">Cahaya</span>.</li>
-                        <li>Sifatnya sangat <span class="font-bold text-green-700">Taat</span> kepada perintah Allah dan tidak pernah membangkang.</li>
-                        <li>Malaikat tidak makan, tidak minum, dan tidak tidur.</li>
-                        <li>Malaikat juga tidak memiliki jenis kelamin (bukan laki-laki dan bukan perempuan).</li>
+                        <li>Malaikat adalah makhluk ciptaan Allah SWT yang dibuat dari <span class="font-bold text-green-600">Nur (Cahaya)</span>.</li>
+                        <li>Malaikat termasuk makhluk <span class="font-bold text-green-600">Gaib</span>. Artinya, malaikat tidak bisa dilihat oleh mata kita, tapi kita wajib percaya (iman) bahwa malaikat itu ada.</li>
+                        <li>Sifat Malaikat sangat mulia. Malaikat selalu <span class="font-bold text-green-600">Taat dan Patuh</span> kepada Allah.</li>
+                        <li>Malaikat <span class="font-bold text-red-500">tidak makan</span>, <span class="font-bold text-red-500">tidak minum</span>, dan <span class="font-bold text-red-500">tidak tidur</span>. Malaikat juga tidak pernah berbuat dosa.</li>
                     </ul>
-                    <p>Beriman kepada Malaikat termasuk dalam <span class="font-bold">Rukun Iman yang ke-2</span>.</p>
+                    <p class="bg-green-50 p-2 rounded border border-green-200 font-semibold text-center text-green-800">
+                        Beriman kepada Malaikat adalah Rukun Iman yang ke-2.
+                    </p>
                 </div>
             </section>
 
-            <!-- English Corner -->
-            <section class="mb-10 p-6 bg-indigo-50 rounded-xl border border-indigo-100">
-                <div class="flex items-center gap-3 mb-4">
-                    <span class="text-xl">🇬🇧</span>
-                    <h3 class="text-sm font-bold text-indigo-900 uppercase tracking-wide">English Corner</h3>
+            <!-- English Corner (Layout Khusus) -->
+            <section class="mb-10 p-6 bg-slate-800 rounded-xl border-4 border-yellow-400 relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-yellow-400 text-black text-[10px] font-bold px-3 py-1 rounded-bl-lg warning-blink">
+                    WAJIB DIHAFAL HARI INI!
                 </div>
-                <div class="grid grid-cols-2 gap-4 text-center">
-                    <div class="bg-white p-3 rounded-lg border border-indigo-200 shadow-sm">
-                        <p class="text-[10px] text-slate-400 uppercase italic">Malaikat</p>
-                        <p class="text-indigo-600 font-black text-lg italic tracking-tight">Angel</p>
+                
+                <!-- Kata Hari Ini -->
+                <div class="text-center mb-6">
+                    <h3 class="text-yellow-400 font-bold text-lg mb-2 uppercase tracking-widest">Kosakata Baru</h3>
+                    <div class="bg-white inline-block px-10 py-4 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <p class="text-xs text-slate-400 uppercase mb-1">Kambing</p>
+                        <p class="text-4xl font-black text-slate-800">GOAT</p>
                     </div>
-                    <div class="bg-white p-3 rounded-lg border border-indigo-200 shadow-sm">
-                        <p class="text-[10px] text-slate-400 uppercase italic">Cahaya</p>
-                        <p class="text-indigo-600 font-black text-lg italic tracking-tight">Light</p>
+                </div>
+
+                <!-- Kata Sebelumnya -->
+                <div class="border-t border-slate-600 pt-4">
+                    <p class="text-slate-400 text-[10px] text-center mb-3 uppercase tracking-wider">Jangan Lupakan Kata Sebelumnya:</p>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <span class="bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold border border-slate-500">Foot (Kaki)</span>
+                        <span class="bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold border border-slate-500">Face (Wajah)</span>
+                        <span class="bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold border border-slate-500">Hair (Rambut)</span>
+                        <span class="bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold border border-slate-500">Cat (Kucing)</span>
+                        <span class="bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold border border-slate-500">Dog (Anjing)</span>
                     </div>
                 </div>
             </section>
 
             <!-- Latihan Soal -->
             <section class="space-y-10">
-                <h3 class="text-xs font-black text-slate-400 uppercase tracking-widest text-center">Lembar Evaluasi (19 Butir Soal)</h3>
+                <h3 class="text-xs font-black text-slate-400 uppercase tracking-widest text-center">Lembar Evaluasi (19 Soal)</h3>
                 
-                <!-- Bagian I -->
+                <!-- I. Pilihan Ganda -->
                 <div class="space-y-6">
-                    <p class="text-xs font-bold text-slate-500 italic underline uppercase">I. Pilihan Ganda (10 Soal)</p>
-                    
-                    <div class="text-sm space-y-6">
-                        <p>1. Malaikat adalah makhluk Allah yang bersifat gaib. Gaib artinya...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4 font-medium"><span>A. Terlihat</span><span>B. Tidak terlihat</span><span>C. Sangat besar</span></div>
+                    <p class="text-xs font-bold text-green-700 italic underline uppercase bg-green-50 inline-block px-2 py-1 rounded">I. Pilihan Ganda (10 Soal)</p>
+                    <div class="text-sm space-y-5">
+                        <p>1. Malaikat diciptakan Allah dari...</p>
+                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Api</span><span>B. Cahaya</span><span>C. Tanah</span></div>
 
-                        <p>2. Allah menciptakan malaikat dari...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4 font-medium"><span>A. Tanah</span><span>B. Cahaya (Nur)</span><span>C. Api</span></div>
+                        <p>2. Makhluk gaib artinya makhluk yang...</p>
+                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Bisa dilihat</span><span>B. Tidak terlihat</span><span>C. Sangat besar</span></div>
 
-                        <p>3. Percaya kepada malaikat termasuk rukun iman yang ke-...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4 font-medium"><span>A. Satu</span><span>B. Dua</span><span>C. Tiga</span></div>
+                        <p>3. Percaya kepada malaikat termasuk rukun iman ke-...</p>
+                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. 1</span><span>B. 2</span><span>C. 3</span></div>
 
-                        <p>4. Salah satu sifat malaikat adalah selalu ... kepada perintah Allah.</p>
-                        <div class="grid grid-cols-3 text-xs ml-4 font-medium"><span>A. Taat</span><span>B. Marah</span><span>C. Malas</span></div>
+                        <p>4. Sifat malaikat kepada Allah adalah selalu...</p>
+                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Taat</span><span>B. Membangkang</span><span>C. Ragu</span></div>
 
-                        <p>5. Malaikat adalah makhluk yang tidak pernah...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4 font-medium"><span>A. Beribadah</span><span>B. Taat</span><span>C. Tidur</span></div>
+                        <p>5. Malaikat tidak makan dan tidak...</p>
+                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Patuh</span><span>B. Minum</span><span>C. Ibadah</span></div>
 
-                        <p>6. Apakah malaikat membutuhkan makan dan minum?</p>
-                        <div class="grid grid-cols-3 text-xs ml-4 font-medium"><span>A. Ya</span><span>B. Tidak</span><span>C. Kadang-kadang</span></div>
+                        <p>6. Siapakah yang menciptakan Malaikat?</p>
+                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Nabi</span><span>B. Manusia</span><span>C. Allah</span></div>
 
-                        <p>7. Malaikat adalah makhluk yang tidak memiliki jenis...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4 font-medium"><span>A. Kelamin</span><span>B. Nama</span><span>C. Sayap</span></div>
+                        <p>7. Malaikat tidak pernah melakukan perbuatan...</p>
+                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Baik</span><span>B. Dosa</span><span>C. Ibadah</span></div>
 
-                        <p>8. Malaikat diciptakan Allah untuk selalu ... kepada-Nya.</p>
-                        <div class="grid grid-cols-3 text-xs ml-4 font-medium"><span>A. Bermain</span><span>B. Beribadah</span><span>C. Tidur</span></div>
+                        <p>8. Berbeda dengan manusia, malaikat tidak memiliki...</p>
+                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Tugas</span><span>B. Nama</span><span>C. Nafsu makan</span></div>
 
-                        <p class="text-indigo-600 font-bold italic border-t pt-4">9. In English, "Angel" means...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4 text-indigo-700 font-bold"><span>A. Cahaya</span><span>B. Malaikat</span><span>C. Allah</span></div>
+                        <!-- Soal English dari Corner -->
+                        <p class="text-slate-600 font-bold italic border-t pt-4">9. Bahasa Inggris dari "Kambing" adalah...</p>
+                        <div class="grid grid-cols-3 text-xs ml-4 font-bold text-blue-600"><span>A. Cat</span><span>B. Dog</span><span>C. Goat</span></div>
 
-                        <p class="text-indigo-600 font-bold italic">10. Nur dalam Bahasa Inggris disebut "Light", yang artinya...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4 text-indigo-700 font-bold"><span>A. Api</span><span>B. Tanah</span><span>C. Cahaya</span></div>
+                        <p class="text-slate-600 font-bold italic">10. "Face" artinya adalah...</p>
+                        <div class="grid grid-cols-3 text-xs ml-4 font-bold text-blue-600"><span>A. Wajah</span><span>B. Kaki</span><span>C. Rambut</span></div>
                     </div>
                 </div>
 
-                <!-- Bagian II -->
-                <div class="mt-12 space-y-6 p-6 border-2 border-dotted border-green-200 rounded-xl bg-green-50/20">
-                    <p class="text-xs font-bold text-slate-500 italic underline uppercase">II. Isian & Writing (9 Soal)</p>
+                <!-- II. Isian Singkat dengan Bank Soal -->
+                <div class="mt-12">
+                    <p class="text-xs font-bold text-green-700 italic underline uppercase bg-green-50 inline-block px-2 py-1 rounded mb-4">II. Isian Singkat (9 Soal)</p>
                     
-                    <div class="text-sm space-y-6">
-                        <p>11. Beriman kepada malaikat hukumnya adalah .........................</p>
-                        <p>12. Malaikat diciptakan dari Nur. Nur artinya .........................</p>
-                        <p>13. Malaikat tidak pernah ......................... kepada perintah Allah.</p>
-                        <p>14. Malaikat adalah makhluk gaib yang tidak bisa ......................... oleh mata.</p>
-                        <p>15. Malaikat bukan laki-laki dan bukan .........................</p>
-                        <p>16. Berbeda dengan manusia, malaikat tidak merasa ......................... (tidak makan/minum).</p>
-                        <p>17. Malaikat selalu menjalankan tugas dari .........................</p>
-
-                        <div class="pt-4 border-t border-indigo-100">
-                            <p class="text-indigo-600 font-bold italic">English Writing</p>
-                            <p>18. Salinlah kata <span class="font-bold">"Angel"</span> dengan rapi!</p>
-                            <div class="mt-2 border-b border-dotted border-slate-300 h-6"></div>
-
-                            <p class="mt-4">19. Apa bahasa Inggris dari <span class="font-bold">"Cahaya"</span>?</p>
-                            <div class="mt-2 border-b border-dotted border-slate-300 h-6"></div>
+                    <!-- Bank Soal -->
+                    <div class="bg-yellow-50 p-4 rounded-xl border-2 border-yellow-200 mb-6">
+                        <p class="text-[10px] text-center font-bold text-yellow-700 uppercase mb-3">PILIHAN JAWABAN (Gunakan untuk menjawab soal di bawah)</p>
+                        <div class="grid grid-cols-4 gap-2 text-[10px] font-medium text-center">
+                            <div class="word-bank-item bg-white p-1 rounded border">Cahaya</div>
+                            <div class="word-bank-item bg-white p-1 rounded border">Gaib</div>
+                            <div class="word-bank-item bg-white p-1 rounded border">Taat</div>
+                            <div class="word-bank-item bg-white p-1 rounded border">Dua</div>
+                            <div class="word-bank-item bg-white p-1 rounded border">Allah</div>
+                            <div class="word-bank-item bg-white p-1 rounded border">Patuh</div>
+                            <div class="word-bank-item bg-white p-1 rounded border">Tidak</div>
+                            <div class="word-bank-item bg-white p-1 rounded border">Selalu</div>
+                            <div class="word-bank-item bg-white p-1 rounded border">Iman</div>
+                            <div class="word-bank-item bg-white p-1 rounded border">Nur</div>
+                            <!-- Pengecoh -->
+                            <div class="word-bank-item bg-white p-1 rounded border text-slate-400">Api</div>
+                            <div class="word-bank-item bg-white p-1 rounded border text-slate-400">Tanah</div>
+                            <div class="word-bank-item bg-white p-1 rounded border text-slate-400">Tiga</div>
+                            <div class="word-bank-item bg-white p-1 rounded border text-slate-400">Manusia</div>
+                            <div class="word-bank-item bg-white p-1 rounded border text-slate-400">Makan</div>
+                            <div class="word-bank-item bg-white p-1 rounded border text-slate-400">Minum</div>
+                            <div class="word-bank-item bg-white p-1 rounded border text-slate-400">Tidur</div>
+                            <div class="word-bank-item bg-white p-1 rounded border text-slate-400">Iblis</div>
+                            <div class="word-bank-item bg-white p-1 rounded border text-slate-400">Durhaka</div>
+                            <div class="word-bank-item bg-white p-1 rounded border text-slate-400">Terlihat</div>
                         </div>
+                    </div>
+
+                    <div class="space-y-6 text-sm p-6 border-2 border-dashed border-green-200 rounded-xl">
+                        <p>11. Malaikat diciptakan Allah dari .........................</p>
+                        <p>12. Makhluk yang tidak terlihat mata disebut makhluk .........................</p>
+                        <p>13. Sifat malaikat kepada Allah adalah selalu .........................</p>
+                        <p>14. Malaikat tidak makan dan ......................... minum.</p>
+                        <p>15. Beriman kepada malaikat adalah rukun iman ke- .........................</p>
+                        <p>16. Malaikat ......................... melaksanakan perintah Allah.</p>
+                        <p>17. Kita wajib ......................... kepada adanya malaikat.</p>
+                        <p>18. Nama lain dari Cahaya adalah .........................</p>
+                        <p>19. Malaikat adalah ciptaan .........................</p>
                     </div>
                 </div>
             </section>
 
-            <!-- Penghitung Nilai -->
-            <section class="mt-16 p-8 bg-slate-800 rounded-2xl text-white shadow-2xl border-4 border-green-600">
+            <!-- Kalkulator -->
+            <section class="mt-16 p-8 bg-slate-900 rounded-2xl text-white shadow-2xl border-4 border-green-500">
                 <div class="text-center mb-6">
-                    <h3 class="text-lg font-bold uppercase tracking-widest text-green-300">Penghitung Nilai Otomatis</h3>
+                    <h3 class="text-lg font-bold uppercase tracking-widest text-green-400">Nilai Otomatis</h3>
+                    <p class="text-[10px] text-slate-400">Masukkan jumlah jawaban benar (Maksimal 19)</p>
                 </div>
-                
                 <div class="flex flex-col items-center space-y-4">
-                    <input type="number" id="inputBenar" min="0" max="19" placeholder="Jumlah Benar" 
-                           class="w-full max-w-[200px] p-4 rounded-lg bg-slate-700 border border-slate-600 text-center text-3xl font-black text-white focus:outline-none focus:ring-2 focus:ring-green-400">
-                    
-                    <button onclick="hitungNilai()" 
-                            class="px-10 py-3 bg-green-600 hover:bg-green-500 rounded-full font-bold uppercase tracking-widest transition-all active:scale-95">
-                        Cek Nilai
-                    </button>
-
-                    <div id="hasilNilai" class="mt-8 text-center hidden">
-                        <p class="text-[10px] text-slate-400 uppercase tracking-widest mb-2">Nilai Kayla:</p>
-                        <h4 id="skorAngka" class="text-7xl font-black text-yellow-400">0</h4>
-                        <p id="pesanNilai" class="mt-4 text-sm font-semibold text-green-200"></p>
+                    <input type="number" id="inputBenar" min="0" max="19" placeholder="0" 
+                           class="w-full max-w-[150px] p-3 rounded-lg bg-slate-800 text-center text-2xl font-bold border border-slate-700 focus:border-green-500 outline-none text-white">
+                    <button onclick="hitungNilai()" class="bg-green-600 hover:bg-green-500 text-white px-8 py-2 rounded-full font-bold uppercase tracking-wider transition-all">Hitung</button>
+                    <div id="hasil" class="hidden text-center mt-4">
+                        <div id="skor" class="text-5xl font-black text-yellow-400">0</div>
+                        <p id="pesan" class="text-xs mt-2 text-green-200"></p>
                     </div>
                 </div>
             </section>
         </main>
-
-        <footer class="bg-slate-100 p-6 text-center border-t border-slate-200">
-            <p class="text-[9px] text-slate-400 font-medium tracking-[0.4em] uppercase">PAIBP Kelas 2 SD • Kayla Zahra Safitri • 2026</p>
+        
+        <footer class="bg-slate-100 p-4 text-center border-t text-[10px] text-slate-400 uppercase font-bold tracking-widest">
+            Kayla Zahra Safitri • 2026
         </footer>
     </div>
 
     <script>
         function hitungNilai() {
-            const benar = parseInt(document.getElementById('inputBenar').value);
-            const total = 19;
-            const container = document.getElementById('hasilNilai');
-            const skor = document.getElementById('skorAngka');
-            const pesan = document.getElementById('pesanNilai');
-
-            if (isNaN(benar) || benar < 0 || benar > total) {
-                alert("Masukkan angka yang benar (0-19) ya!");
-                return;
-            }
-
-            const nilai = Math.round((benar / total) * 100);
-            container.classList.remove('hidden');
-            skor.innerText = nilai;
-
-            if (nilai >= 90) pesan.innerText = "Mumbahasyalloh! Kayla anak yang cerdas dan beriman! 🕌✨";
-            else if (nilai >= 75) pesan.innerText = "Alhamdulillah! Kayla sudah mengenal malaikat dengan baik! ⭐";
-            else pesan.innerText = "Semangat! Teruslah belajar tentang makhluk Allah ya! 💪📖";
+            const b = parseInt(document.getElementById('inputBenar').value);
+            if(isNaN(b) || b < 0 || b > 19) return alert('Masukkan 0-19');
+            const n = Math.round((b/19)*100);
+            document.getElementById('hasil').classList.remove('hidden');
+            document.getElementById('skor').innerText = n;
+            document.getElementById('pesan').innerText = n>=90?"Masya Allah Pintar!":n>=75?"Bagus Sekali!":"Belajar Lagi Ya!";
         }
     </script>
 </body>
 </html>
-
