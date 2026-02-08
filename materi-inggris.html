@@ -3,231 +3,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English Unit 7 - She is my sister</title>
+    <title>English Unit 7 - My Family - Kayla</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; }
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap');
+        
+        body { font-family: 'Fredoka', sans-serif; }
+        
         @keyframes blink { 
             0% { opacity: 1; transform: scale(1); } 
-            50% { opacity: 0.5; transform: scale(1.05); color: #dc2626; } 
+            50% { opacity: 0.5; transform: scale(1.1); color: #ef4444; } 
             100% { opacity: 1; transform: scale(1); } 
         }
-        .warning-blink { animation: blink 1s infinite; }
-        .word-bank-item { transition: all 0.2s; }
-        .word-bank-item:hover { transform: translateY(-2px); background-color: #e0f2fe; }
+        .warning-blink { animation: blink 0.8s infinite; }
+        
+        .pattern-bg {
+            background-color: #f0f9ff;
+            background-image: radial-gradient(#bae6fd 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+        }
     </style>
 </head>
-<body class="bg-slate-50 p-4 md:p-10">
-    <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-xl overflow-hidden border border-slate-200">
+<body class="pattern-bg p-4 md:p-10">
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden border-4 border-sky-100">
         
-        <!-- Header Menonjol -->
-        <header class="bg-gradient-to-r from-blue-600 to-sky-500 p-8 text-center text-white border-b-4 border-yellow-400">
-            <div class="inline-block bg-yellow-400 text-blue-900 font-black px-6 py-2 rounded-full text-lg mb-4 shadow-lg transform rotate-1">
-                KAMIS, 05 FEBRUARI 2026
+        <!-- Header -->
+        <header class="bg-gradient-to-r from-sky-500 to-indigo-500 p-10 text-center text-white border-b-8 border-yellow-400">
+            <div class="inline-block bg-white text-sky-700 font-bold px-8 py-2 rounded-full text-xl mb-4 shadow-lg transform rotate-1">
+                MINGGU, 08 FEBRUARI 2026
             </div>
-            <h1 class="text-xs font-bold tracking-[0.3em] uppercase mb-1 opacity-90">Bahasa Inggris SD Kelas 2</h1>
-            <h2 class="text-3xl font-light tracking-tight">UNIT 7 <span class="font-bold">| SHE IS MY SISTER</span></h2>
-            <div class="mt-4 flex justify-center gap-3 text-[10px] uppercase font-bold text-blue-900">
-                <span class="bg-blue-100 px-3 py-1 rounded shadow-sm">Sesi 1</span>
-                <span class="bg-blue-100 px-3 py-1 rounded shadow-sm">Tahap 1 dari 5</span>
-                <span class="bg-blue-100 px-3 py-1 rounded shadow-sm">Big, Small, Short, Tall</span>
+            <h1 class="text-xs font-bold tracking-[0.4em] uppercase mb-1 opacity-90 text-yellow-100">English for Elementary School</h1>
+            <h2 class="text-4xl font-extrabold tracking-tight italic">UNIT 7 <span class="text-yellow-200">| MY FAMILY</span></h2>
+            <div class="mt-4 flex justify-center gap-3 text-[10px] uppercase font-bold text-sky-900">
+                <span class="bg-sky-100 px-3 py-1 rounded shadow-sm">Sesi 2</span>
+                <span class="bg-sky-100 px-3 py-1 rounded shadow-sm">Kelas 2 SD</span>
+                <span class="bg-sky-100 px-3 py-1 rounded shadow-sm">Tahap 2 dari 5</span>
             </div>
         </header>
 
         <!-- Identitas -->
-        <div class="px-8 py-4 bg-sky-50 flex justify-between items-center border-b text-[11px] text-blue-800 italic">
-            <div>Student Name: <span class="font-bold uppercase text-black">Kayla Zahra Safitri</span></div>
-            <div>Topic: <span class="font-bold text-black">Adjectives (Kata Sifat)</span></div>
+        <div class="px-8 py-4 bg-sky-50 flex justify-between items-center border-b text-[11px] text-sky-800 italic">
+            <div>Nama Siswa: <span class="font-bold uppercase text-black">Kayla Zahra Safitri</span></div>
+            <div>Fokus: <span class="font-bold text-black text-xs">Adjectives (Big, Small, Short, Tall)</span></div>
         </div>
 
         <main class="p-8">
             <!-- Materi -->
             <section class="mb-10">
-                <h3 class="text-sm font-bold text-blue-800 mb-4 border-l-4 border-blue-500 pl-3 uppercase">Vocabulary: Ciri-ciri Fisik</h3>
-                <div class="p-6 bg-white rounded-lg border-2 border-blue-100 text-xs leading-relaxed text-slate-700 space-y-6 shadow-sm">
-                    <p>Hello Kayla! Hari ini kita belajar menyebutkan ciri-ciri fisik seseorang atau benda. Hafalkan 4 kata ini ya:</p>
-                    
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-                        <div class="p-3 bg-blue-50 rounded-lg border border-blue-200">
-                            <p class="text-2xl mb-1">🦒</p>
-                            <p class="font-bold text-blue-700 text-lg">TALL</p>
-                            <p class="text-slate-500 italic">Tinggi</p>
+                <h3 class="text-lg font-bold text-sky-800 mb-4 border-l-4 border-sky-500 pl-3 uppercase">Materi: describing our family</h3>
+                <div class="p-6 bg-white rounded-2xl border-2 border-sky-100 text-sm leading-relaxed text-slate-700 space-y-4 shadow-sm">
+                    <p>Halo Kayla! Hari ini kita belajar kata sifat untuk menjelaskan ciri fisik anggota keluarga kita.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-yellow-50 p-4 rounded-xl border border-yellow-200">
+                            <p class="font-bold text-sky-700 text-base mb-2">1. Ukuran Tubuh</p>
+                            <ul class="space-y-1">
+                                <li><span class="font-bold text-indigo-600">Big</span> = Besar</li>
+                                <li><span class="font-bold text-indigo-600">Small</span> = Kecil</li>
+                            </ul>
                         </div>
-                        <div class="p-3 bg-blue-50 rounded-lg border border-blue-200">
-                            <p class="text-2xl mb-1">🐜</p>
-                            <p class="text-sm font-bold text-blue-700 mt-2">SHORT</p>
-                            <p class="text-slate-500 italic">Pendek</p>
-                        </div>
-                        <div class="p-3 bg-blue-50 rounded-lg border border-blue-200">
-                            <p class="text-2xl mb-1">🐘</p>
-                            <p class="font-bold text-blue-700 text-lg">BIG</p>
-                            <p class="text-slate-500 italic">Besar</p>
-                        </div>
-                        <div class="p-3 bg-blue-50 rounded-lg border border-blue-200">
-                            <p class="text-2xl mb-1">🐭</p>
-                            <p class="text-sm font-bold text-blue-700 mt-2">SMALL</p>
-                            <p class="text-slate-500 italic">Kecil</p>
+                        <div class="bg-sky-50 p-4 rounded-xl border border-sky-200">
+                            <p class="font-bold text-sky-700 text-base mb-2">2. Tinggi Badan</p>
+                            <ul class="space-y-1">
+                                <li><span class="font-bold text-indigo-600">Tall</span> = Tinggi</li>
+                                <li><span class="font-bold text-indigo-600">Short</span> = Pendek</li>
+                            </ul>
                         </div>
                     </div>
-
-                    <div class="bg-sky-50 p-3 rounded border border-sky-200">
-                        <p class="font-bold mb-1">Contoh Kalimat:</p>
-                        <ul class="list-disc ml-4 space-y-1">
-                            <li>She is my sister. She is <span class="font-bold text-blue-600">tall</span> (Dia tinggi).</li>
-                            <li>He is my brother. He is <span class="font-bold text-blue-600">short</span> (Dia pendek).</li>
-                            <li>The ball is <span class="font-bold text-blue-600">big</span> (Bola itu besar).</li>
-                        </ul>
+                    
+                    <div class="mt-4 space-y-3">
+                        <p class="font-bold text-slate-800">Contoh Kalimat:</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <div class="bg-white border-l-4 border-green-400 p-2 shadow-sm italic">
+                                "My father is <span class="text-green-600 font-bold">tall</span>." (Ayahku tinggi)
+                            </div>
+                            <div class="bg-white border-l-4 border-orange-400 p-2 shadow-sm italic">
+                                "He is <span class="text-orange-600 font-bold">short</span>." (Dia pendek)
+                            </div>
+                            <div class="bg-white border-l-4 border-blue-400 p-2 shadow-sm italic">
+                                "My brother is <span class="text-blue-600 font-bold">big</span>." (Kakak laki-lakiku besar)
+                            </div>
+                            <div class="bg-white border-l-4 border-pink-400 p-2 shadow-sm italic">
+                                "She is <span class="text-pink-600 font-bold">small</span>." (Dia kecil)
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <!-- English Corner (Layout Khusus) -->
-            <section class="mb-10 p-6 bg-slate-800 rounded-xl border-4 border-yellow-400 relative overflow-hidden">
-                <div class="absolute top-0 right-0 bg-yellow-400 text-black text-[10px] font-bold px-3 py-1 rounded-bl-lg warning-blink">
-                    HAFALKAN SEKARANG!
+            <!-- English Corner -->
+            <section class="mb-10 p-6 bg-indigo-900 rounded-3xl border-4 border-yellow-400 relative overflow-hidden shadow-xl">
+                <div class="absolute top-0 right-0 bg-yellow-400 text-black text-[10px] font-black px-4 py-1 rounded-bl-xl warning-blink uppercase tracking-tighter">
+                    MUST BE MEMORIZED TODAY!
                 </div>
                 
-                <!-- Kata Hari Ini -->
                 <div class="text-center mb-6">
-                    <h3 class="text-yellow-400 font-bold text-lg mb-2 uppercase tracking-widest">New Word Today</h3>
-                    <div class="bg-white inline-block px-10 py-4 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
-                        <p class="text-xs text-slate-400 uppercase mb-1">Kambing</p>
-                        <p class="text-4xl font-black text-slate-800">GOAT</p>
+                    <h3 class="text-yellow-400 font-bold text-lg mb-2 uppercase tracking-widest">English Corner</h3>
+                    <div class="bg-white inline-block px-10 py-4 rounded-2xl shadow-lg transform -rotate-1">
+                        <p class="text-[10px] text-slate-400 uppercase mb-1 font-bold">Kambing</p>
+                        <p class="text-4xl font-black text-slate-800 uppercase">GOAT</p>
+                        <p class="text-[10px] text-indigo-600 font-bold mt-1 tracking-widest">Cara Baca: /ɡəʊt/</p>
                     </div>
                 </div>
 
-                <!-- Kata Sebelumnya -->
-                <div class="border-t border-slate-600 pt-4">
-                    <p class="text-slate-400 text-[10px] text-center mb-3 uppercase tracking-wider">Don't Forget Previous Words:</p>
+                <div class="border-t border-indigo-700 pt-4">
+                    <p class="text-sky-300 text-[10px] text-center mb-3 uppercase tracking-wider font-bold">Previous Words (Don't Forget!):</p>
                     <div class="flex flex-wrap justify-center gap-3">
-                        <span class="bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold border border-slate-500">Foot (Kaki)</span>
-                        <span class="bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold border border-slate-500">Face (Wajah)</span>
-                        <span class="bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold border border-slate-500">Hair (Rambut)</span>
-                        <span class="bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold border border-slate-500">Cat (Kucing)</span>
-                        <span class="bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold border border-slate-500">Dog (Anjing)</span>
+                        <span class="bg-indigo-800 text-white px-4 py-2 rounded-xl text-sm font-bold border border-indigo-600 shadow-md">Foot</span>
+                        <span class="bg-indigo-800 text-white px-4 py-2 rounded-xl text-sm font-bold border border-indigo-600 shadow-md">Face</span>
+                        <span class="bg-indigo-800 text-white px-4 py-2 rounded-xl text-sm font-bold border border-indigo-600 shadow-md">Hair</span>
+                        <span class="bg-indigo-800 text-white px-4 py-2 rounded-xl text-sm font-bold border border-indigo-600 shadow-md">Cat</span>
+                        <span class="bg-indigo-800 text-white px-4 py-2 rounded-xl text-sm font-bold border border-indigo-600 shadow-md">Dog</span>
                     </div>
                 </div>
             </section>
 
             <!-- Latihan Soal -->
             <section class="space-y-10">
-                <h3 class="text-xs font-black text-slate-400 uppercase tracking-widest text-center">Exercise Sheet (19 Questions)</h3>
+                <div class="text-center">
+                    <h3 class="text-xs font-black text-slate-400 uppercase tracking-[0.3em]">Evaluation Sheet</h3>
+                    <div class="h-1 w-20 bg-sky-200 mx-auto mt-1 rounded-full"></div>
+                </div>
                 
-                <!-- I. Multiple Choice -->
+                <!-- I. Pilihan Ganda -->
                 <div class="space-y-6">
-                    <p class="text-xs font-bold text-blue-700 italic underline uppercase bg-blue-50 inline-block px-2 py-1 rounded">I. Multiple Choice (10 Questions)</p>
-                    <div class="text-sm space-y-5">
-                        <p>1. Gajah itu besar. Bahasa Inggris "Besar" adalah...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Small</span><span>B. Big</span><span>C. Short</span></div>
+                    <p class="text-xs font-bold text-sky-700 italic underline uppercase bg-sky-50 inline-block px-3 py-1 rounded-full border border-sky-100">I. Multiple Choice (10 Questions)</p>
+                    <div class="text-sm space-y-6">
+                        <div class="space-y-2">
+                            <p>1. Apa arti dari kata "<span class="font-bold">Tall</span>"?</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Pendek</span><span>B. Tinggi</span><span>C. Besar</span></div>
+                        </div>
 
-                        <p>2. Semut itu kecil. Bahasa Inggris "Kecil" adalah...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Big</span><span>B. Tall</span><span>C. Small</span></div>
+                        <div class="space-y-2">
+                            <p>2. Lawan kata dari "<span class="font-bold">Big</span>" adalah...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Tall</span><span>B. Short</span><span>C. Small</span></div>
+                        </div>
 
-                        <p>3. Kakak perempuan saya tinggi. "Tinggi" in English is...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Short</span><span>B. Tall</span><span>C. Small</span></div>
+                        <div class="space-y-2">
+                            <p>3. "Ayahku tinggi" dalam bahasa Inggris adalah...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. My father is short</span><span>B. My father is tall</span><span>C. My father is small</span></div>
+                        </div>
 
-                        <p>4. Adik bayi itu pendek. "Pendek" in English is...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Short</span><span>B. Tall</span><span>C. Big</span></div>
+                        <div class="space-y-2">
+                            <p>4. Kata "<span class="font-bold">Short</span>" digunakan untuk benda atau orang yang...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Pendek</span><span>B. Besar</span><span>C. Tinggi</span></div>
+                        </div>
 
-                        <p>5. "She is my sister". Artinya...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Dia adik laki-laki</span><span>B. Dia saudara perempuan</span><span>C. Dia ayah saya</span></div>
+                        <div class="space-y-2">
+                            <p>5. "He is <span class="font-bold">small</span>". Kata yang dicetak tebal artinya...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Tinggi</span><span>B. Besar</span><span>C. Kecil</span></div>
+                        </div>
 
-                        <p>6. Lawan kata (opposite) dari "Big" adalah...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Tall</span><span>B. Small</span><span>C. Fat</span></div>
+                        <div class="space-y-2 text-indigo-700">
+                            <p>6. <span class="font-bold">"He is tall"</span>. Kata "He" merujuk pada...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Perempuan</span><span>B. Laki-laki</span><span>C. Hewan</span></div>
+                        </div>
 
-                        <p>7. Lawan kata (opposite) dari "Tall" adalah...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Short</span><span>B. Big</span><span>C. Long</span></div>
+                        <div class="space-y-2">
+                            <p>7. My brother is big. <span class="italic">Big</span> artinya...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Besar</span><span>B. Kecil</span><span>C. Pendek</span></div>
+                        </div>
 
-                        <p>8. "My father is tall". Artinya Ayah saya...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Pendek</span><span>B. Tinggi</span><span>C. Kecil</span></div>
+                        <div class="space-y-2">
+                            <p>8. Jika adikmu bertubuh kecil, kamu berkata "My sister is..."</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Tall</span><span>B. Small</span><span>C. Big</span></div>
+                        </div>
 
-                        <!-- Soal English Corner -->
-                        <p class="text-slate-600 font-bold italic border-t pt-4">9. Hewan "Goat" makan rumput. Goat artinya...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4 font-bold text-blue-600"><span>A. Kucing</span><span>B. Kambing</span><span>C. Sapi</span></div>
+                        <div class="space-y-2 pt-4 border-t border-dashed">
+                            <p class="text-sky-700 font-bold italic underline">9. "Goat" dalam bahasa Indonesia adalah...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Kucing</span><span>B. Anjing</span><span>C. Kambing</span></div>
+                        </div>
 
-                        <p class="text-slate-600 font-bold italic">10. "Hair" ada di kepala. Hair artinya...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4 font-bold text-blue-600"><span>A. Rambut</span><span>B. Kaki</span><span>C. Tangan</span></div>
+                        <div class="space-y-2">
+                            <p class="text-sky-700 font-bold italic underline">10. Cara membaca kata "Goat" yang benar adalah...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. /ɡəʊt/</span><span>B. /fʊt/</span><span>C. /kæt/</span></div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- II. Fill in the blanks -->
+                <!-- II. Isian Singkat -->
                 <div class="mt-12">
-                    <p class="text-xs font-bold text-blue-700 italic underline uppercase bg-blue-50 inline-block px-2 py-1 rounded mb-4">II. Fill in the Blanks (9 Questions)</p>
+                    <p class="text-xs font-bold text-sky-700 italic underline uppercase bg-sky-50 inline-block px-3 py-1 rounded-full border border-sky-100 mb-6">II. Short Answer (9 Questions)</p>
                     
-                    <!-- Bank Soal -->
-                    <div class="bg-yellow-50 p-4 rounded-xl border-2 border-yellow-200 mb-6">
-                        <p class="text-[10px] text-center font-bold text-yellow-700 uppercase mb-3">WORD BANK (PILIHAN JAWABAN)</p>
-                        <div class="grid grid-cols-4 gap-2 text-[10px] font-medium text-center">
-                            <div class="word-bank-item bg-white p-1 rounded border">Big</div>
-                            <div class="word-bank-item bg-white p-1 rounded border">Small</div>
-                            <div class="word-bank-item bg-white p-1 rounded border">Tall</div>
-                            <div class="word-bank-item bg-white p-1 rounded border">Short</div>
-                            <div class="word-bank-item bg-white p-1 rounded border">Sister</div>
-                            <div class="word-bank-item bg-white p-1 rounded border">Brother</div>
-                            <div class="word-bank-item bg-white p-1 rounded border">Tinggi</div>
-                            <div class="word-bank-item bg-white p-1 rounded border">Pendek</div>
-                            <div class="word-bank-item bg-white p-1 rounded border">Besar</div>
-                            <div class="word-bank-item bg-white p-1 rounded border">Kecil</div>
-                            <!-- Pengecoh -->
-                            <div class="word-bank-item bg-white p-1 rounded border text-slate-400">Fat</div>
-                            <div class="word-bank-item bg-white p-1 rounded border text-slate-400">Thin</div>
-                            <div class="word-bank-item bg-white p-1 rounded border text-slate-400">Mother</div>
-                            <div class="word-bank-item bg-white p-1 rounded border text-slate-400">Father</div>
-                            <div class="word-bank-item bg-white p-1 rounded border text-slate-400">Long</div>
-                            <div class="word-bank-item bg-white p-1 rounded border text-slate-400">Old</div>
-                            <div class="word-bank-item bg-white p-1 rounded border text-slate-400">Young</div>
-                            <div class="word-bank-item bg-white p-1 rounded border text-slate-400">Happy</div>
-                            <div class="word-bank-item bg-white p-1 rounded border text-slate-400">Sad</div>
-                            <div class="word-bank-item bg-white p-1 rounded border text-slate-400">Goat</div>
-                        </div>
-                    </div>
-
-                    <div class="space-y-6 text-sm p-6 border-2 border-dashed border-blue-200 rounded-xl">
-                        <p>11. The elephant (gajah) is .........................</p>
-                        <p>12. The ant (semut) is .........................</p>
-                        <p>13. Jerapah lehernya panjang dan badannya ......................... (in English)</p>
-                        <p>14. My ......................... is a girl (saudara perempuan).</p>
-                        <p>15. Big artinya .........................</p>
-                        <p>16. Small artinya .........................</p>
-                        <p>17. Tall artinya .........................</p>
-                        <p>18. Short artinya .........................</p>
-                        <p>19. My ......................... is a boy (saudara laki-laki).</p>
+                    <div class="space-y-6 text-sm p-8 border-2 border-dashed border-sky-200 rounded-3xl bg-sky-50/20">
+                        <p>11. Bahasa Inggris dari kata <span class="font-bold underline text-sky-700">Tinggi</span> adalah ......................................................</p>
+                        <p>12. Lawan kata dari <span class="font-bold text-indigo-600">Short</span> (pendek) adalah ......................................................</p>
+                        <p>13. My mother is tall. Arti kata <span class="font-bold">Tall</span> adalah ......................................................</p>
+                        <p>14. Bahasa Inggris dari kata <span class="font-bold underline text-sky-700">Besar</span> adalah ......................................................</p>
+                        <p>15. "Dia kecil" dalam bahasa Inggris adalah: He is ......................................................</p>
+                        <p>16. Kalimat "Ayahku tinggi" adalah: My ..................................... is tall.</p>
+                        <p>17. Kata <span class="font-bold text-indigo-600">Small</span> memiliki arti ......................................................</p>
+                        <p>18. Kakak laki-lakiku besar = My brother is ......................................................</p>
+                        <p>19. Lawan kata dari <span class="font-bold text-indigo-600">Big</span> (besar) adalah ......................................................</p>
                     </div>
                 </div>
             </section>
 
             <!-- Kalkulator -->
-            <section class="mt-16 p-8 bg-slate-900 rounded-2xl text-white shadow-2xl border-4 border-blue-500">
+            <section class="mt-16 p-8 bg-sky-900 rounded-3xl text-white shadow-2xl border-4 border-sky-400">
                 <div class="text-center mb-6">
-                    <h3 class="text-lg font-bold uppercase tracking-widest text-blue-400">Score Calculator</h3>
-                    <p class="text-[10px] text-slate-400">Input correct answers (Max 19)</p>
+                    <h3 class="text-lg font-bold uppercase tracking-widest text-sky-300">Skor Kayla</h3>
+                    <p class="text-[10px] text-sky-200 opacity-60 italic">Hitung jumlah jawaban benar di bawah ini</p>
                 </div>
                 <div class="flex flex-col items-center space-y-4">
                     <input type="number" id="inputBenar" min="0" max="19" placeholder="0" 
-                           class="w-full max-w-[150px] p-3 rounded-lg bg-slate-800 text-center text-2xl font-bold border border-slate-700 focus:border-blue-500 outline-none text-white">
-                    <button onclick="hitungNilai()" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-2 rounded-full font-bold uppercase tracking-wider transition-all">Calculate</button>
-                    <div id="hasil" class="hidden text-center mt-4">
-                        <div id="skor" class="text-5xl font-black text-yellow-400">0</div>
-                        <p id="pesan" class="text-xs mt-2 text-blue-200"></p>
+                           class="w-full max-w-[150px] p-3 rounded-2xl bg-sky-800 text-center text-3xl font-bold border-2 border-sky-700 focus:border-yellow-400 outline-none text-yellow-300 shadow-inner">
+                    <button onclick="hitungNilai()" class="bg-yellow-400 hover:bg-yellow-300 text-sky-900 px-10 py-3 rounded-full font-bold uppercase tracking-wider transition-all shadow-lg active:scale-95">LIHAT HASIL</button>
+                    <div id="hasil" class="hidden text-center mt-6 animate-bounce">
+                        <div id="skor" class="text-7xl font-black text-white">0</div>
+                        <p id="pesan" class="text-sm mt-2 text-yellow-200 font-bold uppercase tracking-widest"></p>
                     </div>
                 </div>
             </section>
         </main>
         
-        <footer class="bg-slate-100 p-4 text-center border-t text-[10px] text-slate-400 uppercase font-bold tracking-widest">
-            Kayla Zahra Safitri • 2026
+        <footer class="bg-sky-50 p-6 text-center border-t border-sky-100 text-[10px] text-sky-400 uppercase font-black tracking-[0.5em]">
+            Kayla Zahra Safitri • English Session • 2026
         </footer>
     </div>
 
     <script>
         function hitungNilai() {
             const b = parseInt(document.getElementById('inputBenar').value);
-            if(isNaN(b) || b < 0 || b > 19) return alert('Input 0-19');
+            if(isNaN(b) || b < 0 || b > 19) return;
             const n = Math.round((b/19)*100);
             document.getElementById('hasil').classList.remove('hidden');
             document.getElementById('skor').innerText = n;
-            document.getElementById('pesan').innerText = n>=90?"Excellent!":n>=75?"Good Job!":"Try Again!";
+            document.getElementById('pesan').innerText = n>=90?"You're a Superstar!":n>=75?"Excellent Work!":"Keep Practicing, Kayla!";
         }
     </script>
 </body>
 </html>
+
