@@ -3,213 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bahasa Indonesia - Bijak Memakai Uang - Kayla</title>
+    <title>Bahasa Indonesia Bab 6 - Bijak Memakai Uang - Kayla</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.3; }
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap');
+        
+        body { font-family: 'Fredoka', sans-serif; }
+        
+        @keyframes blink { 
+            0% { opacity: 1; transform: scale(1); } 
+            50% { opacity: 0.5; transform: scale(1.05); color: #dc2626; } 
+            100% { opacity: 1; transform: scale(1); } 
         }
-        .flash-notice {
-            animation: blink 0.8s infinite;
-            border: 4px solid #ef4444;
+        .warning-blink { animation: blink 1s infinite; }
+        
+        .pattern-bg {
+            background-color: #fffbeb;
+            background-image: radial-gradient(#fde68a 0.5px, transparent 0.5px);
+            background-size: 20px 20px;
         }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        .date-badge {
-            background: #1e293b;
-            color: #f8fafc;
-            padding: 10px 30px;
-            border-radius: 50px;
-            display: inline-block;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-            border: 2px solid #3b82f6;
+
+        .money-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
         }
     </style>
 </head>
-<body class="bg-slate-50 p-4 md:p-10">
-    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden border border-slate-200">
+<body class="pattern-bg p-4 md:p-10">
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden border-4 border-yellow-200">
         
-        <!-- Header Menonjol -->
-        <header class="bg-gradient-to-b from-blue-600 to-blue-800 p-10 text-center text-white">
-            <div class="date-badge mb-6">
-                <h2 class="text-xl font-black tracking-tighter">RABU, 04 FEBRUARI 2026</h2>
+        <!-- Header -->
+        <header class="bg-gradient-to-r from-blue-500 to-indigo-600 p-10 text-center text-white border-b-8 border-yellow-400">
+            <div class="inline-block bg-white text-indigo-700 font-extrabold px-8 py-2 rounded-full text-xl mb-4 shadow-lg transform -rotate-1 border-2 border-indigo-200">
+                SENIN, 09 FEBRUARI 2026
             </div>
-            <h1 class="text-xs font-bold text-blue-200 tracking-[0.4em] uppercase mb-2">Kurikulum Merdeka Dasar</h1>
-            <h3 class="text-3xl font-light tracking-tight">BAHASA INDONESIA <span class="font-bold text-yellow-400">| BAB 6 (SESI 2)</span></h3>
-            <p class="mt-4 text-sm font-medium bg-blue-900/40 inline-block px-6 py-2 rounded-full border border-blue-400/30">
-                TAHAP 1: BIJAK MEMAKAI UANG (Mengenal Uang & Pekerjaan)
-            </p>
+            <h1 class="text-xs font-bold tracking-[0.4em] uppercase mb-1 opacity-90">Bahasa Indonesia - Sesi 1</h1>
+            <h2 class="text-4xl font-extrabold tracking-tight uppercase">Bab 6 <span class="text-yellow-300">| BIJAK MEMAKAI UANG</span></h2>
+            <div class="mt-4 flex justify-center gap-3 text-[10px] uppercase font-bold text-indigo-900">
+                <span class="bg-blue-100 px-3 py-1 rounded shadow-sm">Pekerjaan & Jasa</span>
+                <span class="bg-blue-100 px-3 py-1 rounded shadow-sm">Kelas 2 SD</span>
+                <span class="bg-blue-100 px-3 py-1 rounded shadow-sm">Tahap 1 dari 14</span>
+            </div>
         </header>
 
-        <!-- Identitas Siswa -->
-        <div class="px-8 py-4 bg-slate-100 flex justify-between items-center border-b text-[11px] text-slate-600 font-bold uppercase tracking-widest">
-            <div>Siswa: <span class="text-blue-700">Kayla Zahra Safitri</span></div>
-            <div>Materi: <span class="text-blue-700">Uang & Pekerjaan</span></div>
+        <!-- Identitas -->
+        <div class="px-8 py-4 bg-blue-50 flex justify-between items-center border-b text-[11px] text-blue-800 italic">
+            <div>Nama Siswa: <span class="font-bold uppercase text-black">Kayla Zahra Safitri</span></div>
+            <div>Fokus: <span class="font-bold text-black text-xs">Kosakata Pekerjaan & Jasa</span></div>
         </div>
 
         <main class="p-8">
-            <!-- Materi Ringkas -->
+            <!-- Materi -->
             <section class="mb-10">
-                <div class="flex items-center gap-3 mb-4">
-                    <div class="h-8 w-2 bg-yellow-400 rounded-full"></div>
-                    <h3 class="text-lg font-bold text-slate-800 uppercase">Ayo Belajar Tentang Uang!</h3>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="p-6 bg-green-50 rounded-2xl border border-green-200">
-                        <p class="text-xs font-bold text-green-700 uppercase mb-2">1. Apa itu Uang?</p>
-                        <p class="text-sm leading-relaxed text-slate-700">
-                            Uang adalah alat untuk <span class="font-bold">membeli</span> barang atau membayar jasa. Di Indonesia, uang kita namanya <span class="font-bold text-green-600 italic underline">Rupiah (Rp)</span>. Ada uang kertas dan ada uang logam.
-                        </p>
-                    </div>
-                    <div class="p-6 bg-blue-50 rounded-2xl border border-blue-200">
-                        <p class="text-xs font-bold text-blue-700 uppercase mb-2">2. Apa itu Pekerjaan?</p>
-                        <p class="text-sm leading-relaxed text-slate-700">
-                            Untuk mendapatkan uang, orang dewasa harus <span class="font-bold">bekerja</span>. Contoh pekerjaan: Guru (mengajar), Dokter (mengobati), dan Petani (menanam padi).
-                        </p>
+                <h3 class="text-lg font-bold text-blue-800 mb-4 border-l-4 border-blue-500 pl-3 uppercase">Materi: Mengenal Cara Mendapatkan Uang</h3>
+                <div class="p-6 money-card rounded-2xl border-2 border-blue-100 text-sm leading-relaxed text-slate-700 space-y-4 shadow-sm">
+                    <p>Halo Kayla! Tahukah kamu? Untuk mendapatkan uang, orang dewasa harus bekerja. Ada berbagai jenis pekerjaan di sekitar kita:</p>
+                    <ul class="list-disc ml-5 space-y-3">
+                        <li><span class="font-bold text-indigo-600 underline">Pekerjaan yang Menghasilkan Jasa:</span> Pekerjaan ini membantu orang lain. Contohnya: <span class="font-bold">Guru</span> (mengajar), <span class="font-bold">Dokter</span> (mengobati), dan <span class="font-bold">Sopir</span> (mengantar).</li>
+                        <li><span class="font-bold text-indigo-600 underline">Pekerjaan yang Menghasilkan Barang (Karya):</span> Pekerjaan ini membuat sesuatu yang bisa kita pegang. Contohnya: <span class="font-bold">Petani</span> (menghasilkan padi), <span class="font-bold">Penjahit</span> (membuat baju), dan <span class="font-bold">Koki</span> (memasak makanan).</li>
+                        <li>Uang yang kita dapatkan dari bekerja harus digunakan dengan <span class="font-bold text-green-600">bijak</span>. Kita harus membedakan mana kebutuhan (penting) dan mana keinginan (mainan/jajanan).</li>
+                    </ul>
+                    <div class="bg-blue-100 p-3 rounded-xl border border-blue-200 font-bold text-center text-blue-800 mt-4 italic">
+                        "Rajin menabung adalah ciri anak yang bijak memakai uang."
                     </div>
                 </div>
             </section>
 
-            <!-- English Corner - NOTICE KERAS -->
-            <section class="mb-10">
-                <div class="flash-notice bg-red-600 p-1 rounded-2xl overflow-hidden shadow-lg">
-                    <div class="bg-white p-6 rounded-xl">
-                        <h4 class="text-center text-red-600 font-black text-sm uppercase tracking-tighter mb-4">
-                            ⚠️ NOTICE KERAS: WAJIB DIHAFAL HARI INI! ⚠️
-                        </h4>
-                        <div class="flex flex-col md:flex-row items-center justify-around gap-6">
-                            <div class="text-center">
-                                <p class="text-[10px] text-slate-400 uppercase font-bold">Kosakata Hari Ini:</p>
-                                <p class="text-5xl font-black text-slate-900 tracking-tighter italic">CAT</p>
-                                <p class="text-lg font-medium text-red-500">Kucing</p>
-                            </div>
-                            <div class="h-px w-20 bg-slate-200 md:h-20 md:w-px"></div>
-                            <div class="text-center opacity-50">
-                                <p class="text-[8px] text-slate-400 uppercase font-bold italic">Review Kemarin:</p>
-                                <p class="text-xs font-bold text-slate-600 uppercase">Foot, Face, Hair</p>
-                            </div>
+            <!-- English Corner -->
+            <section class="mb-10 p-6 bg-slate-800 rounded-3xl border-4 border-yellow-400 relative overflow-hidden shadow-xl">
+                <div class="absolute top-0 right-0 bg-yellow-400 text-black text-[10px] font-black px-4 py-1 rounded-bl-xl warning-blink uppercase">
+                    WAJIB DIHAFAL HARI INI!
+                </div>
+                
+                <div class="text-center mb-6">
+                    <h3 class="text-yellow-400 font-bold text-lg mb-2 uppercase tracking-widest">English Corner Hari Ini</h3>
+                    <div class="bg-white inline-block px-10 py-4 rounded-2xl shadow-lg">
+                        <p class="text-[10px] text-slate-400 uppercase mb-1">Burung</p>
+                        <p class="text-4xl font-black text-slate-800 uppercase">BIRD</p>
+                        <p class="text-[10px] text-indigo-600 font-bold mt-1">Cara Baca: /bɜːrd/</p>
+                    </div>
+                </div>
+
+                <div class="border-t border-slate-600 pt-4">
+                    <p class="text-slate-200 text-xs text-center mb-3 uppercase tracking-wider font-bold">Harus Tetap Dihafal (Materi Sebelumnya):</p>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold border border-blue-400 shadow-sm">Foot (Kaki)</span>
+                        <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold border border-blue-400 shadow-sm">Face (Wajah)</span>
+                        <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold border border-blue-400 shadow-sm">Hair (Rambut)</span>
+                        <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold border border-blue-400 shadow-sm">Cat (Kucing)</span>
+                        <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold border border-blue-400 shadow-sm">Dog (Anjing)</span>
+                        <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold border border-blue-400 shadow-sm">Cow (Sapi)</span>
+                        <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold border border-blue-400 shadow-sm">Goat (Kambing)</span>
+                        <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold border border-blue-400 shadow-sm">Horse (Kuda)</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Latihan Soal -->
+            <section class="space-y-10">
+                <h3 class="text-xs font-black text-slate-400 uppercase tracking-widest text-center">Lembar Evaluasi Bahasa Indonesia (19 Soal)</h3>
+                
+                <!-- I. Pilihan Ganda -->
+                <div class="space-y-6">
+                    <p class="text-xs font-bold text-blue-700 italic underline uppercase bg-blue-50 inline-block px-2 py-1 rounded">I. Pilihan Ganda (10 Soal)</p>
+                    <div class="text-sm space-y-6">
+                        <div class="space-y-2">
+                            <p>1. Untuk mendapatkan uang, orang dewasa harus...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Bermain</span><span>B. Bekerja</span><span>C. Tidur</span></div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <p>2. Pekerjaan yang memberikan bantuan tenaga atau keahlian disebut pekerjaan menghasilkan...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Jasa</span><span>B. Barang</span><span>C. Mainan</span></div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <p>3. Contoh pekerjaan yang menghasilkan jasa adalah...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Petani</span><span>B. Penjahit</span><span>C. Guru</span></div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <p>4. Pekerjaan yang menghasilkan barang berupa baju adalah...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Penjahit</span><span>B. Dokter</span><span>C. Sopir</span></div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <p>5. Seorang koki bekerja menghasilkan barang berupa...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Mobil</span><span>B. Makanan</span><span>C. Padi</span></div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <p>6. Jika kita memakai uang hanya untuk hal yang penting, artinya kita bersikap...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Boros</span><span>B. Bijak</span><span>C. Pelit</span></div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <p>7. Petani bekerja di sawah untuk menghasilkan...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Kursi</span><span>B. Padi</span><span>C. Sepatu</span></div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <p>8. Sopir adalah pekerjaan yang memberikan jasa berupa layanan...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Mengantar</span><span>B. Mengajar</span><span>C. Memasak</span></div>
+                        </div>
+
+                        <div class="space-y-2 pt-4 border-t border-dashed">
+                            <p class="text-indigo-700 font-bold italic">9. Bahasa Inggris dari "Burung" adalah...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Bird</span><span>B. Cow</span><span>C. Horse</span></div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <p class="text-indigo-700 font-bold italic">10. "Goat" artinya adalah...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Kuda</span><span>B. Kambing</span><span>C. Sapi</span></div>
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <!-- Soal Evaluasi -->
-            <section class="space-y-12">
-                <div class="text-center">
-                    <span class="bg-slate-800 text-white text-[10px] px-4 py-1 rounded-full font-bold uppercase tracking-[0.3em]">Lembar Evaluasi</span>
-                </div>
-
-                <!-- Bagian I: Pilihan Ganda -->
-                <div class="space-y-8">
-                    <p class="text-xs font-bold text-slate-400 italic underline uppercase">I. Pilihan Ganda (10 Soal)</p>
+                <!-- II. Isian Singkat -->
+                <div class="mt-12">
+                    <p class="text-xs font-bold text-blue-700 italic underline uppercase bg-blue-50 inline-block px-2 py-1 rounded mb-6">II. Uraian Singkat (9 Soal)</p>
                     
-                    <div class="text-sm space-y-6">
-                        <p>1. Nama mata uang negara Indonesia adalah...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Ringgit</span><span>B. Rupiah</span><span>C. Dollar</span></div>
-
-                        <p>2. Uang digunakan sebagai alat untuk...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Bermain</span><span>B. Tukar Menukar</span><span>C. Membeli barang</span></div>
-
-                        <p>3. Orang yang pekerjaannya menangkap ikan di laut disebut...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Petani</span><span>B. Nelayan</span><span>C. Sopir</span></div>
-
-                        <p>4. Jika ingin membeli buku di koperasi sekolah, kita harus membayar menggunakan...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Uang</span><span>B. Daun</span><span>C. Kertas kosong</span></div>
-
-                        <p>5. Ibu bekerja di rumah sakit dan mengobati orang sakit. Pekerjaan Ibu adalah...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Polisi</span><span>B. Guru</span><span>C. Dokter</span></div>
-
-                        <p>6. Kegiatan menyisihkan sebagian uang untuk kebutuhan masa depan disebut...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Jajan</span><span>B. Menabung</span><span>C. Boros</span></div>
-
-                        <p>7. Ayah bekerja mengemudikan pesawat terbang. Pekerjaan Ayah adalah...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Masinis</span><span>B. Pilot</span><span>C. Nahkoda</span></div>
-
-                        <p>8. Tempat untuk menabung uang yang paling aman adalah di...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Bawah kasur</span><span>B. Bank</span><span>C. Saku celana</span></div>
-
-                        <p class="text-red-600 font-bold italic border-t pt-4">9. Kayla has a pet "CAT". Apa arti "CAT"?</p>
-                        <div class="grid grid-cols-3 text-xs ml-4 text-red-700 font-bold"><span>A. Anjing</span><span>B. Kucing</span><span>C. Burung</span></div>
-
-                        <p class="text-red-600 font-bold italic">10. "Kucing" dalam bahasa Inggris adalah...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4 text-red-700 font-bold"><span>A. CAT</span><span>B. DOG</span><span>C. BIRD</span></div>
-                    </div>
-                </div>
-
-                <!-- Bagian II: Isian -->
-                <div class="mt-12 space-y-6 p-8 border-2 border-blue-100 rounded-3xl bg-blue-50/30">
-                    <p class="text-xs font-bold text-slate-400 italic underline uppercase">II. Isian Singkat (9 Soal)</p>
-                    <div class="text-sm space-y-6">
-                        <p>11. Sebelum membeli barang, kita harus melihat ......................... (harga/warna) barang tersebut.</p>
-                        <p>12. Supaya punya banyak uang saat dewasa, kita harus rajin .........................</p>
-                        <p>13. Orang yang bekerja memadamkan api saat kebakaran disebut .........................</p>
-                        <p>14. Uang logam biasanya terbuat dari bahan .........................</p>
-                        <p>15. Orang yang bekerja mengajar murid di sekolah adalah .........................</p>
-                        <p>16. Kebalikan dari kata "Hemat" adalah .........................</p>
-                        <p>17. Kita harus bijak memakai uang, artinya tidak boleh .........................</p>
-
-                        <div class="pt-6 border-t border-red-200">
-                            <p class="text-red-600 font-bold italic text-xs uppercase">English Corner Task (WAJIB)</p>
-                            <p>18. Tulis kata <span class="font-bold">"CAT"</span> sebanyak 5 kali di sini:</p>
-                            <div class="mt-2 border-b border-dotted border-slate-300 h-8"></div>
-                            
-                            <p class="mt-4">19. <span class="font-bold italic text-red-600">Cat</span> is an animal that says ......................... (suaranya)</p>
-                        </div>
+                    <div class="space-y-6 text-sm p-8 border-2 border-dashed border-blue-200 rounded-3xl bg-blue-50/20">
+                        <p>11. Apa yang harus dilakukan orang dewasa agar bisa mendapatkan uang? ......................................................</p>
+                        <p>12. Sebutkan satu contoh pekerjaan yang menghasilkan jasa! ......................................................</p>
+                        <p>13. Petani bekerja menghasilkan barang berupa ......................................................</p>
+                        <p>14. Menjahit kain menjadi baju adalah tugas seorang ......................................................</p>
+                        <p>15. Pekerjaan dokter adalah mengobati orang yang ......................................................</p>
+                        <p>16. Kita harus membedakan antara kebutuhan dan ......................................................</p>
+                        <p>17. Menaruh uang di tabungan atau celengan disebut kegiatan ......................................................</p>
+                        <p>18. Koki menghasilkan karya berupa masakan atau ......................................................</p>
+                        <p>19. Pekerjaan yang membantu orang lain disebut pekerjaan menghasilkan ......................................................</p>
                     </div>
                 </div>
             </section>
 
-            <!-- Penghitung Nilai -->
-            <section class="mt-16 p-10 bg-slate-900 rounded-[2.5rem] text-white shadow-2xl border-4 border-blue-500 relative overflow-hidden">
-                <div class="absolute top-0 right-0 p-4 opacity-10">
-                    <svg width="100" height="100" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.31-8.86c-1.77-.45-2.34-.94-2.34-1.67 0-.84.79-1.39 2.1-1.39 1.47 0 2.01.59 2.06 1.47h1.73c-.06-1.57-1.16-2.61-2.67-2.94V5h-2v1.59c-1.49.32-2.73 1.25-2.73 2.72 0 1.79 1.49 2.69 3.66 3.21 1.96.47 2.49 1.13 2.49 1.9 0 .68-.56 1.45-2.26 1.45-1.63 0-2.31-.73-2.42-1.73H7.43c.12 1.79 1.5 2.74 2.88 3.07V19h2v-1.6c1.55-.26 2.81-1.15 2.81-2.75 0-2.25-1.87-2.88-3.82-3.36z"/></svg>
+            <!-- Kalkulator Nilai -->
+            <section class="mt-16 p-8 bg-blue-900 rounded-3xl text-white shadow-2xl border-4 border-indigo-400">
+                <div class="text-center mb-6">
+                    <h3 class="text-lg font-bold uppercase tracking-widest text-blue-300">Kalkulator Nilai Kayla</h3>
+                    <p class="text-[10px] text-blue-200 opacity-60">Masukkan jumlah jawaban benar (0-19)</p>
                 </div>
-                <div class="text-center mb-8">
-                    <h3 class="text-xl font-black uppercase tracking-widest text-blue-400">Skor Kayla Hari Ini</h3>
-                </div>
-                <div class="flex flex-col items-center space-y-6">
-                    <input type="number" id="inputBenar" min="0" max="19" placeholder="?" 
-                           class="w-24 h-24 rounded-3xl bg-slate-800 border-2 border-blue-500 text-center text-5xl font-black text-white focus:outline-none focus:ring-4 focus:ring-blue-400/50 transition-all">
-                    <p class="text-[10px] text-slate-400 uppercase font-bold">Masukkan Jumlah Benar (Maks 19)</p>
-                    
-                    <button onclick="hitungNilai()" 
-                            class="px-12 py-4 bg-blue-600 hover:bg-blue-500 rounded-2xl font-black uppercase tracking-widest shadow-lg shadow-blue-500/30 active:scale-95 transition-all">
-                        CEK HASIL
-                    </button>
-
-                    <div id="hasilNilai" class="mt-8 text-center hidden">
-                        <div id="skorAngka" class="text-8xl font-black text-yellow-400 drop-shadow-lg">0</div>
-                        <p id="pesanNilai" class="mt-6 text-sm font-bold text-blue-200 uppercase tracking-tight"></p>
+                <div class="flex flex-col items-center space-y-4">
+                    <input type="number" id="inputBenar" min="0" max="19" placeholder="0" 
+                           class="w-full max-w-[150px] p-3 rounded-2xl bg-blue-800 text-center text-2xl font-bold border border-blue-700 focus:border-yellow-400 outline-none text-yellow-300">
+                    <button onclick="hitungNilai()" class="bg-yellow-400 hover:bg-yellow-300 text-blue-900 px-8 py-2 rounded-full font-bold uppercase tracking-wider transition-all shadow-lg">Hitung Skor</button>
+                    <div id="hasil" class="hidden text-center mt-4">
+                        <div id="skor" class="text-6xl font-black text-white">0</div>
+                        <p id="pesan" class="text-xs mt-2 text-blue-200 font-bold uppercase"></p>
                     </div>
                 </div>
             </section>
         </main>
-
-        <footer class="bg-slate-50 p-8 text-center border-t border-slate-100">
-            <p class="text-[9px] text-slate-400 font-bold tracking-[0.5em] uppercase italic">Bahasa Indonesia • Bijak Memakai Uang • Kayla Zahra • 2026</p>
+        
+        <footer class="bg-slate-100 p-4 text-center border-t text-[10px] text-slate-400 uppercase font-black tracking-widest">
+            Kayla Zahra Safitri • 09 Februari 2026
         </footer>
     </div>
 
     <script>
         function hitungNilai() {
-            const benar = parseInt(document.getElementById('inputBenar').value);
-            const total = 19;
-            const container = document.getElementById('hasilNilai');
-            const skor = document.getElementById('skorAngka');
-            const pesan = document.getElementById('pesanNilai');
-
-            if (isNaN(benar) || benar < 0 || benar > total) {
-                alert("Kayla, masukkan angka 0 sampai 19 ya!");
-                return;
-            }
-
-            const nilai = Math.round((benar / total) * 100);
-            container.classList.remove('hidden');
-            skor.innerText = nilai;
-
-            if (nilai >= 90) pesan.innerText = "Sempurna! Kayla sudah pintar mengelola uang! 💰🌟";
-            else if (nilai >= 75) pesan.innerText = "Bagus sekali! Teruslah rajin menabung! 🐷💎";
-            else pesan.innerText = "Ayo belajar lagi! Pasti bisa lebih hemat! 📚💪";
+            const b = parseInt(document.getElementById('inputBenar').value);
+            if(isNaN(b) || b < 0 || b > 19) return;
+            const n = Math.round((b/19)*100);
+            document.getElementById('hasil').classList.remove('hidden');
+            document.getElementById('skor').innerText = n;
+            let msg = "";
+            if(n >= 90) msg = "Hebat! Kayla Sangat Bijak!";
+            else if(n >= 75) msg = "Bagus Sekali, Terus Belajar!";
+            else msg = "Semangat! Ayo Baca Materinya Lagi!";
+            document.getElementById('pesan').innerText = msg;
         }
     </script>
 </body>
