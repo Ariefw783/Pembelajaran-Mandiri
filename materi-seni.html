@@ -3,200 +3,288 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seni Bab 7 - Kolase yang Bercerita</title>
+    <title>Seni Rupa Bab 7 - Kolase Bercerita - Kayla</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; }
-        @keyframes blink {
-            0% { opacity: 1; background-color: #ef4444; color: white; }
-            50% { opacity: 1; background-color: #fef08a; color: #854d0e; }
-            100% { opacity: 1; background-color: #ef4444; color: white; }
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap');
+        
+        body { font-family: 'Fredoka', sans-serif; }
+        
+        @keyframes blink { 
+            0% { opacity: 1; transform: scale(1); } 
+            50% { opacity: 0.5; transform: scale(1.05); color: #ef4444; } 
+            100% { opacity: 1; transform: scale(1); } 
         }
-        .notice-blink {
-            animation: blink 0.8s infinite;
-            padding: 10px;
-            border-radius: 8px;
-            font-weight: bold;
-            text-align: center;
-            border: 2px solid #b91c1c;
+        .warning-blink { animation: blink 1s infinite; }
+        
+        .art-bg {
+            background-color: #fffaf0;
+            background-image: radial-gradient(#fbd38d 0.5px, transparent 0.5px);
+            background-size: 30px 30px;
+        }
+
+        .brush-border {
+            border-style: solid;
+            border-image: linear-gradient(to right, #f6ad55, #ed64a6, #4299e1) 1;
         }
     </style>
 </head>
-<body class="bg-slate-50 p-4 md:p-10">
-    <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-xl overflow-hidden border border-slate-200">
+<body class="art-bg p-4 md:p-10">
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-[3rem] overflow-hidden border-8 border-orange-100">
+        
         <!-- Header -->
-        <header class="bg-gradient-to-r from-pink-50 to-purple-50 p-8 text-center border-b-4 border-pink-400">
-            <h1 class="text-xs font-bold text-slate-500 tracking-[0.3em] uppercase mb-2">Kurikulum Merdeka Dasar</h1>
-            <h2 class="text-2xl font-light text-slate-800 tracking-tight">SENI RUPA <span class="font-bold text-pink-600">| BAB 7</span></h2>
-            <div class="mt-4 flex justify-center gap-4 text-[10px] text-slate-500 uppercase font-medium">
-                <span class="bg-white px-3 py-1 rounded-full shadow-sm">Selasa, 03 Februari 2026</span>
-                <span class="bg-white px-3 py-1 rounded-full shadow-sm">Sesi 2</span>
-                <span class="bg-white px-3 py-1 rounded-full shadow-sm font-bold text-pink-600">Kolase Bercerita</span>
+        <header class="bg-gradient-to-r from-orange-400 via-pink-500 to-purple-500 p-10 text-center text-white border-b-8 border-yellow-300">
+            <div class="inline-block bg-white text-orange-600 font-black px-10 py-3 rounded-2xl text-2xl mb-6 shadow-[0_5px_0_0_#ed8936] transform -rotate-2">
+                SELASA, 10 FEBRUARI 2026
+            </div>
+            <h1 class="text-xs font-bold tracking-[0.5em] uppercase mb-1 opacity-90">Seni Rupa - Eksplorasi Kreatif</h1>
+            <h2 class="text-4xl font-extrabold tracking-tight">KEGIATAN 7 <span class="text-yellow-200">| KOLASE YANG BERCERITA</span></h2>
+            <div class="mt-4 flex justify-center gap-3 text-[10px] uppercase font-bold text-white">
+                <span class="bg-black/20 px-4 py-1 rounded-full backdrop-blur-sm">Sesi 1</span>
+                <span class="bg-black/20 px-4 py-1 rounded-full backdrop-blur-sm">Kelas 2 SD</span>
+                <span class="bg-black/20 px-4 py-1 rounded-full backdrop-blur-sm">Tahap 1 dari 4</span>
             </div>
         </header>
 
         <!-- Identitas -->
-        <div class="px-8 py-4 bg-slate-50/50 flex justify-between items-center border-b text-[11px] text-slate-600 italic">
-            <div>Nama: <span class="font-bold text-slate-800 uppercase">Kayla Zahra Safitri</span></div>
-            <div>Materi: <span class="font-bold text-slate-800">Teori Kolase Dasar</span></div>
+        <div class="px-8 py-4 bg-orange-50 flex justify-between items-center border-b text-[11px] text-orange-800 italic">
+            <div>Nama Siswa: <span class="font-bold uppercase text-orange-600">Kayla Zahra Safitri</span></div>
+            <div>Fokus: <span class="font-bold text-black text-xs">Konsep Dasar Kolase & Cerita Visual</span></div>
         </div>
 
         <main class="p-8">
-            <!-- Materi Ringkas -->
+            <!-- Materi -->
             <section class="mb-10">
-                <h3 class="text-sm font-bold text-pink-800 mb-4 border-l-4 border-pink-500 pl-3 uppercase">Apa itu Kolase?</h3>
-                <div class="p-6 bg-pink-50 rounded-lg border border-pink-100 text-xs leading-relaxed text-slate-700 space-y-4">
-                    <p>Halo Kayla! Hari ini kita belajar membuat karya seni yang seru bernama <span class="font-bold text-pink-600">KOLASE</span>.</p>
-                    <p><span class="font-bold">Kolase</span> adalah karya seni yang dibuat dengan cara <span class="font-bold underline text-pink-700">menempelkan</span> berbagai macam bahan pada permukaan gambar. Bahan-bahannya bisa berupa:</p>
-                    <ul class="list-disc ml-5 space-y-1">
-                        <li>Potongan kertas warna-warni.</li>
-                        <li>Daun kering atau ranting.</li>
-                        <li>Biji-bijian.</li>
-                        <li>Kain perca (potongan kain sisa).</li>
-                    </ul>
-                    <p>Disebut <span class="italic font-bold">"Kolase yang bercerita"</span> karena gambar yang kita tempel bisa menceritakan sebuah kisah, misalnya kisah tentang kebun bunga atau hewan di hutan.</p>
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-2 h-8 bg-orange-500 rounded-full"></div>
+                    <h3 class="text-lg font-bold text-slate-800 uppercase">Materi: Mengenal Seni Kolase</h3>
+                </div>
+                <div class="p-8 bg-white rounded-3xl border-4 border-orange-50 border-double text-sm leading-relaxed text-slate-700 space-y-4 shadow-inner">
+                    <p class="font-medium text-orange-600 text-lg">Halo Kayla! Ayo kita belajar menempel!</p>
+                    <p>Kolase adalah teknik membuat karya seni dengan cara <span class="font-bold text-orange-500">menempelkan</span> berbagai macam potongan bahan pada sebuah gambar.</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-4 mt-4">
+                        <div class="bg-yellow-50 p-4 rounded-2xl border-2 border-yellow-100">
+                            <p class="font-bold text-yellow-700 mb-2">🎨 Bahan-bahan Kolase:</p>
+                            <ul class="list-disc ml-5 space-y-1">
+                                <li>Potongan kertas warna-warni.</li>
+                                <li>Bahan alam (biji-bijian, daun kering).</li>
+                                <li>Kain perca atau kapas.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-2xl border-2 border-blue-100">
+                            <p class="font-bold text-blue-700 mb-2">📖 Kolase Bercerita:</p>
+                            <p>Kolase tidak hanya hiasan, tapi bisa <span class="font-bold text-blue-600">bercerita</span> melalui pilihan bentuk dan warna yang kita tempel.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-pink-100 p-4 rounded-xl border border-pink-200 font-bold text-center text-pink-800 mt-4 italic">
+                        "Dengan menempel potongan bahan yang berbeda, kita bisa menciptakan gambar baru yang indah!"
+                    </div>
                 </div>
             </section>
 
             <!-- English Corner -->
-            <section class="mb-10 p-6 bg-yellow-50 rounded-xl border border-yellow-200">
-                <div class="flex items-center gap-3 mb-4">
-                    <span class="text-xl">🇬🇧</span>
-                    <h3 class="text-sm font-bold text-yellow-900 uppercase tracking-wide">English Corner</h3>
+            <section class="mb-10 p-6 bg-slate-900 rounded-[2.5rem] border-4 border-orange-400 relative overflow-hidden shadow-2xl">
+                <!-- Warning Notice -->
+                <div class="absolute top-0 right-0 bg-red-600 text-white text-[10px] font-black px-6 py-2 rounded-bl-3xl warning-blink uppercase tracking-tighter">
+                    ⚠️ WAJIB DIHAFAL HARI INI! ⚠️
                 </div>
                 
-                <!-- Notice Keras Berkedip -->
-                <div class="notice-blink mb-6 text-sm uppercase tracking-tighter">
-                    ⚠️ HARUS DIHAFAL HARI INI JUGA! ⚠️
-                </div>
-
-                <div class="grid grid-cols-1 gap-4 text-center">
-                    <div class="bg-white p-6 rounded-lg border-2 border-yellow-400 shadow-sm">
-                        <p class="text-[10px] text-slate-400 uppercase italic mb-1">Hari Ini:</p>
-                        <p class="text-slate-800 font-medium text-sm mb-1">Rambut</p>
-                        <p class="text-pink-600 font-black text-3xl italic tracking-tight uppercase">HAIR</p>
+                <div class="text-center mb-8 mt-4">
+                    <h3 class="text-orange-400 font-bold text-xl mb-4 uppercase tracking-[0.2em]">English Corner</h3>
+                    <div class="bg-white inline-block px-12 py-6 rounded-3xl shadow-[0_10px_0_0_#cbd5e1] border-2 border-slate-200">
+                        <p class="text-[10px] text-slate-400 uppercase mb-1 font-bold">Kuda</p>
+                        <p class="text-5xl font-black text-slate-800 uppercase">HORSE</p>
+                        <p class="text-xs text-orange-500 font-bold mt-2 bg-orange-50 px-4 py-1 rounded-full border border-orange-100 italic">Cara Baca: /hɔːrs/</p>
                     </div>
                 </div>
 
-                <div class="mt-4 p-3 bg-white/50 rounded text-[10px] text-slate-500 italic text-center">
-                    Ingat juga pelajaran sebelumnya: Foot (Kaki) & Face (Wajah)
+                <div class="border-t border-slate-700 pt-6">
+                    <p class="text-slate-400 text-[10px] text-center mb-4 uppercase tracking-widest font-black">Memory Bank (Jangan Lupa!):</p>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <span class="bg-slate-800 text-yellow-400 px-4 py-2 rounded-xl text-xs font-bold border border-slate-700 shadow-md">Foot (Kaki)</span>
+                        <span class="bg-slate-800 text-yellow-400 px-4 py-2 rounded-xl text-xs font-bold border border-slate-700 shadow-md">Face (Wajah)</span>
+                        <span class="bg-slate-800 text-yellow-400 px-4 py-2 rounded-xl text-xs font-bold border border-slate-700 shadow-md">Hair (Rambut)</span>
+                        <span class="bg-slate-800 text-yellow-400 px-4 py-2 rounded-xl text-xs font-bold border border-slate-700 shadow-md">Cat (Kucing)</span>
+                        <span class="bg-slate-800 text-yellow-400 px-4 py-2 rounded-xl text-xs font-bold border border-slate-700 shadow-md">Dog (Anjing)</span>
+                        <span class="bg-slate-800 text-yellow-400 px-4 py-2 rounded-xl text-xs font-bold border border-slate-700 shadow-md">Cow (Sapi)</span>
+                        <span class="bg-slate-800 text-yellow-400 px-4 py-2 rounded-xl text-xs font-bold border border-slate-700 shadow-md">Goat (Kambing)</span>
+                        <span class="bg-slate-800 text-yellow-400 px-4 py-2 rounded-xl text-xs font-bold border border-slate-700 shadow-md">Bird (Burung)</span>
+                    </div>
                 </div>
             </section>
 
             <!-- Latihan Soal -->
-            <section class="space-y-10">
-                <h3 class="text-xs font-black text-slate-400 uppercase tracking-widest text-center">Evaluasi Seni Rupa (19 Soal)</h3>
+            <section class="space-y-12">
+                <div class="text-center space-y-2">
+                    <h3 class="text-xs font-black text-slate-400 uppercase tracking-[0.3em]">Lembar Evaluasi Seni</h3>
+                    <p class="text-xs font-bold text-orange-500 bg-orange-50 inline-block px-4 py-1 rounded-full">Total: 19 Soal Kreatif</p>
+                </div>
                 
-                <!-- Bagian I -->
+                <!-- I. Pilihan Ganda -->
                 <div class="space-y-6">
-                    <p class="text-xs font-bold text-slate-500 italic underline uppercase">I. Pilihan Ganda (10 Soal)</p>
-                    
-                    <div class="text-sm space-y-6">
-                        <p>1. Cara membuat karya kolase yang benar adalah dengan cara...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Menggambar</span><span>B. Menempel</span><span>C. Memahat</span></div>
+                    <p class="text-xs font-bold text-white uppercase bg-orange-500 inline-block px-4 py-2 rounded-lg shadow-md">I. Pilihan Ganda (10 Soal)</p>
+                    <div class="text-sm space-y-6 text-slate-700">
+                        <div class="space-y-3 p-4 hover:bg-orange-50/50 rounded-2xl transition-colors">
+                            <p class="font-bold">1. Kolase adalah karya seni rupa yang dibuat dengan teknik...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4 font-semibold">
+                                <span class="bg-white p-2 rounded-lg border border-slate-100">A. Mencetak</span>
+                                <span class="bg-white p-2 rounded-lg border border-slate-100">B. Menempel</span>
+                                <span class="bg-white p-2 rounded-lg border border-slate-100">C. Memahat</span>
+                            </div>
+                        </div>
 
-                        <p>2. Bahan utama untuk menempel potongan kertas pada kolase adalah...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Air</span><span>B. Gunting</span><span>C. Lem</span></div>
+                        <div class="space-y-3 p-4 hover:bg-orange-50/50 rounded-2xl transition-colors">
+                            <p class="font-bold">2. Bahan apa yang bisa digunakan untuk membuat kolase?</p>
+                            <div class="grid grid-cols-3 text-xs ml-4 font-semibold">
+                                <span class="bg-white p-2 rounded-lg border border-slate-100">A. Air</span>
+                                <span class="bg-white p-2 rounded-lg border border-slate-100">B. Api</span>
+                                <span class="bg-white p-2 rounded-lg border border-slate-100">C. Daun kering</span>
+                            </div>
+                        </div>
 
-                        <p>3. Contoh bahan alam yang bisa digunakan untuk membuat kolase adalah...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Plastik</span><span>B. Daun kering</span><span>C. Kertas lipat</span></div>
+                        <div class="space-y-3 p-4 hover:bg-orange-50/50 rounded-2xl transition-colors">
+                            <p class="font-bold">3. Agar kolase melekat dengan kuat pada kertas, kita menggunakan...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4 font-semibold">
+                                <span class="bg-white p-2 rounded-lg border border-slate-100">A. Lem</span>
+                                <span class="bg-white p-2 rounded-lg border border-slate-100">B. Air</span>
+                                <span class="bg-white p-2 rounded-lg border border-slate-100">C. Gunting</span>
+                            </div>
+                        </div>
 
-                        <p>4. Sebelum menempelkan bahan, kita sebaiknya membuat ... terlebih dahulu.</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Makanan</span><span>B. Sketsa (pola)</span><span>C. Lemah</span></div>
+                        <div class="space-y-3 p-4 hover:bg-orange-50/50 rounded-2xl transition-colors">
+                            <p class="font-bold">4. Kolase dapat bercerita melalui elemen visual berupa...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4 font-semibold">
+                                <span class="bg-white p-2 rounded-lg border border-slate-100">A. Suara</span>
+                                <span class="bg-white p-2 rounded-lg border border-slate-100">B. Bentuk & Warna</span>
+                                <span class="bg-white p-2 rounded-lg border border-slate-100">C. Gerakan</span>
+                            </div>
+                        </div>
 
-                        <p>5. Alat yang digunakan untuk memotong kertas menjadi bagian kecil adalah...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Penggaris</span><span>B. Gunting</span><span>C. Pensil</span></div>
+                        <div class="space-y-3 p-4 hover:bg-orange-50/50 rounded-2xl transition-colors">
+                            <p class="font-bold">5. Menggabungkan potongan bahan yang berbeda disebut teknik...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4 font-semibold">
+                                <span class="bg-white p-2 rounded-lg border border-slate-100">A. Kolase</span>
+                                <span class="bg-white p-2 rounded-lg border border-slate-100">B. Patung</span>
+                                <span class="bg-white p-2 rounded-lg border border-slate-100">C. Musik</span>
+                            </div>
+                        </div>
 
-                        <p>6. Kolase termasuk karya seni berapa dimensi?</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. 1 Dimensi</span><span>B. 2 Dimensi</span><span>C. 3 Dimensi</span></div>
+                        <div class="space-y-3 p-4 hover:bg-orange-50/50 rounded-2xl transition-colors">
+                            <p class="font-bold">6. Salah satu contoh bahan alam untuk kolase adalah...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4 font-semibold">
+                                <span class="bg-white p-2 rounded-lg border border-slate-100">A. Plastik</span>
+                                <span class="bg-white p-2 rounded-lg border border-slate-100">B. Biji-bijian</span>
+                                <span class="bg-white p-2 rounded-lg border border-slate-100">C. Besi</span>
+                            </div>
+                        </div>
 
-                        <p>7. Bahan buatan manusia yang sering digunakan kolase adalah...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Biji jagung</span><span>B. Ranting</span><span>C. Kertas warna</span></div>
+                        <div class="space-y-3 p-4 hover:bg-orange-50/50 rounded-2xl transition-colors">
+                            <p class="font-bold">7. Cerita dalam kolase dapat kita sampaikan melalui gambar...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4 font-semibold">
+                                <span class="bg-white p-2 rounded-lg border border-slate-100">A. Sederhana</span>
+                                <span class="bg-white p-2 rounded-lg border border-slate-100">B. Gelap</span>
+                                <span class="bg-white p-2 rounded-lg border border-slate-100">C. Tanpa warna</span>
+                            </div>
+                        </div>
 
-                        <p>8. Mengapa kolase disebut "bercerita"?</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Karena bisa bicara</span><span>B. Karena ada gambarnya</span><span>C. Karena menceritakan suatu kisah</span></div>
+                        <div class="space-y-3 p-4 hover:bg-orange-50/50 rounded-2xl transition-colors">
+                            <p class="font-bold">8. Potongan kertas yang digunakan untuk kolase sebaiknya memiliki warna yang...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4 font-semibold">
+                                <span class="bg-white p-2 rounded-lg border border-slate-100">A. Sama semua</span>
+                                <span class="bg-white p-2 rounded-lg border border-slate-100">B. Berbeda-beda</span>
+                                <span class="bg-white p-2 rounded-lg border border-slate-100">C. Hitam putih</span>
+                            </div>
+                        </div>
 
-                        <p class="text-pink-600 font-bold italic border-t pt-4">9. In English, "Rambut" is called...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4 text-pink-700 font-bold"><span>A. Hair</span><span>B. Hand</span><span>C. Head</span></div>
+                        <div class="space-y-3 p-4 pt-6 border-t border-dashed border-orange-200">
+                            <p class="text-orange-600 font-bold italic">9. Bahasa Inggris dari "Kuda" adalah...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4 font-semibold">
+                                <span class="bg-white p-2 rounded-lg border border-orange-100">A. Cat</span>
+                                <span class="bg-white p-2 rounded-lg border border-orange-100">B. Horse</span>
+                                <span class="bg-white p-2 rounded-lg border border-orange-100">C. Dog</span>
+                            </div>
+                        </div>
 
-                        <p class="text-pink-600 font-bold italic">10. "Hair" is located on our...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4 text-pink-700 font-bold"><span>A. Foot</span><span>B. Head (Kepala)</span><span>C. Hand</span></div>
+                        <div class="space-y-3 p-4">
+                            <p class="text-orange-600 font-bold italic">10. "Cow" dalam bahasa Indonesia artinya adalah...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4 font-semibold">
+                                <span class="bg-white p-2 rounded-lg border border-orange-100">A. Sapi</span>
+                                <span class="bg-white p-2 rounded-lg border border-orange-100">B. Burung</span>
+                                <span class="bg-white p-2 rounded-lg border border-orange-100">C. Kucing</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Bagian II -->
-                <div class="mt-12 space-y-6 p-6 border-2 border-dotted border-pink-200 rounded-xl bg-pink-50/20">
-                    <p class="text-xs font-bold text-slate-500 italic underline uppercase">II. Isian Singkat (9 Soal)</p>
+                <!-- II. Isian Singkat -->
+                <div class="mt-12">
+                    <p class="text-xs font-bold text-white uppercase bg-pink-500 inline-block px-4 py-2 rounded-lg shadow-md mb-8">II. Isian Singkat (9 Soal)</p>
                     
-                    <div class="text-sm space-y-6">
-                        <p>11. Karya seni menempel disebut .........................</p>
-                        <p>12. Supaya kertas tidak lepas, kita menggunakan .........................</p>
-                        <p>13. Biji kacang hijau termasuk bahan ......................... (alam/buatan)</p>
-                        <p>14. Kita memotong kertas menggunakan .........................</p>
-                        <p>15. Dasar tempat menempel kolase biasanya menggunakan kertas .........................</p>
-                        <p>16. Menempel harus dilakukan dengan ......................... agar hasilnya rapi.</p>
-                        <p>17. Contoh bahan dari kain sisa disebut kain .........................</p>
-
-                        <div class="pt-4 border-t border-yellow-200">
-                            <p class="text-pink-600 font-bold italic text-xs uppercase">English Writing</p>
-                            <p>18. Salin kata <span class="font-bold">"Hair"</span> sebanyak 3 kali!</p>
-                            <div class="mt-2 border-b border-dotted border-slate-300 h-6"></div>
-
-                            <p class="mt-4">19. Apa bahasa Indonesia dari <span class="font-bold">"Hair"</span>?</p>
-                            <div class="mt-2 border-b border-dotted border-slate-300 h-6"></div>
-                        </div>
+                    <div class="space-y-6 text-sm p-8 border-4 border-dashed border-orange-100 rounded-[2.5rem] bg-orange-50/30 text-slate-700">
+                        <p class="flex items-center gap-2">11. Kolase dibuat dengan cara <span class="flex-grow border-b-2 border-orange-200 ml-2"></span></p>
+                        <p class="flex items-center gap-2">12. Bahan buatan yang sering dipakai untuk kolase adalah potongan <span class="flex-grow border-b-2 border-orange-200 ml-2"></span></p>
+                        <p class="flex items-center gap-2">13. Selain kertas, kita bisa menempelkan bahan alam seperti biji dan <span class="flex-grow border-b-2 border-orange-200 ml-2"></span></p>
+                        <p class="flex items-center gap-2">14. Kolase dapat digunakan untuk menyampaikan <span class="flex-grow border-b-2 border-orange-200 ml-2"></span> sederhana.</p>
+                        <p class="flex items-center gap-2">15. Elemen visual kolase adalah bentuk dan <span class="flex-grow border-b-2 border-orange-200 ml-2"></span></p>
+                        <p class="flex items-center gap-2">16. Kita menempel potongan bahan pada permukaan sebuah <span class="flex-grow border-b-2 border-orange-200 ml-2"></span></p>
+                        <p class="flex items-center gap-2">17. Kapas adalah contoh bahan kolase yang berwarna <span class="flex-grow border-b-2 border-orange-200 ml-2"></span></p>
+                        <p class="flex items-center gap-2">18. Teknik menempel dilakukan supaya gambar menjadi lebih <span class="flex-grow border-b-2 border-orange-200 ml-2"></span></p>
+                        <p class="flex items-center gap-2">19. Kolase menggabungkan potongan bahan yang <span class="flex-grow border-b-2 border-orange-200 ml-2"></span></p>
                     </div>
                 </div>
             </section>
 
-            <!-- Penghitung Nilai -->
-            <section class="mt-16 p-8 bg-slate-800 rounded-2xl text-white border-4 border-pink-500 shadow-2xl">
-                <div class="text-center mb-6">
-                    <h3 class="text-lg font-bold uppercase tracking-widest text-pink-300">Skor Seni Kayla</h3>
+            <!-- Kalkulator -->
+            <section class="mt-16 p-8 bg-slate-900 rounded-[3rem] text-white shadow-2xl border-4 border-orange-500 relative">
+                <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-yellow-400 text-slate-900 px-8 py-2 rounded-full font-black uppercase text-sm shadow-xl">
+                    Kalkulator Nilai Seni
                 </div>
-                
-                <div class="flex flex-col items-center space-y-4">
-                    <input type="number" id="inputBenar" min="0" max="19" placeholder="Jumlah Benar" 
-                           class="w-full max-w-[200px] p-4 rounded-lg bg-slate-700 text-center text-3xl font-black text-white focus:outline-none focus:ring-2 focus:ring-pink-400">
+                <div class="text-center mb-8 pt-4">
+                    <p class="text-xs text-slate-400 uppercase font-bold tracking-widest">Masukkan jumlah soal yang dijawab benar oleh Kayla</p>
+                </div>
+                <div class="flex flex-col items-center space-y-6">
+                    <div class="relative group">
+                        <input type="number" id="inputBenar" min="0" max="19" placeholder="0" 
+                               class="w-full max-w-[200px] p-4 rounded-3xl bg-slate-800 text-center text-4xl font-black border-4 border-slate-700 focus:border-orange-500 outline-none text-orange-400 transition-all">
+                        <div class="absolute -right-12 top-1/2 -translate-y-1/2 text-slate-600 font-bold">/ 19</div>
+                    </div>
+                    <button onclick="hitungNilai()" class="bg-gradient-to-r from-orange-400 to-pink-500 hover:scale-105 active:scale-95 text-white px-12 py-4 rounded-full font-black uppercase tracking-widest transition-all shadow-xl">Lihat Hasil</button>
                     
-                    <button onclick="hitungNilai()" 
-                            class="px-10 py-3 bg-pink-600 hover:bg-pink-500 rounded-full font-bold uppercase tracking-widest transition-all">
-                        CEK HASIL
-                    </button>
-
-                    <div id="hasilNilai" class="mt-8 text-center hidden">
-                        <h4 id="skorAngka" class="text-7xl font-black text-yellow-400">0</h4>
-                        <p id="pesanNilai" class="mt-4 text-sm font-semibold text-pink-200"></p>
+                    <div id="hasil" class="hidden text-center mt-6 animate-bounce-slow">
+                        <div id="skor" class="text-8xl font-black text-transparent bg-clip-text bg-gradient-to-b from-yellow-300 to-orange-500">0</div>
+                        <p id="pesan" class="text-lg mt-4 text-white font-black uppercase tracking-tighter px-6 py-2 bg-white/10 rounded-full"></p>
                     </div>
                 </div>
             </section>
         </main>
-
-        <footer class="bg-slate-100 p-6 text-center border-t border-slate-200">
-            <p class="text-[9px] text-slate-400 font-medium tracking-[0.4em] uppercase">SENI RUPA KELAS 2 SD • Kayla Zahra Safitri • 2026</p>
+        
+        <footer class="bg-slate-50 p-6 text-center border-t text-[10px] text-slate-400 uppercase font-black tracking-[0.4em]">
+            Kayla Zahra Safitri • Seni Rupa Sesi 7 • 10 Februari 2026
         </footer>
     </div>
 
     <script>
         function hitungNilai() {
-            const benar = parseInt(document.getElementById('inputBenar').value);
-            const total = 19;
-            const container = document.getElementById('hasilNilai');
-            const skor = document.getElementById('skorAngka');
-            const pesan = document.getElementById('pesanNilai');
-
-            if (isNaN(benar) || benar < 0 || benar > total) {
-                alert("Masukkan jumlah benar 0 sampai 19 ya!");
-                return;
+            const b = parseInt(document.getElementById('inputBenar').value);
+            if(isNaN(b) || b < 0 || b > 19) return;
+            const n = Math.round((b/19)*100);
+            const hasilDiv = document.getElementById('hasil');
+            hasilDiv.classList.remove('hidden');
+            document.getElementById('skor').innerText = n;
+            
+            const pesan = document.getElementById('pesan');
+            if(n >= 90) {
+                pesan.innerText = "🌟 Seniman Cilik Hebat!";
+                pesan.className = "text-lg mt-4 text-yellow-400 font-black uppercase tracking-tighter px-6 py-2 bg-yellow-400/10 rounded-full";
+            } else if(n >= 75) {
+                pesan.innerText = "🎨 Keren Sekali, Kayla!";
+                pesan.className = "text-lg mt-4 text-blue-400 font-black uppercase tracking-tighter px-6 py-2 bg-blue-400/10 rounded-full";
+            } else {
+                pesan.innerText = "🖌️ Semangat Belajar Lagi!";
+                pesan.className = "text-lg mt-4 text-orange-400 font-black uppercase tracking-tighter px-6 py-2 bg-orange-400/10 rounded-full";
             }
-
-            const nilai = Math.round((benar / total) * 100);
-            container.classList.remove('hidden');
-            skor.innerText = nilai;
-
-            if (nilai >= 90) pesan.innerText = "Kreatif sekali! Kayla seniman cilik hebat! 🎨✨";
-            else if (nilai >= 75) pesan.innerText = "Bagus! Kayla sudah paham cara membuat kolase! 🖌️";
-            else pesan.innerText = "Terus belajar ya, menempel itu menyenangkan! ✂️";
         }
     </script>
 </body>
