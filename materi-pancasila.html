@@ -3,63 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pendidikan Pancasila Bab 3 - Keberagaman Agama</title>
+    <title>Pend. Pancasila Bab 3 - Aku dan Teman-Temanku - Kayla</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; }
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap');
+        
+        body { font-family: 'Fredoka', sans-serif; }
+        
+        @keyframes blink { 
+            0% { opacity: 1; transform: scale(1); } 
+            50% { opacity: 0.5; transform: scale(1.05); color: #ef4444; } 
+            100% { opacity: 1; transform: scale(1); } 
+        }
+        .warning-blink { animation: blink 1s infinite; }
+        
+        .pattern-bg {
+            background-color: #f0fdf4;
+            background-image:  radial-gradient(#bbf7d0 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+        }
+
+        .friend-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(4px);
+            border: 2px solid #86efac;
+        }
     </style>
 </head>
-<body class="bg-slate-50 p-4 md:p-10">
-    <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-xl overflow-hidden border border-slate-200">
+<body class="pattern-bg p-4 md:p-10">
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-[3rem] overflow-hidden border-4 border-blue-100">
+        
         <!-- Header -->
-        <header class="bg-gradient-to-r from-red-50 to-orange-50 p-8 text-center border-b-2 border-red-500">
-            <h1 class="text-xs font-bold text-slate-500 tracking-[0.3em] uppercase mb-2">Kurikulum Merdeka Indonesia</h1>
-            <h2 class="text-2xl font-light text-slate-800 tracking-tight">PENDIDIKAN PANCASILA <span class="font-bold text-red-600">| BAB 3</span></h2>
-            <div class="mt-4 flex justify-center gap-4 text-[10px] text-slate-500 uppercase font-medium">
-                <span class="bg-white px-3 py-1 rounded-full shadow-sm">Selasa, 27 Januari 2026</span>
-                <span class="bg-white px-3 py-1 rounded-full shadow-sm">Sesi 1</span>
-                <span class="bg-white px-3 py-1 rounded-full shadow-sm">Simbol Keberagaman Agama</span>
+        <header class="bg-gradient-to-r from-blue-500 to-indigo-500 p-10 text-center text-white border-b-8 border-yellow-300">
+            <div class="inline-block bg-yellow-400 text-blue-900 font-bold px-8 py-2 rounded-full text-xl mb-4 shadow-lg transform rotate-1 uppercase tracking-wider">
+                SELASA, 10 FEBRUARI 2026
+            </div>
+            <h1 class="text-xs font-bold tracking-[0.4em] uppercase mb-1 opacity-90">Pendidikan Pancasila</h1>
+            <h2 class="text-4xl font-extrabold tracking-tight">BAB 3 <span class="text-yellow-200">| AKU DAN TEMAN-TEMANKU</span></h2>
+            <div class="mt-4 flex justify-center gap-3 text-[10px] uppercase font-bold text-white">
+                <span class="bg-white/20 backdrop-blur-md px-3 py-1 rounded shadow-sm">Sesi 1</span>
+                <span class="bg-white/20 backdrop-blur-md px-3 py-1 rounded shadow-sm">Kelas 2 SD</span>
+                <span class="bg-white/20 backdrop-blur-md px-3 py-1 rounded shadow-sm">Tahap 1 dari 8</span>
             </div>
         </header>
 
-        <!-- Identitas Siswa -->
-        <div class="px-8 py-4 bg-slate-50/50 flex justify-between items-center border-b text-[11px] text-slate-600 italic">
-            <div>Nama: <span class="font-bold text-slate-800 uppercase">Kayla Zahra Safitri</span></div>
-            <div>Materi: <span class="font-bold text-slate-800">Aku dan Teman-temanku</span></div>
+        <!-- Identitas -->
+        <div class="px-8 py-4 bg-blue-50 flex justify-between items-center border-b text-[11px] text-blue-800 italic">
+            <div>Nama Siswa: <span class="font-bold uppercase text-black">Kayla Zahra Safitri</span></div>
+            <div>Fokus: <span class="font-bold text-black text-xs">Konsep Persahabatan & Hobi Pribadi</span></div>
         </div>
 
         <main class="p-8">
-            <!-- Materi Ringkas -->
+            <!-- Materi -->
             <section class="mb-10">
-                <h3 class="text-sm font-bold text-red-800 mb-4 border-l-4 border-red-500 pl-3 uppercase">Materi: Berbeda Itu Indah</h3>
-                <div class="p-6 bg-red-50/50 rounded-lg border border-red-100 text-xs leading-relaxed text-slate-700 space-y-4">
-                    <p>Kayla, di Indonesia ada <span class="font-bold text-red-600">6 Agama</span> yang diakui. Teman-teman kita mungkin punya cara ibadah yang berbeda. Yuk kita kenali tempat ibadahnya:</p>
-                    <ul class="grid grid-cols-2 gap-2 font-medium">
-                        <li class="bg-white p-2 rounded shadow-sm">🕌 <span class="text-red-700">Islam:</span> Masjid</li>
-                        <li class="bg-white p-2 rounded shadow-sm">⛪ <span class="text-red-700">Kristen:</span> Gereja</li>
-                        <li class="bg-white p-2 rounded shadow-sm">⛪ <span class="text-red-700">Katolik:</span> Gereja</li>
-                        <li class="bg-white p-2 rounded shadow-sm">🕉️ <span class="text-red-700">Hindu:</span> Pura</li>
-                        <li class="bg-white p-2 rounded shadow-sm">☸️ <span class="text-red-700">Buddha:</span> Vihara</li>
-                        <li class="bg-white p-2 rounded shadow-sm">⛩️ <span class="text-red-700">Khonghucu:</span> Klenteng</li>
+                <h3 class="text-lg font-bold text-blue-800 mb-4 border-l-4 border-blue-500 pl-3 uppercase">Mari Memahami: Arti Sahabat</h3>
+                <div class="p-6 friend-card rounded-3xl text-sm leading-relaxed text-slate-700 space-y-4 shadow-sm">
+                    <p class="font-medium">Halo Kayla! Di sekolah dan di rumah, kita pasti punya teman. Teman yang sangat dekat dengan kita disebut <span class="font-bold text-blue-600 underline">Sahabat</span>.</p>
+                    <ul class="list-disc ml-5 space-y-3">
+                        <li>Hubungan dengan teman harus dijaga dengan <span class="font-bold text-pink-500">Rukun dan Damai</span>.</li>
+                        <li>Dalam persahabatan, kita harus saling <span class="font-bold text-indigo-600">Menyayangi dan Menghargai</span>.</li>
+                        <li>Kegiatan <span class="font-bold text-blue-600">Mari Mengamati</span> mengajarkan kita untuk melihat bahwa setiap teman itu unik dan berbeda-beda.</li>
                     </ul>
-                    <p>Walaupun berbeda agama, kita harus tetap <span class="font-bold">Rukun</span> dan saling <span class="font-bold">Menghormati</span>. Semboyan negara kita adalah <span class="italic font-bold text-red-600">Bhinneka Tunggal Ika</span>, artinya berbeda-beda tetapi tetap satu jua.</p>
+                </div>
+            </section>
+
+            <section class="mb-10">
+                <h3 class="text-lg font-bold text-orange-600 mb-4 border-l-4 border-orange-500 pl-3 uppercase">Subbagian A: Mengenal Hobi</h3>
+                <div class="p-6 bg-orange-50 rounded-3xl border-2 border-orange-100 text-sm leading-relaxed text-slate-700 shadow-sm">
+                    <p>Setiap anak memiliki kegemaran atau sesuatu yang sangat suka dilakukan. Hal itu disebut dengan <span class="font-bold text-orange-600">Hobi</span>.</p>
+                    <div class="grid grid-cols-2 gap-4 mt-4">
+                        <div class="bg-white p-3 rounded-2xl text-center border border-orange-200">
+                            <span class="block text-2xl">⚽</span>
+                            <span class="font-bold text-xs uppercase text-slate-500">Sepak Bola</span>
+                        </div>
+                        <div class="bg-white p-3 rounded-2xl text-center border border-orange-200">
+                            <span class="block text-2xl">🎨</span>
+                            <span class="font-bold text-xs uppercase text-slate-500">Menggambar</span>
+                        </div>
+                    </div>
+                    <p class="mt-4 italic text-center text-xs text-orange-800 bg-orange-200/50 py-2 rounded-lg">Mengetahui hobi diri sendiri adalah awal untuk mengenal siapa kita.</p>
                 </div>
             </section>
 
             <!-- English Corner -->
-            <section class="mb-10 p-6 bg-indigo-50 rounded-xl border border-indigo-100">
-                <div class="flex items-center gap-3 mb-4">
-                    <span class="text-xl">🇬🇧</span>
-                    <h3 class="text-sm font-bold text-indigo-900 uppercase tracking-wide">English Corner: My Body</h3>
+            <section class="mb-10 p-6 bg-indigo-900 rounded-[2.5rem] border-4 border-yellow-400 relative overflow-hidden shadow-xl">
+                <div class="absolute top-0 right-0 bg-yellow-400 text-black text-[10px] font-black px-4 py-1 rounded-bl-xl warning-blink uppercase tracking-tighter">
+                    WAJIB DIHAFAL HARI INI!
                 </div>
-                <div class="grid grid-cols-2 gap-4 text-center">
-                    <div class="bg-white p-3 rounded-lg border border-indigo-200">
-                        <p class="text-[10px] text-slate-400 uppercase italic">Kepala</p>
-                        <p class="text-indigo-600 font-black text-lg italic tracking-tight">Head</p>
+                
+                <div class="text-center mb-6">
+                    <h3 class="text-indigo-300 font-bold text-lg mb-2 uppercase tracking-widest">English Corner</h3>
+                    <div class="bg-white inline-block px-12 py-5 rounded-3xl shadow-lg border-b-4 border-indigo-200">
+                        <p class="text-[10px] text-slate-400 uppercase mb-1">Kuda</p>
+                        <p class="text-4xl font-black text-indigo-800 uppercase">HORSE</p>
+                        <p class="text-xs text-blue-600 font-bold mt-1">Cara Baca: /hɔːrs/</p>
                     </div>
-                    <div class="bg-white p-3 rounded-lg border border-indigo-200">
-                        <p class="text-[10px] text-slate-400 uppercase italic">Mata</p>
-                        <p class="text-indigo-600 font-black text-lg italic tracking-tight">Eye</p>
+                </div>
+
+                <div class="border-t border-indigo-700/50 pt-4">
+                    <p class="text-indigo-300 text-[10px] text-center mb-3 uppercase tracking-wider font-bold">Harus Tetap Dihafal (Materi Sebelumnya):</p>
+                    <div class="flex flex-wrap justify-center gap-2">
+                        <span class="bg-white/10 text-white px-3 py-1 rounded-lg text-[11px] font-bold border border-white/20">Foot</span>
+                        <span class="bg-white/10 text-white px-3 py-1 rounded-lg text-[11px] font-bold border border-white/20">Face</span>
+                        <span class="bg-white/10 text-white px-3 py-1 rounded-lg text-[11px] font-bold border border-white/20">Hair</span>
+                        <span class="bg-white/10 text-white px-3 py-1 rounded-lg text-[11px] font-bold border border-white/20">Cat</span>
+                        <span class="bg-white/10 text-white px-3 py-1 rounded-lg text-[11px] font-bold border border-white/20">Dog</span>
+                        <span class="bg-white/10 text-white px-3 py-1 rounded-lg text-[11px] font-bold border border-white/20">Cow</span>
+                        <span class="bg-white/10 text-white px-3 py-1 rounded-lg text-[11px] font-bold border border-white/20">Goat</span>
+                        <span class="bg-white/10 text-white px-3 py-1 rounded-lg text-[11px] font-bold border border-white/20">Bird</span>
                     </div>
                 </div>
             </section>
@@ -68,117 +119,115 @@
             <section class="space-y-10">
                 <h3 class="text-xs font-black text-slate-400 uppercase tracking-widest text-center">Lembar Evaluasi (19 Soal)</h3>
                 
-                <!-- Bagian I -->
+                <!-- I. Pilihan Ganda -->
                 <div class="space-y-6">
-                    <p class="text-xs font-bold text-slate-500 italic underline uppercase">I. Pilihan Ganda (10 Soal)</p>
-                    
+                    <p class="text-xs font-bold text-blue-700 italic underline uppercase bg-blue-50 inline-block px-2 py-1 rounded">I. Pilihan Ganda (10 Soal)</p>
                     <div class="text-sm space-y-6">
-                        <p>1. Ada berapa agama yang diakui secara resmi di Indonesia?</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. 4 Agama</span><span>B. 5 Agama</span><span>C. 6 Agama</span></div>
+                        <div class="space-y-2">
+                            <p>1. Teman yang sangat dekat dengan kita disebut...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Lawan</span><span>B. Sahabat</span><span>C. Musuh</span></div>
+                        </div>
 
-                        <p>2. Umat Islam beribadah di...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Vihara</span><span>B. Masjid</span><span>C. Gereja</span></div>
+                        <div class="space-y-2">
+                            <p>2. Hubungan dengan teman harus dijaga agar tetap...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Rukun</span><span>B. Berantem</span><span>C. Marah</span></div>
+                        </div>
 
-                        <p>3. Nama tempat ibadah untuk umat Hindu adalah...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Pura</span><span>B. Klenteng</span><span>C. Gereja</span></div>
+                        <div class="space-y-2">
+                            <p>3. Sesuatu yang sangat suka dilakukan disebut...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Pekerjaan</span><span>B. Hobi</span><span>C. Nama</span></div>
+                        </div>
 
-                        <p>4. Jika teman sedang beribadah, sikap kita sebaiknya...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Mengganggu</span><span>B. Menghormati</span><span>C. Mengajak bermain</span></div>
+                        <div class="space-y-2">
+                            <p>4. Dalam persahabatan, kita harus saling...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Membenci</span><span>B. Menyayangi</span><span>C. Menjauhi</span></div>
+                        </div>
 
-                        <p>5. Semboyan bangsa Indonesia adalah Bhinneka Tunggal Ika, yang artinya...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Berbeda-beda tetap satu</span><span>B. Bersama selamanya</span><span>C. Bermain bersama</span></div>
+                        <div class="space-y-2">
+                            <p>5. Setiap teman itu unik dan...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Sama semua</span><span>B. Berbeda-beda</span><span>C. Kembar</span></div>
+                        </div>
 
-                        <p>6. Vihara adalah tempat ibadah untuk umat...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Buddha</span><span>B. Islam</span><span>C. Kristen</span></div>
+                        <div class="space-y-2">
+                            <p>6. Kegiatan melihat keadaan sekitar teman disebut Mari...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Mengamati</span><span>B. Berlari</span><span>C. Tidur</span></div>
+                        </div>
 
-                        <p>7. Klenteng adalah sebutan tempat ibadah umat...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Hindu</span><span>B. Khonghucu</span><span>C. Katolik</span></div>
+                        <div class="space-y-2">
+                            <p>7. Mengetahui hobi adalah awal untuk mengenal...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Orang lain</span><span>B. Diri sendiri</span><span>C. Guru</span></div>
+                        </div>
 
-                        <p>8. Dengan teman yang berbeda agama, kita harus tetap...</p>
-                        <div class="grid grid-cols-3 text-xs ml-4"><span>A. Rukun</span><span>B. Bermusuhan</span><span>C. Menjauh</span></div>
+                        <div class="space-y-2">
+                            <p>8. Contoh hobi adalah...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Menggambar</span><span>B. Menangis</span><span>C. Marah</span></div>
+                        </div>
 
-                        <p class="text-indigo-600 font-bold italic border-t pt-4">9. In English, what is "Kepala"?</p>
-                        <div class="grid grid-cols-3 text-xs ml-4 text-indigo-700 font-bold"><span>A. Eye</span><span>B. Head</span><span>C. Foot</span></div>
+                        <div class="space-y-2 pt-4 border-t border-dashed">
+                            <p class="text-indigo-700 font-bold italic">9. Bahasa Inggris dari "Kuda" adalah...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Bird</span><span>B. Cow</span><span>C. Horse</span></div>
+                        </div>
 
-                        <p class="text-indigo-600 font-bold italic">10. Kayla has two "Eyes". What is "Eye" in Indonesian?</p>
-                        <div class="grid grid-cols-3 text-xs ml-4 text-indigo-700 font-bold"><span>A. Hidung</span><span>B. Telinga</span><span>C. Mata</span></div>
+                        <div class="space-y-2">
+                            <p class="text-indigo-700 font-bold italic">10. "Goat" artinya adalah...</p>
+                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Kuda</span><span>B. Kambing</span><span>C. Sapi</span></div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Bagian II -->
-                <div class="mt-12 space-y-6 p-6 border-2 border-dotted border-red-200 rounded-xl bg-red-50/20">
-                    <p class="text-xs font-bold text-slate-500 italic underline uppercase">II. Isian Singkat (9 Soal)</p>
+                <!-- II. Isian Singkat -->
+                <div class="mt-12">
+                    <p class="text-xs font-bold text-blue-700 italic underline uppercase bg-blue-50 inline-block px-2 py-1 rounded mb-6">II. Uraian Singkat (9 Soal)</p>
                     
-                    <div class="text-sm space-y-6">
-                        <p>11. Gereja adalah tempat ibadah umat Kristen dan .........................</p>
-                        <p>12. Kita tidak boleh membeda-bedakan teman berdasarkan .........................</p>
-                        <p>13. Bhinneka Tunggal Ika mengajarkan kita untuk menjaga .........................</p>
-                        <p>14. Saling menghormati antar umat beragama disebut sikap .........................</p>
-                        <p>15. Saat teman merayakan hari raya agamanya, kita sebaiknya mengucapkan .........................</p>
-                        <p>16. Agama Islam, Kristen, Katolik, Hindu, Buddha, dan Khonghucu adalah keberagaman di .........................</p>
-                        <p>17. Bermain dengan siapa saja tanpa pilih-pilih akan menciptakan rasa .........................</p>
-
-                        <div class="pt-4 border-t border-indigo-100">
-                            <p class="text-indigo-600 font-bold italic">English Writing</p>
-                            <p>18. Salin kata <span class="font-bold">"Head"</span> dengan rapi!</p>
-                            <div class="mt-2 border-b border-dotted border-slate-300 h-6"></div>
-
-                            <p class="mt-4">19. Apa bahasa Inggris dari <span class="font-bold">"Mata"</span>?</p>
-                            <div class="mt-2 border-b border-dotted border-slate-300 h-6"></div>
-                        </div>
+                    <div class="space-y-6 text-sm p-8 border-4 border-blue-100 rounded-[2rem] bg-blue-50/30">
+                        <p>11. Teman yang dekat disebut juga sebagai ......................................................</p>
+                        <p>12. Kita harus menjaga hubungan yang rukun dan ......................................................</p>
+                        <p>13. Selain menyayangi, kita juga harus saling ...................................................... teman.</p>
+                        <p>14. Kegemaran yang sering kita lakukan disebut ......................................................</p>
+                        <p>15. Sepak bola dan menggambar adalah contoh dari ......................................................</p>
+                        <p>16. Setiap teman memiliki sifat yang ...................................................... (tidak sama).</p>
+                        <p>17. Kegiatan mengamati teman membantu kita memahami konsep ......................................................</p>
+                        <p>18. Kita harus tetap rukun meskipun memiliki hobi yang ......................................................</p>
+                        <p>19. Mengetahui hobi pribadi membantu kita mengenal ............................................. sendiri.</p>
                     </div>
                 </div>
             </section>
 
-            <!-- Penghitung Nilai -->
-            <section class="mt-16 p-8 bg-slate-800 rounded-2xl text-white shadow-2xl border-4 border-red-500">
+            <!-- Kalkulator -->
+            <section class="mt-16 p-8 bg-blue-900 rounded-[3rem] text-white shadow-2xl border-4 border-blue-400">
                 <div class="text-center mb-6">
-                    <h3 class="text-lg font-bold uppercase tracking-widest text-red-300">Skor Pendidikan Pancasila</h3>
+                    <h3 class="text-lg font-bold uppercase tracking-widest text-yellow-400">Nilai Kayla</h3>
+                    <p class="text-[10px] text-blue-200 opacity-60">Masukkan jumlah jawaban benar (0-19)</p>
                 </div>
-                
                 <div class="flex flex-col items-center space-y-4">
-                    <input type="number" id="inputBenar" min="0" max="19" placeholder="Jawab Benar" 
-                           class="w-full max-w-[200px] p-4 rounded-lg bg-slate-700 border border-slate-600 text-center text-3xl font-black text-white focus:outline-none focus:ring-2 focus:ring-red-400">
-                    
-                    <button onclick="hitungNilai()" 
-                            class="px-10 py-3 bg-red-600 hover:bg-red-500 rounded-full font-bold uppercase tracking-widest transition-all active:scale-95">
-                        Lihat Nilai
-                    </button>
-
-                    <div id="hasilNilai" class="mt-8 text-center hidden">
-                        <p class="text-[10px] text-slate-400 uppercase tracking-widest mb-2">Nilai Kayla:</p>
-                        <h4 id="skorAngka" class="text-7xl font-black text-yellow-400">0</h4>
-                        <p id="pesanNilai" class="mt-4 text-sm font-semibold text-red-200"></p>
+                    <input type="number" id="inputBenar" min="0" max="19" placeholder="0" 
+                           class="w-full max-w-[150px] p-3 rounded-2xl bg-blue-800 text-center text-2xl font-bold border border-blue-700 focus:border-yellow-400 outline-none text-yellow-300">
+                    <button onclick="hitungNilai()" class="bg-yellow-400 hover:bg-yellow-300 text-blue-900 px-8 py-2 rounded-full font-bold uppercase tracking-wider transition-all shadow-lg active:scale-95">Hitung Skor</button>
+                    <div id="hasil" class="hidden text-center mt-4">
+                        <div id="skor" class="text-6xl font-black text-white">0</div>
+                        <p id="pesan" class="text-xs mt-2 text-yellow-200 font-bold uppercase"></p>
                     </div>
                 </div>
             </section>
         </main>
-
-        <footer class="bg-slate-100 p-6 text-center border-t border-slate-200">
-            <p class="text-[9px] text-slate-400 font-medium tracking-[0.4em] uppercase">Pancasila Kelas 2 SD • Kayla Zahra Safitri • 2026</p>
+        
+        <footer class="bg-slate-100 p-6 text-center border-t text-[10px] text-slate-400 uppercase font-black tracking-widest">
+            Kayla Zahra Safitri • 10 Februari 2026 • Pend. Pancasila Kelas 2
         </footer>
     </div>
 
     <script>
         function hitungNilai() {
-            const benar = parseInt(document.getElementById('inputBenar').value);
-            const total = 19;
-            const container = document.getElementById('hasilNilai');
-            const skor = document.getElementById('skorAngka');
-            const pesan = document.getElementById('pesanNilai');
-
-            if (isNaN(benar) || benar < 0 || benar > total) {
-                alert("Masukkan jumlah benar (0-19) ya!");
-                return;
-            }
-
-            const nilai = Math.round((benar / total) * 100);
-            container.classList.remove('hidden');
-            skor.innerText = nilai;
-
-            if (nilai >= 90) pesan.innerText = "HEBAT! Kayla anak Indonesia yang toleran! 🇮🇩✨";
-            else if (nilai >= 75) pesan.innerText = "BAGUS! Kayla mengerti pentingnya rukun! 🤝";
-            else pesan.innerText = "SEMANGAT! Yuk, sayangi semua teman tanpa pilih-pilih! ❤️";
+            const b = parseInt(document.getElementById('inputBenar').value);
+            if(isNaN(b) || b < 0 || b > 19) return;
+            const n = Math.round((b/19)*100);
+            document.getElementById('hasil').classList.remove('hidden');
+            document.getElementById('skor').innerText = n;
+            let msg = "";
+            if(n >= 90) msg = "Hebat Sekali, Kayla!";
+            else if(n >= 75) msg = "Bagus, Teruskan!";
+            else msg = "Ayo Semangat Belajar Lagi!";
+            document.getElementById('pesan').innerText = msg;
         }
     </script>
 </body>
