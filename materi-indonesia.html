@@ -1,204 +1,281 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bahasa Indonesia Sesi 3 - Labih & Arai - Kayla</title>
+    <title>Bahasa Indonesia Sesi 4 - Kayla Zahra Safitri</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
         
         body { font-family: 'Fredoka', sans-serif; }
         
         @keyframes blink { 
             0% { opacity: 1; transform: scale(1); } 
-            50% { opacity: 0.5; transform: scale(1.05); color: #ef4444; } 
+            50% { opacity: 0.5; transform: scale(1.02); color: #ef4444; } 
             100% { opacity: 1; transform: scale(1); } 
         }
-        .warning-blink { animation: blink 1s infinite; }
+        .warning-blink { animation: blink 1.2s infinite; }
         
         .pattern-bg {
-            background-color: #f0fdf4;
-            background-image: radial-gradient(#dcfce7 0.5px, transparent 0.5px);
-            background-size: 20px 20px;
+            background-color: #f0f9ff;
+            background-image: radial-gradient(#bae6fd 0.8px, transparent 0.8px);
+            background-size: 24px 24px;
         }
 
-        .story-box {
-            background: linear-gradient(135deg, #ffffff 0%, #fff7ed 100%);
+        .content-card {
+            background: #ffffff;
+            border: 3px solid #e0f2fe;
         }
     </style>
 </head>
 <body class="pattern-bg p-4 md:p-10">
-    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden border-4 border-orange-100">
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-[2rem] overflow-hidden border-4 border-blue-200">
         
         <!-- Header -->
-        <header class="bg-gradient-to-r from-orange-500 to-amber-500 p-10 text-center text-white border-b-8 border-yellow-400">
-            <div class="inline-block bg-white text-orange-700 font-extrabold px-8 py-2 rounded-full text-xl mb-4 shadow-lg transform -rotate-1 border-2 border-orange-200 uppercase">
-                KAMIS, 12 FEBRUARI 2026
+        <header class="bg-gradient-to-r from-blue-600 to-cyan-500 p-10 text-center text-white border-b-8 border-yellow-400">
+            <div class="inline-block bg-white text-blue-700 font-black px-10 py-3 rounded-2xl text-2xl mb-4 shadow-xl transform hover:scale-105 transition-transform">
+                SENIN, 16 FEBRUARI 2026
             </div>
-            <h1 class="text-xs font-bold tracking-[0.4em] uppercase mb-1 opacity-90">Bahasa Indonesia - Sesi 3</h1>
-            <h2 class="text-4xl font-extrabold tracking-tight uppercase">Bab 6 <span class="text-yellow-200">| LABIH DAN ARAI</span></h2>
-            <div class="mt-4 flex justify-center gap-3 text-[10px] uppercase font-bold text-orange-900">
-                <span class="bg-orange-100 px-3 py-1 rounded shadow-sm">Hemat vs Boros</span>
-                <span class="bg-orange-100 px-3 py-1 rounded shadow-sm">Kelas 2 SD</span>
-                <span class="bg-orange-100 px-3 py-1 rounded shadow-sm">Tahap 3 dari 14</span>
+            <h1 class="text-sm font-bold tracking-[0.3em] uppercase mb-1 opacity-90">Bahasa Indonesia - Sesi 4</h1>
+            <h2 class="text-4xl font-extrabold tracking-tight uppercase">Bab 6 <span class="text-yellow-300">| KEBUTUHAN VS KEINGINAN</span></h2>
+            <div class="mt-4 flex justify-center gap-3 text-[11px] uppercase font-bold text-blue-900">
+                <span class="bg-blue-100 px-4 py-1.5 rounded-full shadow-sm border border-blue-200">Bijak Memakai Uang</span>
+                <span class="bg-blue-100 px-4 py-1.5 rounded-full shadow-sm border border-blue-200">Kelas 2 SD</span>
+                <span class="bg-blue-100 px-4 py-1.5 rounded-full shadow-sm border border-blue-200">Tahap 4 dari 16</span>
             </div>
         </header>
 
         <!-- Identitas -->
-        <div class="px-8 py-4 bg-orange-50 flex justify-between items-center border-b text-[11px] text-orange-800 italic">
-            <div>Nama Siswa: <span class="font-bold uppercase text-black">Kayla Zahra Safitri</span></div>
-            <div>Fokus: <span class="font-bold text-black text-xs">Memahami Isi Cerita & Pesan Hemat</span></div>
+        <div class="px-8 py-5 bg-blue-50 flex justify-between items-center border-b-2 border-blue-100 text-[12px] text-blue-800">
+            <div>Nama Siswa: <span class="font-bold uppercase text-blue-900 text-sm">Kayla Zahra Safitri</span></div>
+            <div class="bg-white px-3 py-1 rounded-lg border border-blue-200">Fokus: <span class="font-bold text-indigo-700">Pengeluaran Dasar</span></div>
         </div>
 
         <main class="p-8">
-            <!-- Materi -->
-            <section class="mb-10">
-                <h3 class="text-lg font-bold text-orange-800 mb-4 border-l-4 border-orange-500 pl-3 uppercase">Ringkasan Cerita: Labih dan Arai</h3>
-                <div class="p-6 story-box rounded-2xl border-2 border-orange-100 text-sm leading-relaxed text-slate-700 space-y-4 shadow-sm">
-                    <p>Kayla, hari ini kita membaca cerita tentang dua teman, Labih dan Arai. Berikut adalah hal-hal penting yang harus diingat:</p>
-                    <ul class="list-disc ml-5 space-y-3">
-                        <li><span class="font-bold text-orange-600">Labih</span> adalah anak yang sangat <span class="font-bold underline">Hemat</span>. Ia suka menabung uangnya dan hanya membeli barang yang benar-benar ia butuhkan.</li>
-                        <li><span class="font-bold text-red-600">Arai</span> adalah teman Labih yang bersikap <span class="font-bold underline">Boros</span>. Ia suka menghabiskan uangnya untuk membeli jajanan atau mainan yang sebenarnya tidak terlalu penting.</li>
-                        <li>Suatu hari, ada barang yang sangat mereka butuhkan, namun hanya Labih yang punya cukup uang karena ia rajin menabung.</li>
-                        <li><span class="font-bold text-green-600">Pesan Utama Cerita:</span> Hidup hemat membuat kita punya simpanan uang untuk masa depan. Jangan boros karena uang akan cepat habis sia-sia.</li>
-                    </ul>
-                    <div class="bg-orange-100 p-3 rounded-xl border border-orange-200 font-bold text-center text-orange-800 mt-4 italic">
-                        "Hemat pangkal kaya, boros pangkal miskin."
+            <!-- Materi Lengkap -->
+            <section class="mb-12">
+                <h3 class="text-xl font-bold text-blue-900 mb-6 flex items-center gap-2">
+                    <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm italic">M</span>
+                    MATERI: APA ITU KEBUTUHAN DAN KEINGINAN?
+                </h3>
+                
+                <div class="space-y-6">
+                    <!-- Kebutuhan Pokok -->
+                    <div class="p-6 content-card rounded-3xl shadow-sm border-l-[12px] border-l-green-500">
+                        <h4 class="font-bold text-green-700 text-lg mb-2">1. Kebutuhan Pokok</h4>
+                        <p class="text-slate-700 leading-relaxed mb-3">Kebutuhan adalah sesuatu yang <span class="font-bold text-red-600">HARUS</span> kita penuhi agar kita bisa hidup sehat dan baik. Jika tidak ada, kita akan kesulitan.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                            <div class="bg-green-50 p-3 rounded-xl border border-green-100 text-center">
+                                <span class="block text-2xl">🍚</span>
+                                <span class="font-bold text-green-800">Pangan</span>
+                                <p class="text-[10px] text-green-600">Makanan & Minuman</p>
+                            </div>
+                            <div class="bg-green-50 p-3 rounded-xl border border-green-100 text-center">
+                                <span class="block text-2xl">👕</span>
+                                <span class="font-bold text-green-800">Sandang</span>
+                                <p class="text-[10px] text-green-600">Pakaian yang Layak</p>
+                            </div>
+                            <div class="bg-green-50 p-3 rounded-xl border border-green-100 text-center">
+                                <span class="block text-2xl">🏠</span>
+                                <span class="font-bold text-green-800">Papan</span>
+                                <p class="text-[10px] text-green-600">Rumah/Tempat Tinggal</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Keinginan -->
+                    <div class="p-6 content-card rounded-3xl shadow-sm border-l-[12px] border-l-orange-400">
+                        <h4 class="font-bold text-orange-700 text-lg mb-2">2. Keinginan</h4>
+                        <p class="text-slate-700 leading-relaxed mb-3">Keinginan adalah sesuatu yang kita <span class="font-bold text-blue-600">INGINKAN</span> tapi sebenarnya tidak harus ada sekarang juga. Kita masih bisa hidup baik tanpa barang ini.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2 text-slate-600 bg-orange-50/50 p-2 rounded-lg">
+                                <span class="text-orange-500">✔</span> Mainan baru yang mahal.
+                            </li>
+                            <li class="flex items-center gap-2 text-slate-600 bg-orange-50/50 p-2 rounded-lg">
+                                <span class="text-orange-500">✔</span> Jajanan cokelat atau es krim berlebihan.
+                            </li>
+                            <li class="flex items-center gap-2 text-slate-600 bg-orange-50/50 p-2 rounded-lg">
+                                <span class="text-orange-500">✔</span> Perhiasan atau baju pesta yang mewah.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Kesimpulan -->
+                    <div class="bg-blue-600 text-white p-6 rounded-3xl shadow-lg relative overflow-hidden">
+                        <div class="relative z-10">
+                            <p class="text-lg font-bold mb-1">💡 Tips Bijak untuk Kayla:</p>
+                            <p class="text-sm opacity-90 italic">"Dahulukan membeli Kebutuhan sebelum menuruti Keinginan. Dengan begitu, uang Kayla tidak akan cepat habis!"</p>
+                        </div>
+                        <div class="absolute -right-4 -bottom-4 text-6xl opacity-20">💰</div>
                     </div>
                 </div>
             </section>
 
             <!-- English Corner -->
-            <section class="mb-10 p-6 bg-slate-800 rounded-3xl border-4 border-yellow-400 relative overflow-hidden shadow-xl">
-                <div class="absolute top-0 right-0 bg-yellow-400 text-black text-[10px] font-black px-4 py-1 rounded-bl-xl warning-blink uppercase">
-                    WAJIB DIHAFAL HARI INI!
+            <section class="mb-12 p-8 bg-slate-900 rounded-[2.5rem] border-4 border-yellow-400 relative shadow-2xl">
+                <div class="absolute top-0 right-0 bg-yellow-400 text-black text-[11px] font-black px-6 py-2 rounded-bl-2xl warning-blink uppercase tracking-tighter">
+                    HAfal HARI INI!
                 </div>
                 
-                <div class="text-center mb-6">
-                    <h3 class="text-yellow-400 font-bold text-lg mb-2 uppercase tracking-widest">English Corner Hari Ini</h3>
-                    <div class="bg-white inline-block px-10 py-4 rounded-2xl shadow-lg">
-                        <p class="text-[10px] text-slate-400 uppercase mb-1">Bebek</p>
-                        <p class="text-4xl font-black text-slate-800 uppercase">DUCK</p>
-                        <p class="text-[10px] text-orange-600 font-bold mt-1">Cara Baca: /dʌk/</p>
+                <div class="flex flex-col md:flex-row items-center gap-8 mb-8">
+                    <div class="bg-white p-6 rounded-[2rem] shadow-xl text-center min-w-[200px] border-4 border-blue-400">
+                        <p class="text-xs text-slate-400 uppercase font-bold mb-1">Gajah</p>
+                        <p class="text-4xl font-black text-slate-800 uppercase mb-2">ELEPHANT</p>
+                        <div class="bg-blue-50 text-blue-700 text-xs py-1.5 px-3 rounded-full font-bold">
+                            Cara Baca: <span class="italic">/ˈel.ɪ.fənt/</span>
+                        </div>
+                    </div>
+                    <div class="text-white">
+                        <h4 class="text-yellow-400 font-bold text-xl mb-2">English Corner</h4>
+                        <p class="text-slate-400 text-sm">Gajah adalah hewan yang sangat besar. Ayo ucapkan kata <span class="text-white font-bold italic">Elephant</span> lima kali!</p>
                     </div>
                 </div>
 
-                <div class="border-t border-slate-600 pt-4">
-                    <p class="text-slate-200 text-xs text-center mb-3 uppercase tracking-wider font-bold">Harus Tetap Dihafal (Materi Sebelumnya):</p>
+                <div class="border-t border-slate-700 pt-6">
+                    <p class="text-yellow-400 text-[11px] text-center mb-4 uppercase tracking-[0.2em] font-black">Memory Check (Ingat Selalu):</p>
                     <div class="flex flex-wrap justify-center gap-3">
-                        <span class="bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold border border-slate-500 shadow-sm">Foot</span>
-                        <span class="bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold border border-slate-500 shadow-sm">Face</span>
-                        <span class="bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold border border-slate-500 shadow-sm">Hair</span>
-                        <span class="bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold border border-slate-500 shadow-sm">Cat</span>
-                        <span class="bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold border border-slate-500 shadow-sm">Dog</span>
-                        <span class="bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold border border-slate-500 shadow-sm">Cow</span>
-                        <span class="bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold border border-slate-500 shadow-sm">Goat</span>
-                        <span class="bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold border border-slate-500 shadow-sm">Horse</span>
-                        <span class="bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold border border-slate-500 shadow-sm">Bird</span>
-                        <span class="bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold border border-slate-500 shadow-sm">Fish</span>
+                        <span class="bg-slate-800 text-white px-4 py-2 rounded-xl text-xs font-bold border border-slate-600 hover:border-yellow-400 transition-colors italic">Goat (Kambing)</span>
+                        <span class="bg-slate-800 text-white px-4 py-2 rounded-xl text-xs font-bold border border-slate-600 hover:border-yellow-400 transition-colors italic">Horse (Kuda)</span>
+                        <span class="bg-slate-800 text-white px-4 py-2 rounded-xl text-xs font-bold border border-slate-600 hover:border-yellow-400 transition-colors italic">Bird (Burung)</span>
+                        <span class="bg-slate-800 text-white px-4 py-2 rounded-xl text-xs font-bold border border-slate-600 hover:border-yellow-400 transition-colors italic">Fish (Ikan)</span>
+                        <span class="bg-slate-800 text-white px-4 py-2 rounded-xl text-xs font-bold border border-slate-600 hover:border-yellow-400 transition-colors italic">Duck (Bebek)</span>
                     </div>
                 </div>
             </section>
 
             <!-- Latihan Soal -->
-            <section class="space-y-10">
-                <h3 class="text-xs font-black text-slate-400 uppercase tracking-widest text-center">Lembar Evaluasi (19 Soal)</h3>
+            <section class="space-y-12">
+                <div class="text-center">
+                    <h3 class="inline-block bg-slate-100 text-slate-500 px-6 py-1 rounded-full text-[10px] font-black uppercase tracking-[0.3em]">Lembar Kerja Mandiri (19 Soal)</h3>
+                </div>
                 
                 <!-- I. Pilihan Ganda -->
-                <div class="space-y-6">
-                    <p class="text-xs font-bold text-orange-700 italic underline uppercase bg-orange-50 inline-block px-2 py-1 rounded">I. Pilihan Ganda (10 Soal)</p>
-                    <div class="text-sm space-y-6">
-                        <div class="space-y-2">
-                            <p>1. Tokoh dalam cerita yang memiliki sifat hemat adalah...</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Arai</span><span>B. Labih</span><span>C. Ibu</span></div>
+                <div class="space-y-8">
+                    <div class="flex items-center gap-3">
+                        <span class="bg-blue-600 text-white font-bold px-3 py-1 rounded-lg text-sm">I</span>
+                        <p class="text-sm font-bold text-blue-800 uppercase tracking-tight">Pilihan Ganda (10 Soal)</p>
+                    </div>
+                    
+                    <div class="text-[15px] space-y-8 ml-4">
+                        <div class="space-y-3">
+                            <p class="font-medium text-slate-800"><span class="font-bold text-blue-500 mr-2 text-xs">01.</span> Sesuatu yang HARUS dipenuhi agar kita bisa hidup disebut...</p>
+                            <div class="grid grid-cols-3 text-sm font-bold text-slate-600">
+                                <span>A. Keinginan</span><span>B. Kebutuhan</span><span>C. Mainan</span>
+                            </div>
                         </div>
 
-                        <div class="space-y-2">
-                            <p>2. Arai adalah anak yang memiliki sifat...</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Boros</span><span>B. Rajin</span><span>C. Hemat</span></div>
+                        <div class="space-y-3">
+                            <p class="font-medium text-slate-800"><span class="font-bold text-blue-500 mr-2 text-xs">02.</span> Contoh kebutuhan pokok manusia adalah...</p>
+                            <div class="grid grid-cols-3 text-sm font-bold text-slate-600">
+                                <span>A. Rumah</span><span>B. Robot-robotan</span><span>C. Kalung emas</span>
+                            </div>
                         </div>
 
-                        <div class="space-y-2">
-                            <p>3. Sikap boros artinya suka menghabiskan uang untuk hal yang...</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Penting</span><span>B. Tidak penting</span><span>C. Bermanfaat</span></div>
+                        <div class="space-y-3">
+                            <p class="font-medium text-slate-800"><span class="font-bold text-blue-500 mr-2 text-xs">03.</span> Makanan dan minuman termasuk ke dalam kebutuhan...</p>
+                            <div class="grid grid-cols-3 text-sm font-bold text-slate-600">
+                                <span>A. Papan</span><span>B. Sandang</span><span>C. Pangan</span>
+                            </div>
                         </div>
 
-                        <div class="space-y-2">
-                            <p>4. Apa yang dilakukan Labih dengan uang sisa sakunya?</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Dibuang</span><span>B. Ditabung</span><span>C. Dijajankan</span></div>
+                        <div class="space-y-3">
+                            <p class="font-medium text-slate-800"><span class="font-bold text-blue-500 mr-2 text-xs">04.</span> Sandang artinya adalah kebutuhan akan...</p>
+                            <div class="grid grid-cols-3 text-sm font-bold text-slate-600">
+                                <span>A. Tempat tinggal</span><span>B. Pakaian</span><span>C. Makanan</span>
+                            </div>
                         </div>
 
-                        <div class="space-y-2">
-                            <p>5. Menabung membuat kita memiliki simpanan uang untuk masa...</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Lalu</span><span>B. Kini</span><span>C. Depan</span></div>
+                        <div class="space-y-3">
+                            <p class="font-medium text-slate-800"><span class="font-bold text-blue-500 mr-2 text-xs">05.</span> Membeli boneka baru padahal sudah punya banyak termasuk...</p>
+                            <div class="grid grid-cols-3 text-sm font-bold text-slate-600">
+                                <span>A. Kebutuhan</span><span>B. Keinginan</span><span>C. Tugas sekolah</span>
+                            </div>
                         </div>
 
-                        <div class="space-y-2">
-                            <p>6. Sifat Labih dan Arai sangat...</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Sama</span><span>B. Berbeda</span><span>C. Buruk</span></div>
+                        <div class="space-y-3">
+                            <p class="font-medium text-slate-800"><span class="font-bold text-blue-500 mr-2 text-xs">06.</span> Apa yang terjadi jika kebutuhan pangan tidak terpenuhi?</p>
+                            <div class="grid grid-cols-3 text-sm font-bold text-slate-600">
+                                <span>A. Lapar & lemas</span><span>B. Senang</span><span>C. Jadi pintar</span>
+                            </div>
                         </div>
 
-                        <div class="space-y-2">
-                            <p>7. Anak yang bijak akan membeli barang sesuai dengan...</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Keinginan</span><span>B. Kebutuhan</span><span>C. Harga</span></div>
+                        <div class="space-y-3">
+                            <p class="font-medium text-slate-800"><span class="font-bold text-blue-500 mr-2 text-xs">07.</span> Tempat untuk berlindung dari panas dan hujan disebut kebutuhan...</p>
+                            <div class="grid grid-cols-3 text-sm font-bold text-slate-600">
+                                <span>A. Pangan</span><span>B. Sandang</span><span>C. Papan</span>
+                            </div>
                         </div>
 
-                        <div class="space-y-2">
-                            <p>8. "Hemat pangkal kaya" adalah sebuah...</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Perintah</span><span>B. Pesan/Pepatah</span><span>C. Larangan</span></div>
+                        <div class="space-y-3">
+                            <p class="font-medium text-slate-800"><span class="font-bold text-blue-500 mr-2 text-xs">08.</span> Anak yang bijak memakai uang akan mendahulukan...</p>
+                            <div class="grid grid-cols-3 text-sm font-bold text-slate-600">
+                                <span>A. Jajan cokelat</span><span>B. Kebutuhan</span><span>C. Keinginan</span>
+                            </div>
                         </div>
 
-                        <div class="space-y-2 pt-4 border-t border-dashed">
-                            <p class="text-orange-700 font-bold italic">9. Bahasa Inggris dari "Bebek" adalah...</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Bird</span><span>B. Duck</span><span>C. Fish</span></div>
+                        <div class="space-y-3 pt-4 border-t-2 border-dashed border-blue-100">
+                            <p class="text-blue-700 font-bold italic"><span class="font-bold text-blue-500 mr-2 text-xs">09.</span> "Elephant" dalam bahasa Indonesia adalah...</p>
+                            <div class="grid grid-cols-3 text-sm font-bold text-slate-600">
+                                <span>A. Jerapah</span><span>B. Gajah</span><span>C. Harimau</span>
+                            </div>
                         </div>
 
-                        <div class="space-y-2">
-                            <p class="text-orange-700 font-bold italic">10. "Duck" dibaca dengan bunyi...</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. /dak/</span><span>B. /duk/</span><span>C. /dek/</span></div>
+                        <div class="space-y-3">
+                            <p class="text-blue-700 font-bold italic"><span class="font-bold text-blue-500 mr-2 text-xs">10.</span> Bagaimana cara membaca "Elephant"?</p>
+                            <div class="grid grid-cols-3 text-sm font-bold text-slate-600">
+                                <span>A. Elefen</span><span>B. El-e-pant</span><span>C. E-le-fan</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- II. Isian Singkat -->
-                <div class="mt-12">
-                    <p class="text-xs font-bold text-orange-700 italic underline uppercase bg-orange-50 inline-block px-2 py-1 rounded mb-6">II. Isian Singkat (9 Soal)</p>
+                <div class="mt-16">
+                    <div class="flex items-center gap-3 mb-8">
+                        <span class="bg-indigo-600 text-white font-bold px-3 py-1 rounded-lg text-sm">II</span>
+                        <p class="text-sm font-bold text-indigo-800 uppercase tracking-tight">Uraian Singkat (9 Soal)</p>
+                    </div>
                     
-                    <div class="space-y-6 text-sm p-8 border-2 border-dashed border-orange-200 rounded-3xl bg-orange-50/20">
-                        <p>11. Labih adalah anak yang suka ...................................................... uangnya.</p>
-                        <p>12. Arai sering menghabiskan uang untuk hal yang tidak ......................................................</p>
-                        <p>13. Pesan utama cerita tersebut adalah kita harus hidup ......................................................</p>
-                        <p>14. Lawan kata dari hemat adalah ......................................................</p>
-                        <p>15. Uang tabungan dapat digunakan saat kita sedang ......................................................</p>
-                        <p>16. Judul cerita yang kita pelajari hari ini adalah ......................................................</p>
-                        <p>17. Labih hanya membeli barang yang menjadi ......................................................</p>
-                        <p>18. Arai merasa sedih karena uangnya ...................................................... saat butuh barang penting.</p>
-                        <p>19. Menabung biasanya dilakukan di dalam ...................................................... atau bank.</p>
+                    <div class="space-y-7 text-[15px] p-8 border-4 border-blue-100 rounded-[2.5rem] bg-blue-50/30">
+                        <p class="flex gap-2"><span>11.</span> Sesuatu yang kita inginkan tapi tidak mendesak disebut ...........................................</p>
+                        <p class="flex gap-2"><span>12.</span> Pangan, Sandang, dan Papan adalah tiga jenis kebutuhan ...........................................</p>
+                        <p class="flex gap-2"><span>13.</span> Rumah adalah contoh kebutuhan ...........................................</p>
+                        <p class="flex gap-2"><span>14.</span> Kita memakai baju untuk melindungi tubuh. Baju adalah kebutuhan ...........................................</p>
+                        <p class="flex gap-2"><span>15.</span> Makanan sehat adalah contoh kebutuhan ...........................................</p>
+                        <p class="flex gap-2"><span>16.</span> Jika Kayla ingin membeli mainan baru, itu termasuk kebutuhan atau keinginan? ...........................................</p>
+                        <p class="flex gap-2"><span>17.</span> Kita harus mendahulukan membeli ........................................... daripada keinginan.</p>
+                        <p class="flex gap-2"><span>18.</span> Nasi dan sayur yang kita makan termasuk kebutuhan ...........................................</p>
+                        <p class="flex gap-2"><span>19.</span> Anak yang boros biasanya lebih mendahulukan ...........................................</p>
                     </div>
                 </div>
             </section>
 
-            <!-- Kalkulator -->
-            <section class="mt-16 p-8 bg-orange-900 rounded-3xl text-white shadow-2xl border-4 border-orange-500">
-                <div class="text-center mb-6">
-                    <h3 class="text-lg font-bold uppercase tracking-widest text-orange-400">Nilai Kayla</h3>
-                    <p class="text-[10px] text-orange-200 opacity-60">Masukkan jumlah jawaban benar (0-19)</p>
+            <!-- Kalkulator Nilai -->
+            <section class="mt-20 p-10 bg-gradient-to-br from-blue-900 to-indigo-950 rounded-[3rem] text-white shadow-2xl border-b-8 border-indigo-700">
+                <div class="text-center mb-8">
+                    <div class="inline-block bg-blue-500/20 p-3 rounded-2xl mb-4">
+                        <h3 class="text-xl font-bold uppercase tracking-[0.2em] text-cyan-300">Skor Kayla Hari Ini</h3>
+                    </div>
+                    <p class="text-[12px] text-blue-300 font-medium italic">Hitung jumlah jawaban benarmu (0-19)</p>
                 </div>
-                <div class="flex flex-col items-center space-y-4">
-                    <input type="number" id="inputBenar" min="0" max="19" placeholder="0" 
-                           class="w-full max-w-[150px] p-3 rounded-2xl bg-orange-800 text-center text-2xl font-bold border border-orange-700 focus:border-yellow-400 outline-none text-yellow-300">
-                    <button onclick="hitungNilai()" class="bg-yellow-400 hover:bg-yellow-300 text-orange-900 px-8 py-2 rounded-full font-bold uppercase tracking-wider transition-all shadow-lg">Hitung Skor</button>
-                    <div id="hasil" class="hidden text-center mt-4">
-                        <div id="skor" class="text-6xl font-black text-white">0</div>
-                        <p id="pesan" class="text-xs mt-2 text-orange-200 font-bold uppercase"></p>
+                <div class="flex flex-col items-center space-y-6">
+                    <div class="relative group">
+                        <input type="number" id="inputBenar" min="0" max="19" placeholder="0" 
+                               class="w-full max-w-[180px] p-5 rounded-3xl bg-blue-800/50 text-center text-4xl font-black border-2 border-blue-500 focus:border-yellow-400 outline-none text-yellow-300 shadow-inner">
+                    </div>
+                    <button onclick="hitungNilai()" class="bg-yellow-400 hover:bg-yellow-300 active:scale-95 text-blue-950 px-12 py-3.5 rounded-2xl font-black uppercase tracking-widest transition-all shadow-[0_6px_0_0_#ca8a04]">Lihat Hasil</button>
+                    <div id="hasil" class="hidden text-center mt-6 animate-bounce">
+                        <div id="skor" class="text-7xl font-black text-white drop-shadow-lg">0</div>
+                        <p id="pesan" class="text-sm mt-3 text-cyan-300 font-bold uppercase tracking-widest"></p>
                     </div>
                 </div>
             </section>
         </main>
         
-        <footer class="bg-slate-100 p-4 text-center border-t text-[10px] text-slate-400 uppercase font-black tracking-widest">
-            Kayla Zahra Safitri • 12 Februari 2026
+        <footer class="bg-slate-50 p-6 text-center border-t border-slate-200">
+            <p class="text-[11px] text-slate-400 uppercase font-black tracking-[0.5em]">Kayla Zahra Safitri • Belajar Menjadi Anak Bijak</p>
         </footer>
     </div>
 
@@ -207,9 +284,15 @@
             const b = parseInt(document.getElementById('inputBenar').value);
             if(isNaN(b) || b < 0 || b > 19) return;
             const n = Math.round((b/19)*100);
-            document.getElementById('hasil').classList.remove('hidden');
+            const res = document.getElementById('hasil');
+            res.classList.remove('hidden');
             document.getElementById('skor').innerText = n;
-            document.getElementById('pesan').innerText = n>=90?"Hebat, Kayla Pintar!":n>=75?"Bagus, Pertahankan!":"Ayo Semangat Belajar Lagi!";
+            
+            let msg = "";
+            if(n >= 90) msg = "Luar Biasa, Kayla Hebat!";
+            else if(n >= 75) msg = "Bagus Sekali, Teruskan!";
+            else msg = "Ayo Belajar Lagi!";
+            document.getElementById('pesan').innerText = msg;
         }
     </script>
 </body>
