@@ -3,236 +3,294 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matematika Bab 6 - Satuan Berat Baku - Kayla</title>
+    <title>Matematika Bab 6 - Pengukuran Baku - Kayla</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
         
         body { font-family: 'Fredoka', sans-serif; }
         
         @keyframes blink { 
             0% { opacity: 1; transform: scale(1); } 
-            50% { opacity: 0.5; transform: scale(1.05); color: #c2410c; } 
+            50% { opacity: 0.5; transform: scale(1.05); color: #ef4444; } 
             100% { opacity: 1; transform: scale(1); } 
         }
         .warning-blink { animation: blink 1s infinite; }
         
         .math-bg {
             background-color: #f0f9ff;
-            background-image: radial-gradient(#bae6fd 1px, transparent 1px);
-            background-size: 20px 20px;
+            background-image: 
+                linear-gradient(#bae6fd 2px, transparent 2px),
+                linear-gradient(90deg, #bae6fd 2px, transparent 2px),
+                linear-gradient(#bae6fd 1px, transparent 1px),
+                linear-gradient(90deg, #bae6fd 1px, transparent 1px);
+            background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+            background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
         }
     </style>
 </head>
 <body class="math-bg p-4 md:p-10">
-    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden border-4 border-indigo-200">
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden border-4 border-sky-300">
         
         <!-- Header -->
-        <header class="bg-gradient-to-r from-indigo-600 to-blue-500 p-10 text-center text-white border-b-8 border-orange-400">
-            <div class="inline-block bg-white text-indigo-700 font-bold px-8 py-2 rounded-full text-xl mb-4 shadow-lg transform -rotate-1">
-                SENIN, 16 FEBRUARI 2026
+        <header class="bg-gradient-to-r from-sky-500 to-blue-600 p-10 text-center text-white border-b-8 border-yellow-400">
+            <div class="inline-block bg-white text-sky-700 font-bold px-8 py-2 rounded-full text-xl mb-4 shadow-lg transform -rotate-1">
+                SENIN, 23 FEBRUARI 2026
             </div>
             <h1 class="text-xs font-bold tracking-[0.4em] uppercase mb-1 opacity-90">Matematika</h1>
-            <h2 class="text-4xl font-extrabold tracking-tight">BAB 6 <span class="text-orange-200">| BERAT BAKU (kg & g)</span></h2>
-            <div class="mt-4 flex justify-center gap-3 text-[10px] uppercase font-bold text-indigo-900">
-                <span class="bg-indigo-100 px-3 py-1 rounded shadow-sm">Sesi 3</span>
-                <span class="bg-indigo-100 px-3 py-1 rounded shadow-sm">Kelas 2 SD</span>
-                <span class="bg-indigo-100 px-3 py-1 rounded shadow-sm">Tahap 3 dari 8</span>
+            <h2 class="text-4xl font-extrabold tracking-tight">BAB 6 <span class="text-yellow-300">| PENGUKURAN</span></h2>
+            <div class="mt-4 flex justify-center gap-3 text-[11px] uppercase font-bold text-sky-900">
+                <span class="bg-sky-100 px-3 py-1 rounded shadow-sm">Sesi 3</span>
+                <span class="bg-sky-100 px-3 py-1 rounded shadow-sm">Kelas 2 SD</span>
+                <span class="bg-sky-100 px-3 py-1 rounded shadow-sm">Tahap 3 dari 8</span>
             </div>
         </header>
 
         <!-- Identitas -->
-        <div class="px-8 py-4 bg-indigo-50 flex justify-between items-center border-b text-[11px] text-indigo-800 italic">
-            <div>Nama Siswa: <span class="font-bold uppercase text-black">Kayla Zahra Safitri</span></div>
-            <div>Fokus: <span class="font-bold text-black text-xs">Gram, Kilogram & Konversi</span></div>
+        <div class="px-8 py-5 bg-sky-50 flex justify-between items-center border-b-2 border-sky-100 text-[13px] text-sky-800">
+            <div>Nama Siswa: <span class="font-bold uppercase text-black text-sm">Kayla Zahra Safitri</span></div>
+            <div>Fokus: <span class="font-bold text-black text-sm">Satuan Berat Baku (Gram & Kilogram)</span></div>
         </div>
 
         <main class="p-8">
             <!-- Materi -->
-            <section class="mb-10">
-                <h3 class="text-lg font-bold text-indigo-800 mb-4 border-l-4 border-indigo-500 pl-3 uppercase">Materi: Mengenal Satuan Berat Baku</h3>
-                <div class="p-6 bg-white rounded-2xl border-2 border-indigo-100 text-sm leading-relaxed text-slate-700 space-y-6 shadow-sm">
+            <section class="mb-12">
+                <h3 class="text-xl font-bold text-sky-800 mb-5 border-l-4 border-sky-500 pl-4 uppercase tracking-wide">Materi: Mengenal Gram dan Kilogram</h3>
+                <div class="p-8 bg-white rounded-3xl border-2 border-sky-200 text-base leading-loose text-slate-700 space-y-5 shadow-sm">
+                    <p class="font-medium text-lg text-slate-800">Halo Kayla! Mari kita lanjutkan belajar menimbang berat benda.</p>
+                    <p>Pada pertemuan sebelumnya, kita menggunakan kelereng. Sekarang, kita akan belajar mengukur berat benda menggunakan <span class="font-bold text-sky-600">Satuan Baku</span>. Satuan baku artinya ukuran yang digunakan selalu sama di mana saja.</p>
+                    <p>Alat yang digunakan untuk mengukur berat secara baku disebut <span class="font-bold text-sky-600">Timbangan</span>.</p>
                     
-                    <div>
-                        <p class="mb-2">Halo Kayla! Kemarin kita belajar satuan tidak baku. Hari ini kita belajar <strong>Satuan Baku</strong>. Satuan baku artinya hasil timbangannya <strong>Pasti</strong> dan <strong>Sama</strong> di mana saja.</p>
-                        <p>Alat untuk mengukur berat benda satuan baku disebut <span class="font-bold text-indigo-600 text-lg">TIMBANGAN</span>.</p>
-                    </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <!-- Box Gram -->
-                        <div class="bg-orange-50 p-4 rounded-xl border-2 border-orange-200">
-                            <h4 class="font-bold text-orange-600 text-lg mb-2">1. GRAM (g)</h4>
-                            <ul class="list-disc ml-4 space-y-1 text-xs">
-                                <li>Singkatannya adalah <span class="font-bold text-black">g</span>.</li>
-                                <li>Digunakan untuk menimbang benda yang <span class="font-bold text-orange-600">RINGAN</span>.</li>
-                                <li>Contoh: Emas, Cincin, Obat, Bumbu dapur, Permen.</li>
-                            </ul>
-                        </div>
-                        
-                        <!-- Box Kilogram -->
-                        <div class="bg-blue-50 p-4 rounded-xl border-2 border-blue-200">
-                            <h4 class="font-bold text-blue-600 text-lg mb-2">2. KILOGRAM (kg)</h4>
-                            <ul class="list-disc ml-4 space-y-1 text-xs">
-                                <li>Singkatannya adalah <span class="font-bold text-black">kg</span>.</li>
-                                <li>Digunakan untuk menimbang benda yang <span class="font-bold text-blue-600">BERAT</span>.</li>
-                                <li>Contoh: Beras sekarung, Buah Semangka, Telur sekilo, Tubuh manusia.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="bg-indigo-900 text-white p-5 rounded-xl text-center shadow-lg relative overflow-hidden">
-                        <p class="text-xs uppercase tracking-widest text-indigo-300 mb-2">Rumus Penting (Wajib Hafal)</p>
-                        <p class="text-3xl font-black text-yellow-300">1 kg = 1.000 gram</p>
-                        <p class="text-[10px] mt-2 italic opacity-80">"Satu kilogram sama dengan seribu gram"</p>
-                    </div>
-
-                    <div class="bg-slate-100 p-4 rounded-lg border border-slate-300">
-                        <p class="font-bold mb-2">Contoh Konversi (Perubahan):</p>
-                        <ul class="space-y-2 text-xs">
-                            <li class="flex items-center gap-2"><span class="bg-white px-2 py-1 rounded border">2 kg = 2.000 gram</span> (Tinggal ditambah tiga nol)</li>
-                            <li class="flex items-center gap-2"><span class="bg-white px-2 py-1 rounded border">3.000 gram = 3 kg</span> (Nolnya dibuang tiga)</li>
+                    <div class="bg-sky-50 p-5 rounded-2xl border border-sky-100">
+                        <p class="font-bold text-sky-800 mb-2">1. Satuan Gram (disingkat: g)</p>
+                        <ul class="list-disc ml-6 space-y-2">
+                            <li>Gram digunakan untuk menimbang benda-benda yang <span class="font-bold text-sky-600">Ringan</span>.</li>
+                            <li>Contoh benda yang ditimbang dengan satuan gram: sebatang pensil, cincin emas, dan buah stroberi.</li>
                         </ul>
                     </div>
 
+                    <div class="bg-yellow-50 p-5 rounded-2xl border border-yellow-100">
+                        <p class="font-bold text-yellow-800 mb-2">2. Satuan Kilogram (disingkat: kg)</p>
+                        <ul class="list-disc ml-6 space-y-2">
+                            <li>Kilogram digunakan untuk menimbang benda-benda yang <span class="font-bold text-yellow-700">Lebih Berat</span>.</li>
+                            <li>Contoh benda yang ditimbang dengan satuan kilogram: semangka yang besar, sekarung beras, dan berat badan Kayla.</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-blue-600 text-white p-6 rounded-2xl shadow-md text-center">
+                        <p class="text-lg font-bold mb-3">Ingatlah Rumus Penting Ini!</p>
+                        <p class="text-2xl font-black bg-white text-blue-600 inline-block px-6 py-2 rounded-full">1 Kilogram = 1000 Gram</p>
+                        <p class="mt-4 text-sm font-medium">Jika ibu membeli 1 kg telur, itu sama dengan 1000 gram.<br>
+                        Jika 1 kilogram = 1000 gram, maka <span class="font-bold text-yellow-300">2 kilogram sama dengan 2000 gram</span>.</p>
+                    </div>
                 </div>
             </section>
 
             <!-- English Corner -->
-            <section class="mb-10 p-6 bg-slate-800 rounded-3xl border-4 border-orange-400 relative overflow-hidden shadow-xl">
-                <div class="absolute top-0 right-0 bg-orange-400 text-black text-[10px] font-black px-4 py-1 rounded-bl-xl warning-blink uppercase">
+            <section class="mb-12 p-8 bg-slate-800 rounded-3xl border-4 border-yellow-400 relative overflow-hidden shadow-2xl">
+                <div class="absolute top-0 right-0 bg-yellow-400 text-black text-[12px] font-black px-6 py-2 rounded-bl-2xl warning-blink uppercase tracking-widest">
                     WAJIB DIHAFAL HARI INI!
                 </div>
                 
-                <div class="text-center mb-6">
-                    <h3 class="text-orange-400 font-bold text-lg mb-2 uppercase tracking-widest">English Corner</h3>
-                    <div class="bg-white inline-block px-10 py-4 rounded-2xl shadow-lg">
-                        <p class="text-[10px] text-slate-400 uppercase mb-1">Gajah</p>
-                        <p class="text-4xl font-black text-slate-800 uppercase">ELEPHANT</p>
-                        <p class="text-[10px] text-indigo-600 font-bold mt-1">Cara Baca: /ˈel.ɪ.fənt/</p>
+                <div class="text-center mb-8 mt-4">
+                    <h3 class="text-yellow-400 font-bold text-xl mb-3 uppercase tracking-widest">English Corner</h3>
+                    <div class="bg-white inline-block px-12 py-5 rounded-3xl shadow-lg border-b-4 border-slate-300">
+                        <p class="text-[12px] text-slate-500 uppercase font-bold mb-1 tracking-wider">Gajah</p>
+                        <p class="text-5xl font-black text-slate-800 uppercase tracking-wide">ELEPHANT</p>
+                        <p class="text-sm text-sky-600 font-bold mt-2 bg-sky-50 py-1 px-4 rounded-full inline-block">Cara Baca: /'e-le-fent/</p>
                     </div>
                 </div>
 
-                <div class="border-t border-slate-600 pt-4">
-                    <p class="text-slate-400 text-[10px] text-center mb-3 uppercase tracking-wider font-bold">Jangan Lupakan Hewan Sebelumnya:</p>
-                    <div class="flex flex-wrap justify-center gap-3">
-                        <span class="bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold border border-slate-500 hover:bg-slate-600">Goat</span>
-                        <span class="bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold border border-slate-500 hover:bg-slate-600">Horse</span>
-                        <span class="bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold border border-slate-500 hover:bg-slate-600">Bird</span>
-                        <span class="bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold border border-slate-500 hover:bg-slate-600">Fish</span>
-                        <span class="bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold border border-slate-500 hover:bg-slate-600">Duck</span>
+                <div class="border-t-2 border-slate-600 pt-6">
+                    <p class="text-slate-300 text-[11px] text-center mb-4 uppercase tracking-widest font-bold">Tetap Ingat Kata Sebelumnya:</p>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <span class="bg-slate-700 text-yellow-300 px-4 py-2 rounded-full text-sm font-bold border-2 border-slate-500 shadow-sm">Goat</span>
+                        <span class="bg-slate-700 text-yellow-300 px-4 py-2 rounded-full text-sm font-bold border-2 border-slate-500 shadow-sm">Horse</span>
+                        <span class="bg-slate-700 text-yellow-300 px-4 py-2 rounded-full text-sm font-bold border-2 border-slate-500 shadow-sm">Bird</span>
+                        <span class="bg-slate-700 text-yellow-300 px-4 py-2 rounded-full text-sm font-bold border-2 border-slate-500 shadow-sm">Fish</span>
+                        <span class="bg-slate-700 text-yellow-300 px-4 py-2 rounded-full text-sm font-bold border-2 border-slate-500 shadow-sm">Duck</span>
                     </div>
                 </div>
             </section>
 
             <!-- Latihan Soal -->
-            <section class="space-y-10">
-                <h3 class="text-xs font-black text-slate-400 uppercase tracking-widest text-center">Lembar Evaluasi (19 Soal)</h3>
+            <section class="space-y-12">
+                <div class="text-center border-b-2 border-slate-200 pb-4">
+                    <h3 class="text-lg font-black text-slate-500 uppercase tracking-widest">Lembar Evaluasi Mandiri</h3>
+                    <p class="text-sm font-bold text-slate-400 mt-1">Total 16 Soal</p>
+                </div>
                 
                 <!-- I. Pilihan Ganda -->
-                <div class="space-y-6">
-                    <p class="text-xs font-bold text-indigo-700 italic underline uppercase bg-indigo-50 inline-block px-2 py-1 rounded">I. Pilihan Ganda (10 Soal)</p>
-                    <div class="text-sm space-y-6">
-                        <div class="space-y-2">
-                            <p>1. Alat untuk mengukur berat benda dengan satuan baku disebut...</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Penggaris</span><span>B. Timbangan</span><span>C. Jam</span></div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+                    <p class="text-sm font-bold text-white bg-sky-600 inline-block px-4 py-2 rounded-lg mb-8 uppercase tracking-wider shadow-sm">I. Pilihan Ganda (8 Soal)</p>
+                    <div class="text-base space-y-8 font-medium text-slate-700">
+                        
+                        <div class="space-y-3">
+                            <p>1. Satuan baku yang digunakan untuk menimbang benda-benda yang ringan adalah...</p>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
+                                <div class="bg-slate-50 p-2 rounded border border-slate-200">A. Kilogram</div>
+                                <div class="bg-slate-50 p-2 rounded border border-slate-200">B. Gram</div>
+                                <div class="bg-slate-50 p-2 rounded border border-slate-200">C. Meter</div>
+                            </div>
                         </div>
 
-                        <div class="space-y-2">
-                            <p>2. Singkatan dari Kilogram adalah...</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. km</span><span>B. kl</span><span>C. kg</span></div>
+                        <div class="space-y-3">
+                            <p>2. Di bawah ini, tulisan singkatan yang benar untuk kata "Kilogram" adalah...</p>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
+                                <div class="bg-slate-50 p-2 rounded border border-slate-200">A. kl</div>
+                                <div class="bg-slate-50 p-2 rounded border border-slate-200">B. gr</div>
+                                <div class="bg-slate-50 p-2 rounded border border-slate-200">C. kg</div>
+                            </div>
                         </div>
 
-                        <div class="space-y-2">
-                            <p>3. Satuan "gram" biasanya digunakan untuk menimbang benda yang...</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Ringan</span><span>B. Sangat Berat</span><span>C. Besar Sekali</span></div>
+                        <div class="space-y-3">
+                            <p>3. Jika Kayla ingin menimbang buah semangka yang sangat besar, satuan berat yang paling tepat digunakan adalah...</p>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
+                                <div class="bg-slate-50 p-2 rounded border border-slate-200">A. Kilogram</div>
+                                <div class="bg-slate-50 p-2 rounded border border-slate-200">B. Gram</div>
+                                <div class="bg-slate-50 p-2 rounded border border-slate-200">C. Sentimeter</div>
+                            </div>
                         </div>
 
-                        <div class="space-y-2">
-                            <p>4. 1 kg sama dengan berapa gram?</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. 100 gram</span><span>B. 1.000 gram</span><span>C. 10 gram</span></div>
+                        <div class="space-y-3">
+                            <p>4. Benda-benda seperti sebatang pensil dan cincin emas ditimbang menggunakan satuan...</p>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
+                                <div class="bg-slate-50 p-2 rounded border border-slate-200">A. Liter</div>
+                                <div class="bg-slate-50 p-2 rounded border border-slate-200">B. Kilogram</div>
+                                <div class="bg-slate-50 p-2 rounded border border-slate-200">C. Gram</div>
+                            </div>
                         </div>
 
-                        <div class="space-y-2">
-                            <p>5. Singkatan dari gram adalah...</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. grm</span><span>B. kg</span><span>C. g</span></div>
+                        <div class="space-y-3">
+                            <p>5. Sesuai dengan rumus, berat 1 kilogram (1 kg) itu sama ukurannya dengan...</p>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
+                                <div class="bg-slate-50 p-2 rounded border border-slate-200">A. 100 gram</div>
+                                <div class="bg-slate-50 p-2 rounded border border-slate-200">B. 1000 gram</div>
+                                <div class="bg-slate-50 p-2 rounded border border-slate-200">C. 10 gram</div>
+                            </div>
                         </div>
 
-                        <div class="space-y-2">
-                            <p>6. Manakah benda yang sebaiknya ditimbang menggunakan satuan kilogram (kg)?</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Cincin emas</span><span>B. Satu karung beras</span><span>C. Satu permen</span></div>
+                        <div class="space-y-3">
+                            <p>6. Jika berat gula adalah 2000 gram, maka berat gula tersebut sama ukurannya dengan...</p>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
+                                <div class="bg-slate-50 p-2 rounded border border-slate-200">A. 1 kilogram</div>
+                                <div class="bg-slate-50 p-2 rounded border border-slate-200">B. 2 kilogram</div>
+                                <div class="bg-slate-50 p-2 rounded border border-slate-200">C. 3 kilogram</div>
+                            </div>
                         </div>
 
-                        <div class="space-y-2">
-                            <p>7. 2 kg sama dengan ... gram.</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. 200</span><span>B. 2.000</span><span>C. 20</span></div>
+                        <div class="space-y-3">
+                            <p>7. Alat yang biasa digunakan untuk mengukur berat benda secara baku disebut...</p>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
+                                <div class="bg-slate-50 p-2 rounded border border-slate-200">A. Timbangan</div>
+                                <div class="bg-slate-50 p-2 rounded border border-slate-200">B. Termometer</div>
+                                <div class="bg-slate-50 p-2 rounded border border-slate-200">C. Penggaris</div>
+                            </div>
                         </div>
 
-                        <div class="space-y-2">
-                            <p>8. Untuk menimbang obat atau bumbu dapur yang sedikit, kita gunakan satuan...</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. gram (g)</span><span>B. kilogram (kg)</span><span>C. meter (m)</span></div>
-                        </div>
-
-                        <div class="space-y-2 pt-4 border-t border-dashed">
-                            <p class="text-indigo-700 font-bold italic">9. Bahasa Inggris dari "Gajah" adalah...</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Duck</span><span>B. Elephant</span><span>C. Horse</span></div>
-                        </div>
-
-                        <div class="space-y-2">
-                            <p class="text-indigo-700 font-bold italic">10. "Elephant" dibaca dengan cara...</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. /el.i.fen/</span><span>B. /dak/</span><span>C. /fi:sh/</span></div>
+                        <div class="space-y-3">
+                            <p>8. Satuan gram disingkat dengan huruf...</p>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
+                                <div class="bg-slate-50 p-2 rounded border border-slate-200">A. m</div>
+                                <div class="bg-slate-50 p-2 rounded border border-slate-200">B. kg</div>
+                                <div class="bg-slate-50 p-2 rounded border border-slate-200">C. g</div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- II. Isian Singkat -->
-                <div class="mt-12">
-                    <p class="text-xs font-bold text-indigo-700 italic underline uppercase bg-indigo-50 inline-block px-2 py-1 rounded mb-6">II. Isian Singkat (9 Soal)</p>
+                <!-- II. Latihan Berpikir -->
+                <div class="bg-sky-50 p-8 rounded-3xl shadow-sm border border-sky-200">
+                    <p class="text-sm font-bold text-white bg-sky-600 inline-block px-4 py-2 rounded-lg mb-6 uppercase tracking-wider shadow-sm">II. Latihan Berpikir (3 Soal)</p>
+                    <p class="text-xs text-sky-800 font-bold mb-6 italic">*Jawablah sesuai dengan pikiranmu sendiri!</p>
                     
-                    <div class="space-y-6 text-sm p-8 border-2 border-dashed border-indigo-200 rounded-3xl bg-indigo-50/20">
-                        <p>11. Satuan berat baku yang digunakan untuk benda berat adalah ......................................................</p>
-                        <p>12. Singkatan dari gram adalah huruf ......................................................</p>
-                        <p>13. 1 kg = ...................................................... gram.</p>
-                        <p>14. Benda yang ringan seperti cincin emas ditimbang dengan satuan ......................................................</p>
-                        <p>15. Alat untuk mengukur berat disebut ......................................................</p>
-                        <p>16. 3.000 gram sama dengan ...................................................... kg.</p>
-                        <p>17. Singkatan dari kilogram adalah ......................................................</p>
-                        <p>18. Satuan baku artinya hasil timbangannya selalu ...................................................... di mana saja.</p>
-                        <p>19. Bahasa Inggris dari Gajah adalah ......................................................</p>
+                    <div class="space-y-8 text-base font-medium text-slate-700">
+                        <div class="space-y-3">
+                            <p class="font-bold text-purple-700"><span class="bg-purple-200 px-2 py-1 rounded text-xs mr-2 uppercase">Inisiatif</span>9. Jika Kayla melihat ada teman di kelas yang kesulitan membawa tumpukan buku yang sangat berat, apa yang akan Kayla lakukan?</p>
+                            <div class="border-b-2 border-dashed border-slate-400 h-8 ml-4"></div>
+                            <div class="border-b-2 border-dashed border-slate-400 h-8 ml-4"></div>
+                        </div>
+
+                        <div class="space-y-3">
+                            <p class="font-bold text-teal-700"><span class="bg-teal-200 px-2 py-1 rounded text-xs mr-2 uppercase">Logika</span>10. Seekor kucing memiliki 4 buah kaki. Jika di depan rumah ada 2 ekor kucing, berapa jumlah seluruh kaki kucing tersebut?</p>
+                            <div class="border-b-2 border-dashed border-slate-400 h-8 ml-4 w-1/2"></div>
+                        </div>
+
+                        <div class="space-y-3">
+                            <p class="font-bold text-orange-700"><span class="bg-orange-200 px-2 py-1 rounded text-xs mr-2 uppercase">Tes IQ</span>11. Gula rasanya manis, kalau garam rasanya...</p>
+                            <div class="border-b-2 border-dashed border-slate-400 h-8 ml-4 w-1/2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- III. Kosakata Bahasa Inggris -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+                    <p class="text-sm font-bold text-white bg-sky-600 inline-block px-4 py-2 rounded-lg mb-6 uppercase tracking-wider shadow-sm">III. Kosakata Bahasa Inggris (3 Soal)</p>
+                    <p class="text-xs text-slate-500 font-bold mb-6 italic">*Tuliskan 3 kata Bahasa Inggris yang pernah Kayla pelajari atau yang Kayla ingat beserta artinya!</p>
+                    
+                    <div class="space-y-6 text-base font-medium text-slate-700 ml-4">
+                        <p>12. Kata: ........................................... Artinya: ...........................................</p>
+                        <p>13. Kata: ........................................... Artinya: ...........................................</p>
+                        <p>14. Kata: ........................................... Artinya: ...........................................</p>
+                    </div>
+                </div>
+
+                <!-- IV. Menulis Kalimat Motivasi -->
+                <div class="bg-yellow-50 p-8 rounded-3xl shadow-sm border border-yellow-200">
+                    <p class="text-sm font-bold text-white bg-sky-600 inline-block px-4 py-2 rounded-lg mb-6 uppercase tracking-wider shadow-sm">IV. Menulis Indah (2 Soal)</p>
+                    <p class="text-xs text-yellow-800 font-bold mb-6 italic">*Tulislah kembali kalimat di bawah ini dengan rapi dan teliti!</p>
+                    
+                    <div class="space-y-8 text-base font-medium text-slate-700 ml-4">
+                        <div class="space-y-3">
+                            <p>15. <span class="font-bold">"Aku anak yang rajin belajar dan selalu disiplin waktu."</span></p>
+                            <div class="border-b-2 border-slate-400 h-8"></div>
+                        </div>
+
+                        <div class="space-y-3">
+                            <p>16. <span class="font-bold">"Aku selalu jujur dan patuh kepada guru serta orang tuaku."</span></p>
+                            <div class="border-b-2 border-slate-400 h-8"></div>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!-- Kalkulator -->
-            <section class="mt-16 p-8 bg-indigo-900 rounded-3xl text-white shadow-2xl border-4 border-indigo-500">
+            <section class="mt-16 p-8 bg-sky-900 rounded-3xl text-white shadow-2xl border-4 border-yellow-400">
                 <div class="text-center mb-6">
-                    <h3 class="text-lg font-bold uppercase tracking-widest text-indigo-300">Nilai Kayla</h3>
-                    <p class="text-[10px] text-indigo-200 opacity-60">Masukkan jumlah jawaban benar (0-19)</p>
+                    <h3 class="text-xl font-black uppercase tracking-widest text-yellow-400">Nilai Kayla</h3>
+                    <p class="text-xs text-sky-200 opacity-80 mt-1 font-bold">Masukkan jumlah poin benar (Total 16 Soal)</p>
                 </div>
-                <div class="flex flex-col items-center space-y-4">
-                    <input type="number" id="inputBenar" min="0" max="19" placeholder="0" 
-                           class="w-full max-w-[150px] p-3 rounded-2xl bg-indigo-800 text-center text-2xl font-bold border border-indigo-700 focus:border-orange-400 outline-none text-orange-300">
-                    <button onclick="hitungNilai()" class="bg-orange-400 hover:bg-orange-300 text-indigo-900 px-8 py-2 rounded-full font-bold uppercase tracking-wider transition-all shadow-lg">Hitung Skor</button>
-                    <div id="hasil" class="hidden text-center mt-4">
-                        <div id="skor" class="text-6xl font-black text-white">0</div>
-                        <p id="pesan" class="text-xs mt-2 text-indigo-200 font-bold uppercase"></p>
+                <div class="flex flex-col items-center space-y-5">
+                    <input type="number" id="inputBenar" min="0" max="16" placeholder="0" 
+                           class="w-full max-w-[150px] p-4 rounded-2xl bg-sky-800 text-center text-3xl font-black border-2 border-sky-600 focus:border-yellow-400 outline-none text-yellow-300 shadow-inner">
+                    <button onclick="hitungNilai()" class="bg-yellow-400 hover:bg-yellow-300 text-sky-900 px-10 py-3 rounded-full font-black uppercase tracking-widest transition-all shadow-lg transform hover:scale-105">Hitung Skor</button>
+                    <div id="hasil" class="hidden text-center mt-6">
+                        <div id="skor" class="text-7xl font-black text-white drop-shadow-md">0</div>
+                        <p id="pesan" class="text-sm mt-3 text-yellow-300 font-bold uppercase tracking-widest"></p>
                     </div>
                 </div>
             </section>
         </main>
         
-        <footer class="bg-slate-100 p-4 text-center border-t text-[10px] text-slate-400 uppercase font-black tracking-widest">
-            Kayla Zahra Safitri • 16 Februari 2026
+        <footer class="bg-sky-100 p-5 text-center border-t border-sky-200 text-[11px] text-sky-700 uppercase font-black tracking-widest">
+            Kayla Zahra Safitri • 23 Februari 2026 • Semangat Belajar!
         </footer>
     </div>
 
     <script>
         function hitungNilai() {
             const b = parseInt(document.getElementById('inputBenar').value);
-            if(isNaN(b) || b < 0 || b > 19) return;
-            const n = Math.round((b/19)*100);
+            if(isNaN(b) || b < 0 || b > 16) return;
+            const n = Math.round((b/16)*100);
             document.getElementById('hasil').classList.remove('hidden');
             document.getElementById('skor').innerText = n;
-            document.getElementById('pesan').innerText = n>=90?"Masya Allah Pintar!":n>=75?"Bagus Sekali Kayla!":"Terus Semangat Belajar!";
+            
+            let pesan = "";
+            if(n >= 90) pesan = "Luar Biasa Hebat!";
+            else if(n >= 75) pesan = "Bagus Sekali Kayla!";
+            else pesan = "Tetap Semangat & Belajar Lagi!";
+            
+            document.getElementById('pesan').innerText = pesan;
         }
     </script>
 </body>
