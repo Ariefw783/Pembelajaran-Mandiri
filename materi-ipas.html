@@ -3,216 +3,286 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IPAS Bab 2 - Siklus Makhluk Hidup - Kayla</title>
+    <title>IPAS Sesi 6 - Hidup Bersama Alam</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap');
-        
-        body { font-family: 'Fredoka', sans-serif; }
-        
-        @keyframes blink { 
-            0% { opacity: 1; transform: scale(1); } 
-            50% { opacity: 0.5; transform: scale(1.05); color: #fbbf24; } 
-            100% { opacity: 1; transform: scale(1); } 
+        body { font-family: 'Comic Sans MS', 'Segoe UI', sans-serif; }
+        @keyframes blink-hard { 
+            0% { opacity: 1; transform: scale(1); background-color: #ef4444; color: white; } 
+            50% { opacity: 0.2; transform: scale(1.05); background-color: #fca5a5; color: #7f1d1d; } 
+            100% { opacity: 1; transform: scale(1); background-color: #ef4444; color: white; } 
         }
-        .warning-blink { animation: blink 0.8s infinite; }
-        
-        .pattern-bg {
-            background-color: #f0f9ff;
-            background-image: radial-gradient(#bae6fd 0.5px, transparent 0.5px);
-            background-size: 24px 24px;
-        }
+        .warning-blink { animation: blink-hard 0.8s infinite; }
+        .word-bank-item { transition: all 0.2s; cursor: pointer; }
+        .word-bank-item:hover { transform: translateY(-3px); background-color: #dcfce3; border-color: #22c55e; }
     </style>
 </head>
-<body class="pattern-bg p-4 md:p-10">
-    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden border-4 border-sky-100">
+<body class="bg-emerald-50 p-4 md:p-10">
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-2xl overflow-hidden border-2 border-emerald-200">
         
-        <!-- Header -->
-        <header class="bg-gradient-to-r from-teal-600 to-sky-500 p-10 text-center text-white border-b-8 border-orange-400">
-            <div class="inline-block bg-white text-teal-700 font-bold px-10 py-3 rounded-full text-2xl mb-4 shadow-xl transform rotate-1 border-2 border-orange-200">
-                RABU, 11 FEBRUARI 2026
-            </div>
-            <h1 class="text-xs font-bold tracking-[0.4em] uppercase mb-1 opacity-90">Ilmu Pengetahuan Alam dan Sosial</h1>
-            <h2 class="text-3xl font-extrabold tracking-tight leading-tight">BAB 2 <span class="text-orange-200">| AYO, MENGENAL SIKLUS PADA MAKHLUK HIDUP</span></h2>
-            <div class="mt-4 flex justify-center gap-3 text-[10px] uppercase font-bold text-teal-900">
-                <span class="bg-sky-100 px-3 py-1 rounded shadow-sm">Sesi 1</span>
-                <span class="bg-sky-100 px-3 py-1 rounded shadow-sm">Kelas 2 SD</span>
-                <span class="bg-sky-100 px-3 py-1 rounded shadow-sm">Tahap 1 dari 5</span>
+        <!-- Header Menonjol -->
+        <header class="bg-gradient-to-br from-emerald-500 to-teal-600 p-8 text-center text-white border-b-8 border-yellow-400 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIi8+PC9zdmc+')] opacity-50"></div>
+            
+            <div class="relative z-10">
+                <div class="inline-block bg-yellow-400 text-emerald-900 font-black px-8 py-3 rounded-2xl text-xl mb-6 shadow-xl transform rotate-2 hover:rotate-0 transition-transform border-4 border-white">
+                    📅 RABU, 01 APRIL 2026
+                </div>
+                <h1 class="text-sm font-bold tracking-[0.3em] uppercase mb-1 text-emerald-100">IPAS • Kelas 2 SD</h1>
+                <h2 class="text-3xl font-black tracking-tight drop-shadow-md">BAB 3 <span class="font-light">| HIDUP BERSAMA ALAM</span></h2>
+                <div class="mt-5 flex justify-center gap-3 text-xs uppercase font-bold text-teal-900">
+                    <span class="bg-emerald-100 px-4 py-2 rounded-full shadow-md">Sesi 6</span>
+                    <span class="bg-emerald-100 px-4 py-2 rounded-full shadow-md">Tahap 1 dari 5</span>
+                </div>
             </div>
         </header>
 
         <!-- Identitas -->
-        <div class="px-8 py-4 bg-sky-50 flex justify-between items-center border-b text-[11px] text-sky-800 italic">
-            <div>Nama Siswa: <span class="font-bold uppercase text-black">Kayla Zahra Safitri</span></div>
-            <div>Materi: <span class="font-bold text-black text-xs">Konsep Siklus Hidup</span></div>
+        <div class="px-8 py-5 bg-teal-50 flex flex-col md:flex-row justify-between items-center border-b-2 border-teal-100 text-sm text-teal-800">
+            <div>Nama Siswa: <span class="font-black uppercase text-teal-950 bg-white px-3 py-1 rounded-lg shadow-sm">Kayla Zahra Safitri</span></div>
+            <div class="mt-2 md:mt-0">Fokus: <span class="font-bold text-teal-950">Ekosistem, Biotik & Abiotik</span></div>
         </div>
 
         <main class="p-8">
             <!-- Materi -->
             <section class="mb-10">
-                <h3 class="text-lg font-bold text-teal-800 mb-4 border-l-4 border-teal-500 pl-3 uppercase">Materi: Apa itu Siklus Hidup?</h3>
-                <div class="p-6 bg-white rounded-2xl border-2 border-sky-100 text-sm leading-relaxed text-slate-700 space-y-4 shadow-sm">
-                    <p class="font-medium">Halo Kayla! Semua makhluk hidup mengalami perubahan dari kecil sampai dewasa. Perubahan yang berulang ini disebut <span class="text-teal-600 font-bold italic">Siklus Hidup</span>.</p>
+                <h3 class="text-lg font-black text-emerald-800 mb-4 flex items-center gap-2">
+                    <span class="text-2xl">🌱</span> RINGKASAN MATERI
+                </h3>
+                <div class="p-6 bg-white rounded-xl border-2 border-emerald-100 text-sm leading-relaxed text-slate-700 shadow-sm space-y-5">
+                    <p>Halo Kayla! Hari ini kita belajar tentang tempat tinggal hewan dan tumbuhan. Tempat makhluk hidup tinggal dan saling membutuhkan disebut <span class="font-bold text-emerald-600 bg-emerald-50 px-1 rounded">Ekosistem</span>.</p>
                     
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <div class="bg-orange-50 p-4 rounded-xl border border-orange-100">
-                            <p class="font-bold text-orange-700 mb-2">1. Siklus Hidup Manusia</p>
-                            <p>Manusia mulai dari dalam perut ibu sebagai <span class="font-bold">Janin</span>, lalu lahir menjadi bayi, tumbuh jadi anak-anak, remaja, hingga orang dewasa.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-teal-50 p-4 rounded-xl border border-teal-100">
+                            <h4 class="font-bold text-teal-800 mb-2 border-b border-teal-200 pb-1">1. Kelompok Makhluk Hidup</h4>
+                            <ul class="space-y-2 text-xs">
+                                <li>🐸 <span class="font-bold text-teal-700">Individu:</span> Hanya satu/sendirian (Contoh: 1 ekor katak).</li>
+                                <li>🐸🐸🐸 <span class="font-bold text-teal-700">Populasi:</span> Kumpulan hewan yang sama (Contoh: sekelompok katak).</li>
+                                <li>🐸🐟🦆 <span class="font-bold text-teal-700">Komunitas:</span> Kumpulan berbagai hewan di satu tempat (Contoh: katak, ikan, dan bebek di kolam).</li>
+                            </ul>
                         </div>
-                        <div class="bg-green-50 p-4 rounded-xl border border-green-100">
-                            <p class="font-bold text-green-700 mb-2">2. Hewan & Tumbuhan</p>
-                            <p>Hewan juga punya siklus (seperti telur jadi ayam), begitu juga tumbuhan (dari biji jadi pohon besar).</p>
+                        <div class="bg-emerald-50 p-4 rounded-xl border border-emerald-100">
+                            <h4 class="font-bold text-emerald-800 mb-2 border-b border-emerald-200 pb-1">2. Isi Ekosistem (Sawah/Hutan/Rumah)</h4>
+                            <ul class="space-y-2 text-xs">
+                                <li>🌳 <span class="font-bold text-emerald-700">Biotik (Benda Hidup):</span> Semua yang bisa bernapas dan tumbuh. Contoh: Hewan, Tumbuhan, Manusia.</li>
+                                <li>🪨 <span class="font-bold text-emerald-700">Abiotik (Benda Mati):</span> Benda yang tidak bernapas tapi sangat penting. Contoh: Air, Tanah, Batu, Udara, Cahaya Matahari.</li>
+                            </ul>
                         </div>
                     </div>
-
-                    <ul class="list-disc ml-5 space-y-3 mt-4">
-                        <li><span class="font-bold text-teal-600 underline">Siklus Hidup</span> adalah rangkaian perubahan pada makhluk hidup dari lahir sampai dewasa.</li>
-                        <li>Siklus ini penting supaya makhluk hidup tidak mengalami <span class="font-bold text-red-500">Kepunahan</span> (habis atau hilang).</li>
-                        <li>Ada faktor yang memengaruhi siklus, seperti lingkungan yang rusak bisa mengancam kelangsungan hidup mereka.</li>
-                    </ul>
                 </div>
             </section>
 
-            <!-- English Corner -->
-            <section class="mb-10 p-6 bg-slate-900 rounded-3xl border-4 border-orange-400 relative overflow-hidden shadow-xl">
-                <div class="absolute top-0 right-0 bg-red-600 text-white text-[10px] font-black px-4 py-1 rounded-bl-xl warning-blink uppercase">
-                    WAJIB DIHAFAL HARI INI!
+            <!-- English Corner Terpisah & Mencolok -->
+            <section class="mb-12 relative">
+                <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 text-[10px] font-black px-6 py-2 rounded-full warning-blink z-10 border-2 border-white shadow-lg uppercase tracking-widest">
+                    ⚠️ WAJIB DIHAFAL HARI INI! ⚠️
                 </div>
                 
-                <div class="text-center mb-6">
-                    <h3 class="text-orange-400 font-bold text-lg mb-2 uppercase tracking-widest">English Corner Today</h3>
-                    <div class="bg-white inline-block px-10 py-4 rounded-2xl shadow-lg border-2 border-teal-400">
-                        <p class="text-[10px] text-slate-400 uppercase mb-1">Ikan</p>
-                        <p class="text-4xl font-black text-slate-800 uppercase tracking-tighter">FISH</p>
-                        <p class="text-[10px] text-teal-600 font-bold mt-1 italic">Cara Baca: /fɪʃ/</p>
+                <div class="pt-8 pb-6 px-6 bg-slate-900 rounded-3xl border-4 border-yellow-400 shadow-xl text-center">
+                    <h3 class="text-yellow-400 font-black text-xl mb-4 uppercase tracking-widest flex justify-center items-center gap-2">
+                        <span>🇬🇧</span> ENGLISH CORNER <span>🇬🇧</span>
+                    </h3>
+                    
+                    <div class="bg-white inline-block px-12 py-5 rounded-2xl shadow-inner transform hover:scale-105 transition-transform duration-300 border-b-4 border-slate-300 mb-6">
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Warna Hijau (Daun)</p>
+                        <p class="text-5xl font-black text-green-500 drop-shadow-sm">GREEN</p>
                     </div>
-                </div>
 
-                <div class="border-t border-slate-700 pt-4">
-                    <p class="text-orange-300 text-[11px] text-center mb-3 uppercase tracking-widest font-black">Memory Review (Jangan Dilupakan!):</p>
-                    <div class="flex flex-wrap justify-center gap-2">
-                        <span class="bg-slate-800 text-white px-3 py-1 rounded-lg text-[10px] font-bold border border-slate-600">Foot</span>
-                        <span class="bg-slate-800 text-white px-3 py-1 rounded-lg text-[10px] font-bold border border-slate-600">Face</span>
-                        <span class="bg-slate-800 text-white px-3 py-1 rounded-lg text-[10px] font-bold border border-slate-600">Hair</span>
-                        <span class="bg-slate-800 text-white px-3 py-1 rounded-lg text-[10px] font-bold border border-slate-600">Cat</span>
-                        <span class="bg-slate-800 text-white px-3 py-1 rounded-lg text-[10px] font-bold border border-slate-600">Dog</span>
-                        <span class="bg-slate-800 text-white px-3 py-1 rounded-lg text-[10px] font-bold border border-slate-600">Cow</span>
-                        <span class="bg-slate-800 text-white px-3 py-1 rounded-lg text-[10px] font-bold border border-slate-600">Goat</span>
-                        <span class="bg-slate-800 text-white px-3 py-1 rounded-lg text-[10px] font-bold border border-slate-600">Bird</span>
-                        <span class="bg-slate-800 text-white px-3 py-1 rounded-lg text-[10px] font-bold border border-slate-600">Horse</span>
+                    <!-- Kosakata Sebelumnya -->
+                    <div class="mt-2 bg-slate-800 p-4 rounded-xl border border-slate-700">
+                        <p class="text-yellow-200 text-xs font-bold mb-3 uppercase tracking-widest border-b border-slate-600 pb-2">Jangan Lupakan Kata Ini:</p>
+                        <div class="flex flex-wrap justify-center gap-3">
+                            <span class="bg-slate-700 text-white px-4 py-2 rounded-lg text-xs font-bold shadow-sm">🐔 Chicken (Ayam)</span>
+                            <span class="bg-slate-700 text-white px-4 py-2 rounded-lg text-xs font-bold shadow-sm">🐘 Elephant (Gajah)</span>
+                            <span class="bg-slate-700 text-red-400 px-4 py-2 rounded-lg text-xs font-bold shadow-sm">🔴 Red (Merah)</span>
+                            <span class="bg-slate-700 text-blue-400 px-4 py-2 rounded-lg text-xs font-bold shadow-sm">🔵 Blue (Biru)</span>
+                            <span class="bg-slate-700 text-yellow-400 px-4 py-2 rounded-lg text-xs font-bold shadow-sm">🟡 Yellow (Kuning)</span>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!-- Latihan Soal -->
             <section class="space-y-10">
-                <h3 class="text-xs font-black text-slate-400 uppercase tracking-widest text-center">Lembar Evaluasi IPAS (19 Soal)</h3>
+                <h3 class="text-lg font-black text-slate-700 uppercase tracking-widest text-center border-b-2 border-slate-200 pb-4">📝 Lembar Evaluasi (19 Soal)</h3>
                 
                 <!-- I. Pilihan Ganda -->
                 <div class="space-y-6">
-                    <p class="text-xs font-bold text-teal-700 italic underline uppercase bg-teal-50 inline-block px-2 py-1 rounded">I. Pilihan Ganda (10 Soal)</p>
-                    <div class="text-sm space-y-6">
-                        <div class="space-y-2">
-                            <p>1. Rangkaian perubahan pada makhluk hidup dari kecil sampai dewasa disebut...</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Siklus Hidup</span><span>B. Berhenti hidup</span><span>C. Bermain</span></div>
+                    <div class="bg-emerald-100 text-emerald-800 font-bold px-4 py-2 rounded-lg inline-block uppercase text-sm shadow-sm border border-emerald-200">
+                        I. Pilihan Ganda (10 Soal)
+                    </div>
+                    <div class="text-sm space-y-6 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                        <p class="font-bold text-slate-700">1. Satu ekor semut yang berjalan sendirian disebut...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
+                            <span class="bg-slate-50 p-2 rounded border">A. Komunitas</span>
+                            <span class="bg-slate-50 p-2 rounded border">B. Individu</span>
+                            <span class="bg-slate-50 p-2 rounded border">C. Populasi</span>
                         </div>
 
-                        <div class="space-y-2">
-                            <p>2. Sebelum lahir menjadi bayi, manusia berada di dalam perut ibu sebagai...</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Anak-anak</span><span>B. Janin</span><span>C. Remaja</span></div>
+                        <p class="font-bold text-slate-700">2. Kumpulan banyak ikan sejenis yang berenang bersama di kolam disebut...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
+                            <span class="bg-slate-50 p-2 rounded border">A. Individu</span>
+                            <span class="bg-slate-50 p-2 rounded border">B. Populasi</span>
+                            <span class="bg-slate-50 p-2 rounded border">C. Biotik</span>
                         </div>
 
-                        <div class="space-y-2">
-                            <p>3. Makhluk hidup yang sudah habis atau hilang sama sekali di bumi disebut...</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Tumbuh</span><span>B. Muncul</span><span>C. Punah</span></div>
+                        <p class="font-bold text-slate-700">3. Benda abiotik adalah benda yang...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
+                            <span class="bg-slate-50 p-2 rounded border">A. Hidup dan bernapas</span>
+                            <span class="bg-slate-50 p-2 rounded border">B. Mati / tidak bernapas</span>
+                            <span class="bg-slate-50 p-2 rounded border">C. Bisa berjalan</span>
                         </div>
 
-                        <div class="space-y-2">
-                            <p>4. Ayam bermula dari sebuah telur, hal ini contoh siklus hidup pada...</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Tumbuhan</span><span>B. Hewan</span><span>C. Manusia</span></div>
+                        <p class="font-bold text-slate-700">4. Berikut ini yang termasuk benda biotik (hidup) adalah...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
+                            <span class="bg-slate-50 p-2 rounded border">A. Batu dan pasir</span>
+                            <span class="bg-slate-50 p-2 rounded border">B. Air dan cahaya</span>
+                            <span class="bg-slate-50 p-2 rounded border">C. Pohon pisang dan ayam</span>
                         </div>
 
-                        <div class="space-y-2">
-                            <p>5. Tahapan setelah manusia menjadi anak-anak adalah menjadi...</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Bayi</span><span>B. Janin</span><span>C. Remaja</span></div>
+                        <p class="font-bold text-slate-700">5. Tumbuhan membutuhkan cahaya matahari. Cahaya matahari termasuk komponen...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
+                            <span class="bg-slate-50 p-2 rounded border">A. Biotik</span>
+                            <span class="bg-slate-50 p-2 rounded border">B. Abiotik</span>
+                            <span class="bg-slate-50 p-2 rounded border">C. Komunitas</span>
                         </div>
 
-                        <div class="space-y-2">
-                            <p>6. Siklus hidup tumbuhan dimulai dari...</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Biji</span><span>B. Buah matang</span><span>C. Daun kering</span></div>
+                        <p class="font-bold text-slate-700">6. Tempat makhluk hidup tinggal dan saling membutuhkan disebut...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
+                            <span class="bg-slate-50 p-2 rounded border">A. Ekosistem</span>
+                            <span class="bg-slate-50 p-2 rounded border">B. Sekolah</span>
+                            <span class="bg-slate-50 p-2 rounded border">C. Pasar</span>
                         </div>
 
-                        <div class="space-y-2">
-                            <p>7. Mengapa siklus hidup itu penting bagi makhluk hidup?</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Agar punah</span><span>B. Agar tidak punah</span><span>C. Agar bisa tidur</span></div>
+                        <p class="font-bold text-slate-700">7. Di ekosistem sawah, hewan yang sering kita temukan adalah...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
+                            <span class="bg-slate-50 p-2 rounded border">A. Ikan paus</span>
+                            <span class="bg-slate-50 p-2 rounded border">B. Gajah</span>
+                            <span class="bg-slate-50 p-2 rounded border">C. Katak dan belalang</span>
                         </div>
 
-                        <div class="space-y-2">
-                            <p>8. Lingkungan yang rusak dapat mengakibatkan siklus hidup makhluk hidup menjadi...</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Terganggu</span><span>B. Makin baik</span><span>C. Tidak berubah</span></div>
+                        <p class="font-bold text-slate-700">8. Benda abiotik sangat penting bagi hewan untuk...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
+                            <span class="bg-slate-50 p-2 rounded border">A. Minum (Air)</span>
+                            <span class="bg-slate-50 p-2 rounded border">B. Teman mengobrol</span>
+                            <span class="bg-slate-50 p-2 rounded border">C. Menari</span>
                         </div>
 
-                        <div class="space-y-2 pt-4 border-t border-dashed">
-                            <p class="text-teal-700 font-bold italic">9. Bahasa Inggris dari "Ikan" adalah...</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Bird</span><span>B. Fish</span><span>C. Cow</span></div>
+                        <!-- English Corner Questions -->
+                        <p class="font-bold text-green-600 border-t pt-4">9. Daun pohon mangga berwarna "Green". Green artinya...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4 font-bold text-slate-600">
+                            <span class="bg-green-50 p-2 rounded border border-green-200">A. Kuning</span>
+                            <span class="bg-green-50 p-2 rounded border border-green-200">B. Merah</span>
+                            <span class="bg-green-50 p-2 rounded border border-green-200">C. Hijau</span>
                         </div>
 
-                        <div class="space-y-2">
-                            <p class="text-teal-700 font-bold italic">10. "Cat" dalam bahasa Indonesia artinya adalah...</p>
-                            <div class="grid grid-cols-3 text-xs ml-4"><span>A. Anjing</span><span>B. Kambing</span><span>C. Kucing</span></div>
+                        <p class="font-bold text-green-600">10. Rumput di taman berwarna...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4 font-bold text-slate-600">
+                            <span class="bg-green-50 p-2 rounded border border-green-200">A. Green</span>
+                            <span class="bg-green-50 p-2 rounded border border-green-200">B. Blue</span>
+                            <span class="bg-green-50 p-2 rounded border border-green-200">C. Red</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- II. Isian Singkat -->
                 <div class="mt-12">
-                    <p class="text-xs font-bold text-teal-700 italic underline uppercase bg-teal-50 inline-block px-2 py-1 rounded mb-6">II. Isian Singkat (9 Soal)</p>
+                    <div class="bg-teal-100 text-teal-800 font-bold px-4 py-2 rounded-lg inline-block uppercase text-sm shadow-sm border border-teal-200 mb-6">
+                        II. Isian Singkat (9 Soal)
+                    </div>
                     
-                    <div class="space-y-6 text-sm p-8 border-2 border-dashed border-teal-200 rounded-3xl bg-teal-50/20">
-                        <p>11. Perubahan berulang pada makhluk hidup dari lahir sampai dewasa disebut ..................................</p>
-                        <p>12. Manusia yang baru lahir disebut ......................................................</p>
-                        <p>13. Hewan dan tumbuhan juga mengalami perubahan yang disebut ..................................................</p>
-                        <p>14. Jika makhluk hidup tidak bisa melanjutkan siklus hidupnya, mereka bisa mengalami ...........................</p>
-                        <p>15. Sebelum menjadi anak-anak, manusia adalah seorang ......................................................</p>
-                        <p>16. Tumbuhan besar biasanya berasal dari pertumbuhan sebuah ......................................................</p>
-                        <p>17. Manusia tumbuh dari janin, bayi, anak-anak, remaja, lalu menjadi ..................................................</p>
-                        <p>18. Siklus hidup adalah rangkaian ........................................ pada makhluk hidup.</p>
-                        <p>19. Lingkungan yang sehat sangat membantu kelangsungan ........................................ makhluk hidup.</p>
+                    <!-- Bank Soal 15 Opsi -->
+                    <div class="bg-yellow-50 p-5 rounded-2xl border-4 border-yellow-200 mb-8 shadow-sm">
+                        <p class="text-[10px] text-center font-black text-yellow-700 uppercase mb-4 tracking-widest bg-yellow-200 inline-block px-3 py-1 rounded-full mx-auto block w-max">
+                            PILIH JAWABAN DI BAWAH INI
+                        </p>
+                        <div class="grid grid-cols-3 md:grid-cols-5 gap-3 text-xs font-bold text-center text-slate-700">
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Individu</div>
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Populasi</div>
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Komunitas</div>
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Abiotik</div>
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Biotik</div>
+                            
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Ekosistem</div>
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Air</div>
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Cahaya</div>
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Hutan</div>
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Katak</div>
+                            
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Sawah</div>
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Batu</div>
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Hidup</div>
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Green</div>
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Hijau</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6 text-sm p-8 bg-white border-2 border-slate-200 rounded-2xl shadow-sm">
+                        <p class="border-b border-slate-100 pb-2"><span class="font-bold text-teal-600">11.</span> Satu ekor kupu-kupu disebut sebagai .........................</p>
+                        <p class="border-b border-slate-100 pb-2"><span class="font-bold text-teal-600">12.</span> Kumpulan gajah yang hidup bersama di padang rumput disebut .........................</p>
+                        <p class="border-b border-slate-100 pb-2"><span class="font-bold text-teal-600">13.</span> Benda mati di sekitar kita seperti tanah dan udara disebut komponen .........................</p>
+                        <p class="border-b border-slate-100 pb-2"><span class="font-bold text-teal-600">14.</span> Tumbuhan, hewan, dan manusia adalah komponen yang bernapas, disebut komponen .........................</p>
+                        <p class="border-b border-slate-100 pb-2"><span class="font-bold text-teal-600">15.</span> Tempat hidup katak, padi, dan belalang biasanya berada di ekosistem .........................</p>
+                        <p class="border-b border-slate-100 pb-2"><span class="font-bold text-teal-600">16.</span> Ikan sangat membutuhkan komponen abiotik yang bernama ......................... untuk berenang.</p>
+                        <p class="border-b border-slate-100 pb-2"><span class="font-bold text-teal-600">17.</span> Tempat makhluk hidup saling membutuhkan disebut .........................</p>
+                        <p class="border-b border-slate-100 pb-2"><span class="font-bold text-teal-600">18.</span> Bahasa Inggris dari warna hijau adalah .........................</p>
+                        <p><span class="font-bold text-teal-600">19.</span> Kumpulan pohon pisang, burung, dan semut di satu kebun disebut .........................</p>
                     </div>
                 </div>
             </section>
 
             <!-- Kalkulator -->
-            <section class="mt-16 p-8 bg-teal-900 rounded-3xl text-white shadow-2xl border-4 border-teal-500">
-                <div class="text-center mb-6">
-                    <h3 class="text-lg font-bold uppercase tracking-widest text-teal-400">Kalkulator Nilai Kayla</h3>
-                    <p class="text-[10px] text-teal-200 opacity-60">Masukkan jumlah jawaban benar (0-19)</p>
+            <section class="mt-16 p-8 bg-slate-800 rounded-3xl text-white shadow-2xl border-4 border-emerald-500 relative overflow-hidden">
+                <div class="absolute -right-10 -top-10 opacity-10 text-9xl">💯</div>
+                <div class="text-center mb-6 relative z-10">
+                    <h3 class="text-xl font-black uppercase tracking-widest text-emerald-400">Kalkulator Nilai Otomatis</h3>
+                    <p class="text-xs text-slate-400 mt-1">Masukkan jumlah soal yang dijawab dengan benar (0-19)</p>
                 </div>
-                <div class="flex flex-col items-center space-y-4">
+                <div class="flex flex-col items-center space-y-5 relative z-10">
                     <input type="number" id="inputBenar" min="0" max="19" placeholder="0" 
-                           class="w-full max-w-[150px] p-3 rounded-2xl bg-teal-800 text-center text-2xl font-bold border border-teal-700 focus:border-orange-400 outline-none text-orange-300">
-                    <button onclick="hitungNilai()" class="bg-orange-400 hover:bg-orange-300 text-teal-900 px-8 py-2 rounded-full font-bold uppercase tracking-wider transition-all shadow-lg">Lihat Hasil</button>
-                    <div id="hasil" class="hidden text-center mt-4">
-                        <div id="skor" class="text-6xl font-black text-white">0</div>
-                        <p id="pesan" class="text-xs mt-2 text-teal-200 font-bold uppercase"></p>
+                           class="w-full max-w-[150px] p-4 rounded-xl bg-slate-700 text-center text-4xl font-black border-2 border-slate-600 focus:border-emerald-500 outline-none text-white transition-colors">
+                    <button onclick="hitungNilai()" class="bg-emerald-500 hover:bg-emerald-400 text-slate-900 px-10 py-3 rounded-full font-black uppercase tracking-widest transition-transform transform hover:scale-105 shadow-lg">Lihat Skorku!</button>
+                    <div id="hasil" class="hidden text-center mt-6 p-6 bg-slate-700/50 rounded-2xl border border-slate-600 w-full max-w-sm">
+                        <p class="text-xs text-slate-300 uppercase tracking-widest mb-1">Nilai Kamu:</p>
+                        <div id="skor" class="text-6xl font-black text-yellow-400 drop-shadow-md">0</div>
+                        <p id="pesan" class="text-sm mt-3 font-bold text-emerald-300"></p>
                     </div>
                 </div>
             </section>
         </main>
         
-        <footer class="bg-slate-100 p-4 text-center border-t text-[10px] text-slate-400 uppercase font-black tracking-widest">
-            Kayla Zahra Safitri • 11 Februari 2026
+        <footer class="bg-slate-100 p-5 text-center border-t border-slate-200 text-xs text-slate-400 uppercase font-bold tracking-widest">
+            Tahun Ajaran 2026 • Kayla Zahra Safitri
         </footer>
     </div>
 
     <script>
         function hitungNilai() {
             const b = parseInt(document.getElementById('inputBenar').value);
-            if(isNaN(b) || b < 0 || b > 19) return;
+            if(isNaN(b) || b < 0 || b > 19) {
+                alert('Tolong masukkan angka dari 0 sampai 19 ya, Kayla! 😊');
+                return;
+            }
             const n = Math.round((b/19)*100);
             document.getElementById('hasil').classList.remove('hidden');
-            document.getElementById('skor').innerText = n;
-            document.getElementById('pesan').innerText = n>=90?"Hebat Sekali, Kayla!":n>=75?"Bagus, Pertahankan!":"Ayo Semangat Belajar Lagi!";
+            
+            // Animasi angka
+            let start = 0;
+            const step = Math.max(1, Math.floor(n / 20));
+            const interval = setInterval(() => {
+                start += step;
+                if(start >= n) {
+                    start = n;
+                    clearInterval(interval);
+                }
+                document.getElementById('skor').innerText = start;
+            }, 30);
+
+            let pesan = "";
+            if(n >= 90) pesan = "LUAR BIASA! Kayla anak yang sangat cerdas! 🌟🎉";
+            else if(n >= 75) pesan = "BAGUS SEKALI! Kayla sudah paham alam sekitar! 🌿👍";
+            else pesan = "AYO SEMANGAT! Belajar lagi bersama Mama pasti bisa! 💪📚";
+            document.getElementById('pesan').innerText = pesan;
         }
     </script>
 </body>
