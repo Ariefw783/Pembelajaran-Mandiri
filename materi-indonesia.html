@@ -3,310 +3,287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bahasa Indonesia Sesi 4 - Kayla Zahra Safitri</title>
+    <title>Bahasa Indonesia Sesi 17 - Sayang Lingkungan</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
-        
-        body { font-family: 'Fredoka', sans-serif; letter-spacing: 0.02em; }
-        
-        @keyframes blink { 
-            0% { opacity: 1; transform: scale(1); } 
-            50% { opacity: 0.5; transform: scale(1.05); color: #f87171; } 
-            100% { opacity: 1; transform: scale(1); } 
+        body { font-family: 'Comic Sans MS', 'Segoe UI', sans-serif; }
+        @keyframes blink-hard { 
+            0% { opacity: 1; transform: scale(1); background-color: #ef4444; color: white; } 
+            50% { opacity: 0.2; transform: scale(1.05); background-color: #fca5a5; color: #7f1d1d; } 
+            100% { opacity: 1; transform: scale(1); background-color: #ef4444; color: white; } 
         }
-        .warning-blink { animation: blink 1s infinite; }
-        
-        .pattern-bg {
-            background-color: #f0f9ff;
-            background-image: radial-gradient(#bae6fd 0.8px, transparent 0.8px);
-            background-size: 24px 24px;
-        }
-
-        .content-card {
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(5px);
-        }
+        .warning-blink { animation: blink-hard 0.8s infinite; }
+        .word-bank-item { transition: all 0.2s; cursor: pointer; }
+        .word-bank-item:hover { transform: translateY(-3px); background-color: #dbeafe; border-color: #3b82f6; }
     </style>
 </head>
-<body class="pattern-bg p-4 md:p-10">
-    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-[2rem] overflow-hidden border-4 border-blue-200">
+<body class="bg-blue-50 p-4 md:p-10">
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-2xl overflow-hidden border-2 border-blue-200">
         
-        <!-- Header -->
-        <header class="bg-gradient-to-r from-blue-600 to-cyan-500 p-10 text-center text-white border-b-8 border-yellow-400">
-            <div class="inline-block bg-white text-blue-700 font-black px-10 py-2 rounded-full text-xl mb-4 shadow-xl transform hover:scale-105 transition-transform">
-                SENIN, 23 FEBRUARI 2026
-            </div>
-            <h1 class="text-xs font-bold tracking-[0.5em] uppercase mb-1 opacity-90">Bahasa Indonesia - Sesi 4</h1>
-            <h2 class="text-4xl font-extrabold tracking-tight uppercase">Bab 6 <span class="text-yellow-300">| BIJAK MEMAKAI UANG</span></h2>
-            <div class="mt-4 flex justify-center gap-3 text-[10px] uppercase font-bold text-blue-900">
-                <span class="bg-blue-100 px-4 py-1.5 rounded-full shadow-sm border border-blue-200">Kebutuhan vs Keinginan</span>
-                <span class="bg-blue-100 px-4 py-1.5 rounded-full shadow-sm border border-blue-200">Kelas 2 SD</span>
-                <span class="bg-blue-100 px-4 py-1.5 rounded-full shadow-sm border border-blue-200">Tahap 4 dari 16</span>
+        <!-- Header Menonjol -->
+        <header class="bg-gradient-to-br from-blue-500 to-sky-600 p-8 text-center text-white border-b-8 border-yellow-400 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full transform translate-x-1/2 -translate-y-1/2"></div>
+            
+            <div class="relative z-10">
+                <div class="inline-block bg-yellow-400 text-blue-900 font-black px-8 py-3 rounded-2xl text-xl mb-6 shadow-xl transform -rotate-2 hover:rotate-0 transition-transform border-4 border-white">
+                    📅 RABU, 01 APRIL 2026
+                </div>
+                <h1 class="text-sm font-bold tracking-[0.3em] uppercase mb-1 text-blue-100">B. Indonesia • Kelas 2 SD</h1>
+                <h2 class="text-3xl font-black tracking-tight drop-shadow-md">BAB 7 <span class="font-light">| SAYANG LINGKUNGAN</span></h2>
+                <div class="mt-5 flex justify-center gap-3 text-xs uppercase font-bold text-sky-900">
+                    <span class="bg-blue-100 px-4 py-2 rounded-full shadow-md">Sesi 17</span>
+                    <span class="bg-blue-100 px-4 py-2 rounded-full shadow-md">Tahap 1 dari 16</span>
+                </div>
             </div>
         </header>
 
         <!-- Identitas -->
-        <div class="px-8 py-4 bg-blue-50 flex justify-between items-center border-b text-[12px] text-blue-800 italic">
-            <div>Nama Siswa: <span class="font-bold uppercase text-black not-italic">Kayla Zahra Safitri</span></div>
-            <div class="hidden md:block">Tujuan: <span class="font-bold text-black text-xs not-italic">Memahami Pengeluaran Dasar</span></div>
+        <div class="px-8 py-5 bg-sky-50 flex flex-col md:flex-row justify-between items-center border-b-2 border-sky-100 text-sm text-sky-800">
+            <div>Nama Siswa: <span class="font-black uppercase text-sky-950 bg-white px-3 py-1 rounded-lg shadow-sm">Kayla Zahra Safitri</span></div>
+            <div class="mt-2 md:mt-0">Fokus: <span class="font-bold text-sky-950">Pengertian & Kebersihan Lingkungan</span></div>
         </div>
 
         <main class="p-8">
-            <!-- Materi Lengkap -->
-            <section class="mb-12">
-                <h3 class="text-xl font-bold text-blue-800 mb-6 border-l-8 border-blue-500 pl-4 uppercase tracking-wide">Materi: Kebutuhan atau Keinginan?</h3>
-                <div class="p-8 content-card rounded-3xl border-2 border-blue-100 text-[15px] leading-relaxed text-slate-700 space-y-6 shadow-md">
-                    <p class="font-medium text-lg text-blue-900">Halo Kayla! Hari ini kita belajar cara yang paling hebat untuk memakai uang, yaitu memilih mana yang benar-benar kita perlukan.</p>
+            <!-- Materi -->
+            <section class="mb-10">
+                <h3 class="text-lg font-black text-blue-800 mb-4 flex items-center gap-2">
+                    <span class="text-2xl">🏡</span> BACAAN MATERI
+                </h3>
+                <div class="p-6 bg-white rounded-xl border-2 border-blue-100 text-sm leading-relaxed text-slate-700 shadow-sm space-y-5">
+                    <p>Halo Kayla! Tahukah kamu apa itu lingkungan? <span class="font-bold text-blue-600 bg-blue-50 px-1 rounded">Lingkungan</span> adalah segala sesuatu yang ada di sekitar kita. Rumah, sekolah, jalan, dan taman adalah bagian dari lingkungan kita.</p>
                     
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="bg-green-50 p-6 rounded-2xl border border-green-200">
-                            <h4 class="font-bold text-green-700 mb-2 flex items-center gap-2 text-lg">
-                                🍎 1. Kebutuhan Pokok
-                            </h4>
-                            <p class="text-sm">Kebutuhan adalah sesuatu yang <b>harus ada</b> supaya kita bisa hidup sehat dan belajar dengan baik. Jika tidak ada, kita akan merasa kesusahan.</p>
-                            <ul class="mt-3 text-xs space-y-2 font-semibold text-green-800">
-                                <li>• Makanan sehat (Nasi, sayur, buah)</li>
-                                <li>• Pakaian sekolah dan rumah</li>
-                                <li>• Tempat tinggal (Rumah)</li>
-                                <li>• Alat tulis untuk belajar</li>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-sky-50 p-4 rounded-xl border border-sky-100">
+                            <h4 class="font-bold text-sky-800 mb-2 border-b border-sky-200 pb-1">1. Mengapa harus dijaga?</h4>
+                            <ul class="space-y-2 text-xs">
+                                <li>✨ Lingkungan yang <span class="font-bold text-sky-700">bersih</span> membuat kita merasa nyaman dan sehat.</li>
+                                <li>🦠 Lingkungan yang <span class="font-bold text-red-500">kotor</span> bisa menjadi sarang nyamuk dan sumber penyakit.</li>
+                                <li>🌊 Jika banyak sampah di selokan, bisa menyebabkan bencana <span class="font-bold text-red-500">banjir</span> saat hujan.</li>
                             </ul>
                         </div>
-
-                        <div class="bg-orange-50 p-6 rounded-2xl border border-orange-200">
-                            <h4 class="font-bold text-orange-700 mb-2 flex items-center gap-2 text-lg">
-                                🧸 2. Keinginan
-                            </h4>
-                            <p class="text-sm">Keinginan adalah sesuatu yang <b>ingin kita miliki</b> supaya hati senang, tapi kalau tidak ada pun kita tetap bisa hidup dengan baik.</p>
-                            <ul class="mt-3 text-xs space-y-2 font-semibold text-orange-800">
-                                <li>• Mainan robot atau boneka baru</li>
-                                <li>• Permen atau jajanan cokelat</li>
-                                <li>• Jalan-jalan ke taman bermain</li>
-                                <li>• Sepatu hias yang mahal</li>
+                        <div class="bg-blue-50 p-4 rounded-xl border border-blue-100">
+                            <h4 class="font-bold text-blue-800 mb-2 border-b border-blue-200 pb-1">2. Cara Menjaga Lingkungan</h4>
+                            <ul class="space-y-2 text-xs">
+                                <li>🗑️ Selalu membuang sampah pada <span class="font-bold text-blue-700">tempatnya (tong sampah)</span>.</li>
+                                <li>🧹 Rajin <span class="font-bold text-blue-700">menyapu</span> halaman rumah dan ruang kelas.</li>
+                                <li>🌳 Ikut <span class="font-bold text-blue-700">menanam pohon</span> agar udara menjadi segar dan sejuk.</li>
                             </ul>
                         </div>
-                    </div>
-
-                    <div class="bg-blue-600 p-5 rounded-2xl text-white shadow-inner">
-                        <p class="font-bold text-center mb-1">💡 Tips Anak Bijak:</p>
-                        <p class="text-sm text-center italic">"Dahulukan membeli <b>Kebutuhan</b> sebelum menuruti <b>Keinginan</b>. Sisa uangnya jangan lupa dimasukkan ke celengan ya!"</p>
                     </div>
                 </div>
             </section>
 
-            <!-- English Corner -->
-            <section class="mb-12 p-8 bg-slate-800 rounded-[2.5rem] border-4 border-yellow-400 relative overflow-hidden shadow-2xl">
-                <div class="absolute top-0 right-0 bg-yellow-400 text-black text-[12px] font-black px-6 py-2 rounded-bl-3xl warning-blink uppercase">
-                    WAJIB DIHAFAL HARI INI!
+            <!-- English Corner Terpisah & Mencolok -->
+            <section class="mb-12 relative">
+                <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 text-[10px] font-black px-6 py-2 rounded-full warning-blink z-10 border-2 border-white shadow-lg uppercase tracking-widest">
+                    ⚠️ WAJIB DIHAFAL HARI INI! ⚠️
                 </div>
                 
-                <div class="text-center mb-8">
-                    <h3 class="text-yellow-400 font-bold text-xl mb-3 uppercase tracking-[0.2em]">English Corner</h3>
-                    <div class="bg-white inline-block px-12 py-6 rounded-[2rem] shadow-xl border-4 border-blue-500">
-                        <p class="text-[12px] text-slate-400 uppercase mb-1 font-bold">Gajah</p>
-                        <p class="text-5xl font-black text-slate-800 uppercase tracking-tighter">ELEPHANT</p>
-                        <p class="text-[12px] text-blue-600 font-bold mt-2 bg-blue-50 py-1 px-4 rounded-full italic">Cara Baca: /'el.ɪ.fənt/</p>
+                <div class="pt-8 pb-6 px-6 bg-slate-900 rounded-3xl border-4 border-yellow-400 shadow-xl text-center">
+                    <h3 class="text-yellow-400 font-black text-xl mb-4 uppercase tracking-widest flex justify-center items-center gap-2">
+                        <span>🇬🇧</span> ENGLISH CORNER <span>🇬🇧</span>
+                    </h3>
+                    
+                    <div class="bg-white inline-block px-12 py-5 rounded-2xl shadow-inner transform hover:scale-105 transition-transform duration-300 border-b-4 border-slate-300 mb-6">
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Warna Hijau (Daun)</p>
+                        <p class="text-5xl font-black text-green-500 drop-shadow-sm">GREEN</p>
                     </div>
-                </div>
 
-                <div class="border-t-2 border-dashed border-slate-600 pt-6">
-                    <p class="text-yellow-200 text-sm text-center mb-4 uppercase tracking-widest font-black">Memory Challenge (Materi Sebelumnya):</p>
-                    <div class="flex flex-wrap justify-center gap-4">
-                        <span class="bg-slate-700 text-white px-4 py-2 rounded-xl text-sm font-bold border-b-4 border-blue-500">Goat (Kambing)</span>
-                        <span class="bg-slate-700 text-white px-4 py-2 rounded-xl text-sm font-bold border-b-4 border-blue-500">Horse (Kuda)</span>
-                        <span class="bg-slate-700 text-white px-4 py-2 rounded-xl text-sm font-bold border-b-4 border-blue-500">Bird (Burung)</span>
-                        <span class="bg-slate-700 text-white px-4 py-2 rounded-xl text-sm font-bold border-b-4 border-blue-500">Fish (Ikan)</span>
-                        <span class="bg-slate-700 text-white px-4 py-2 rounded-xl text-sm font-bold border-b-4 border-blue-500">Duck (Bebek)</span>
+                    <!-- Kosakata Sebelumnya -->
+                    <div class="mt-2 bg-slate-800 p-4 rounded-xl border border-slate-700">
+                        <p class="text-yellow-200 text-xs font-bold mb-3 uppercase tracking-widest border-b border-slate-600 pb-2">Jangan Lupakan Kata Ini:</p>
+                        <div class="flex flex-wrap justify-center gap-3">
+                            <span class="bg-slate-700 text-white px-4 py-2 rounded-lg text-xs font-bold shadow-sm">🐔 Chicken (Ayam)</span>
+                            <span class="bg-slate-700 text-white px-4 py-2 rounded-lg text-xs font-bold shadow-sm">🐘 Elephant (Gajah)</span>
+                            <span class="bg-slate-700 text-red-400 px-4 py-2 rounded-lg text-xs font-bold shadow-sm">🔴 Red (Merah)</span>
+                            <span class="bg-slate-700 text-blue-400 px-4 py-2 rounded-lg text-xs font-bold shadow-sm">🔵 Blue (Biru)</span>
+                            <span class="bg-slate-700 text-yellow-400 px-4 py-2 rounded-lg text-xs font-bold shadow-sm">🟡 Yellow (Kuning)</span>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!-- Latihan Soal -->
-            <section class="space-y-12">
-                <div class="text-center">
-                    <h3 class="text-xs font-black text-slate-400 uppercase tracking-[0.3em]">Lembar Evaluasi Mandiri</h3>
-                    <p class="text-2xl font-bold text-slate-800 mt-2">Uji Kemampuan Kayla</p>
-                </div>
+            <section class="space-y-10">
+                <h3 class="text-lg font-black text-slate-700 uppercase tracking-widest text-center border-b-2 border-slate-200 pb-4">📝 Lembar Tugas (19 Soal)</h3>
                 
                 <!-- I. Pilihan Ganda -->
-                <div class="space-y-8">
-                    <p class="text-[13px] font-black text-white uppercase bg-blue-600 inline-block px-4 py-2 rounded-lg shadow">I. Pilihan Ganda (8 Soal)</p>
-                    <div class="text-[15px] space-y-8">
-                        <div class="space-y-3 p-4 hover:bg-blue-50 rounded-2xl transition-colors">
-                            <p class="font-bold text-slate-800">1. Sesuatu yang harus kita miliki agar bisa bertahan hidup dan tetap sehat disebut...</p>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-sm ml-4">
-                                <label class="border p-3 rounded-xl cursor-pointer hover:border-blue-400">A. Keinginan</label>
-                                <label class="border p-3 rounded-xl cursor-pointer hover:border-blue-400">B. Kebutuhan</label>
-                                <label class="border p-3 rounded-xl cursor-pointer hover:border-blue-400">C. Hadiah</label>
-                            </div>
-                        </div>
-
-                        <div class="space-y-3 p-4 hover:bg-blue-50 rounded-2xl transition-colors">
-                            <p class="font-bold text-slate-800">2. Contoh kebutuhan pokok yang paling penting bagi tubuh manusia adalah...</p>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-sm ml-4">
-                                <label class="border p-3 rounded-xl cursor-pointer hover:border-blue-400">A. Boneka</label>
-                                <label class="border p-3 rounded-xl cursor-pointer hover:border-blue-400">B. Mobil-mobilan</label>
-                                <label class="border p-3 rounded-xl cursor-pointer hover:border-blue-400">C. Makanan sehat</label>
-                            </div>
-                        </div>
-
-                        <div class="space-y-3 p-4 hover:bg-blue-50 rounded-2xl transition-colors">
-                            <p class="font-bold text-slate-800">3. Kenapa mainan robot-robotan disebut sebagai keinginan?</p>
-                            <div class="grid grid-cols-1 gap-2 text-sm ml-4">
-                                <label class="border p-3 rounded-xl">A. Karena membuat kita sehat</label>
-                                <label class="border p-3 rounded-xl">B. Karena tanpa mainan kita masih bisa hidup baik</label>
-                                <label class="border p-3 rounded-xl">C. Karena mainan adalah barang yang wajib ada</label>
-                            </div>
-                        </div>
-
-                        <div class="space-y-3 p-4 hover:bg-blue-50 rounded-2xl transition-colors">
-                            <p class="font-bold text-slate-800">4. Pakaian sekolah termasuk kebutuhan karena digunakan untuk...</p>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-sm ml-4">
-                                <label class="border p-3 rounded-xl">A. Bermain musik</label>
-                                <label class="border p-3 rounded-xl">B. Menonton TV</label>
-                                <label class="border p-3 rounded-xl">C. Menuntut ilmu</label>
-                            </div>
-                        </div>
-
-                        <div class="space-y-3 p-4 hover:bg-blue-50 rounded-2xl transition-colors">
-                            <p class="font-bold text-slate-800">5. Kayla ingin membeli permen cokelat yang banyak, namun Kayla juga butuh pensil baru. Mana yang harus didahulukan?</p>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-sm ml-4">
-                                <label class="border p-3 rounded-xl">A. Membeli pensil</label>
-                                <label class="border p-3 rounded-xl">B. Membeli cokelat</label>
-                                <label class="border p-3 rounded-xl">C. Membeli keduanya</label>
-                            </div>
-                        </div>
-
-                        <div class="space-y-3 p-4 hover:bg-blue-50 rounded-2xl transition-colors">
-                            <p class="font-bold text-slate-800">6. Manakah dari benda berikut yang merupakan contoh Kebutuhan?</p>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-sm ml-4">
-                                <label class="border p-3 rounded-xl">A. Kincir angin plastik</label>
-                                <label class="border p-3 rounded-xl">B. Air minum bersih</label>
-                                <label class="border p-3 rounded-xl">C. Video game</label>
-                            </div>
-                        </div>
-
-                        <div class="space-y-3 p-4 hover:bg-blue-50 rounded-2xl transition-colors">
-                            <p class="font-bold text-slate-800">7. Apa yang biasanya dirasakan seseorang jika kebutuhan pokoknya tidak terpenuhi?</p>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-sm ml-4">
-                                <label class="border p-3 rounded-xl">A. Sangat senang</label>
-                                <label class="border p-3 rounded-xl">B. Merasa kesusahan</label>
-                                <label class="border p-3 rounded-xl">C. Biasa saja</label>
-                            </div>
-                        </div>
-
-                        <div class="space-y-3 p-4 hover:bg-blue-50 rounded-2xl transition-colors">
-                            <p class="font-bold text-slate-800">8. "Rumah" termasuk kebutuhan sebagai tempat untuk...</p>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-sm ml-4">
-                                <label class="border p-3 rounded-xl">A. Berjualan</label>
-                                <label class="border p-3 rounded-xl">B. Berteduh & tinggal</label>
-                                <label class="border p-3 rounded-xl">C. Berlari kencang</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- II. Latihan Pengembangan (Logika, Inisiatif, IQ) -->
-                <div class="space-y-8">
-                    <p class="text-[13px] font-black text-white uppercase bg-orange-500 inline-block px-4 py-2 rounded-lg shadow">II. Latihan Tantangan (3 Soal)</p>
-                    <div class="space-y-8 text-sm p-8 border-4 border-dashed border-orange-200 rounded-[2.5rem] bg-orange-50/30">
-                        <div class="space-y-2">
-                            <p class="font-bold text-orange-900">9. (Inisiatif) Jika kamu melihat adikmu menangis karena mainannya rusak, apa yang akan kamu lakukan agar adik kembali ceria? (Tulis jawabanmu)</p>
-                            <textarea class="w-full border-2 border-orange-100 rounded-xl p-3 h-20 outline-none focus:border-orange-400" placeholder="Jawaban Kayla..."></textarea>
-                        </div>
-
-                        <div class="space-y-2">
-                            <p class="font-bold text-orange-900">10. (Logika) Di sebuah pohon ada 5 burung. Jika seorang pemburu menembak 1 burung hingga jatuh, berapa burung yang masih tertinggal di pohon itu? Mengapa?</p>
-                            <textarea class="w-full border-2 border-orange-100 rounded-xl p-3 h-20 outline-none focus:border-orange-400" placeholder="Jawaban Kayla..."></textarea>
-                        </div>
-
-                        <div class="space-y-2">
-                            <p class="font-bold text-orange-900">11. (IQ - Pola) Jika: 1 = Gajah, 2 = Semut, 3 = Gajah, 4 = Semut. Maka nomor 5 adalah hewan apa?</p>
-                            <input type="text" class="w-full border-2 border-orange-100 rounded-xl p-3 outline-none focus:border-orange-400" placeholder="Jawaban Kayla...">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- III. Bahasa Inggris -->
                 <div class="space-y-6">
-                    <p class="text-[13px] font-black text-white uppercase bg-slate-700 inline-block px-4 py-2 rounded-lg shadow">III. English Words (3 Soal)</p>
-                    <div class="p-8 border-2 border-slate-200 rounded-3xl bg-slate-50 space-y-4">
-                        <p class="text-xs italic text-slate-500 mb-4">Sebutkan 3 kata bahasa Inggris yang sudah Kayla hafal beserta artinya!</p>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                            <div class="space-y-1">
-                                <span class="text-[10px] font-bold text-blue-600">No. 12</span>
-                                <input type="text" class="w-full border p-3 rounded-xl" placeholder="Kata Inggris = Artinya">
-                            </div>
-                            <div class="space-y-1">
-                                <span class="text-[10px] font-bold text-blue-600">No. 13</span>
-                                <input type="text" class="w-full border p-3 rounded-xl" placeholder="Kata Inggris = Artinya">
-                            </div>
-                            <div class="space-y-1">
-                                <span class="text-[10px] font-bold text-blue-600">No. 14</span>
-                                <input type="text" class="w-full border p-3 rounded-xl" placeholder="Kata Inggris = Artinya">
-                            </div>
+                    <div class="bg-blue-100 text-blue-800 font-bold px-4 py-2 rounded-lg inline-block uppercase text-sm shadow-sm border border-blue-200">
+                        I. Pilihan Ganda (10 Soal)
+                    </div>
+                    <div class="text-sm space-y-6 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                        <p class="font-bold text-slate-700">1. Segala sesuatu yang ada di sekitar kita (rumah, jalan, taman) disebut...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
+                            <span class="bg-slate-50 p-2 rounded border">A. Cuaca</span>
+                            <span class="bg-slate-50 p-2 rounded border">B. Lingkungan</span>
+                            <span class="bg-slate-50 p-2 rounded border">C. Langit</span>
+                        </div>
+
+                        <p class="font-bold text-slate-700">2. Lingkungan yang bersih akan membuat tubuh kita menjadi...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
+                            <span class="bg-slate-50 p-2 rounded border">A. Sakit</span>
+                            <span class="bg-slate-50 p-2 rounded border">B. Sehat</span>
+                            <span class="bg-slate-50 p-2 rounded border">C. Lemah</span>
+                        </div>
+
+                        <p class="font-bold text-slate-700">3. Jika kamu melihat bungkus permen di lantai kelas, apa yang harus kamu lakukan?</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
+                            <span class="bg-slate-50 p-2 rounded border">A. Membiarkannya</span>
+                            <span class="bg-slate-50 p-2 rounded border">B. Membuangnya ke tong sampah</span>
+                            <span class="bg-slate-50 p-2 rounded border">C. Menendangnya</span>
+                        </div>
+
+                        <p class="font-bold text-slate-700">4. Membuang sampah sembarangan di selokan dapat menyebabkan bencana...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
+                            <span class="bg-slate-50 p-2 rounded border">A. Banjir</span>
+                            <span class="bg-slate-50 p-2 rounded border">B. Gempa bumi</span>
+                            <span class="bg-slate-50 p-2 rounded border">C. Gunung meletus</span>
+                        </div>
+
+                        <p class="font-bold text-slate-700">5. Lingkungan yang kotor bisa menjadi tempat bersarangnya hewan pembawa penyakit, yaitu...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
+                            <span class="bg-slate-50 p-2 rounded border">A. Kupu-kupu</span>
+                            <span class="bg-slate-50 p-2 rounded border">B. Burung</span>
+                            <span class="bg-slate-50 p-2 rounded border">C. Nyamuk</span>
+                        </div>
+
+                        <p class="font-bold text-slate-700">6. Alat yang digunakan untuk membersihkan halaman rumah dari daun kering adalah...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
+                            <span class="bg-slate-50 p-2 rounded border">A. Sapu lidi</span>
+                            <span class="bg-slate-50 p-2 rounded border">B. Panci</span>
+                            <span class="bg-slate-50 p-2 rounded border">C. Kemoceng</span>
+                        </div>
+
+                        <p class="font-bold text-slate-700">7. Menanam pohon sangat bagus karena dapat membuat udara menjadi...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
+                            <span class="bg-slate-50 p-2 rounded border">A. Panas</span>
+                            <span class="bg-slate-50 p-2 rounded border">B. Segar</span>
+                            <span class="bg-slate-50 p-2 rounded border">C. Berbau busuk</span>
+                        </div>
+
+                        <p class="font-bold text-slate-700">8. Menjaga kebersihan sekolah adalah tugas...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
+                            <span class="bg-slate-50 p-2 rounded border">A. Bapak guru saja</span>
+                            <span class="bg-slate-50 p-2 rounded border">B. Semua warga sekolah</span>
+                            <span class="bg-slate-50 p-2 rounded border">C. Tukang kebun saja</span>
+                        </div>
+
+                        <!-- English Corner Questions -->
+                        <p class="font-bold text-green-600 border-t pt-4">9. Daun pohon pisang warnanya "Green". Apa arti "Green"?</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4 font-bold text-slate-600">
+                            <span class="bg-green-50 p-2 rounded border border-green-200">A. Merah</span>
+                            <span class="bg-green-50 p-2 rounded border border-green-200">B. Kuning</span>
+                            <span class="bg-green-50 p-2 rounded border border-green-200">C. Hijau</span>
+                        </div>
+
+                        <p class="font-bold text-green-600">10. "Hijau" dalam bahasa Inggris adalah...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4 font-bold text-slate-600">
+                            <span class="bg-green-50 p-2 rounded border border-green-200">A. Green</span>
+                            <span class="bg-green-50 p-2 rounded border border-green-200">B. Blue</span>
+                            <span class="bg-green-50 p-2 rounded border border-green-200">C. Red</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- IV. Menulis Kalimat Motivasi -->
-                <div class="space-y-6">
-                    <p class="text-[13px] font-black text-white uppercase bg-emerald-600 inline-block px-4 py-2 rounded-lg shadow">IV. Menulis Indah (2 Soal)</p>
-                    <div class="p-8 border-2 border-emerald-100 rounded-3xl bg-emerald-50 space-y-8">
-                        <div class="space-y-2">
-                            <p class="text-[10px] font-bold text-emerald-700 uppercase">No. 15 (Salin Kalimat Ini):</p>
-                            <p class="text-lg font-bold text-slate-700 italic">"Saya anak hebat yang disiplin dan rajin menabung."</p>
-                            <input type="text" class="w-full border-2 border-white rounded-xl p-4 bg-white/80 shadow-sm" placeholder="Tulis di sini...">
+                <!-- II. Isian Singkat -->
+                <div class="mt-12">
+                    <div class="bg-sky-100 text-sky-800 font-bold px-4 py-2 rounded-lg inline-block uppercase text-sm shadow-sm border border-sky-200 mb-6">
+                        II. Isian Singkat (9 Soal)
+                    </div>
+                    
+                    <!-- Bank Soal 15 Opsi -->
+                    <div class="bg-yellow-50 p-5 rounded-2xl border-4 border-yellow-200 mb-8 shadow-sm">
+                        <p class="text-[10px] text-center font-black text-yellow-700 uppercase mb-4 tracking-widest bg-yellow-200 inline-block px-3 py-1 rounded-full mx-auto block w-max">
+                            PILIH JAWABAN DI BAWAH INI
+                        </p>
+                        <div class="grid grid-cols-3 md:grid-cols-5 gap-3 text-xs font-bold text-center text-slate-700">
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Lingkungan</div>
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Sehat</div>
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Kotor</div>
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Tempatnya</div>
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Sapu</div>
+                            
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Banjir</div>
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Nyamuk</div>
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Pohon</div>
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Sampah</div>
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Nyaman</div>
+                            
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Bersih</div>
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Sakit</div>
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Alam</div>
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Green</div>
+                            <div class="word-bank-item bg-white py-2 rounded-lg border-2 border-slate-200">Hijau</div>
                         </div>
-                        <div class="space-y-2">
-                            <p class="text-[10px] font-bold text-emerald-700 uppercase">No. 16 (Salin Kalimat Ini):</p>
-                            <p class="text-lg font-bold text-slate-700 italic">"Saya selalu jujur dan patuh kepada guru serta orang tua."</p>
-                            <input type="text" class="w-full border-2 border-white rounded-xl p-4 bg-white/80 shadow-sm" placeholder="Tulis di sini...">
-                        </div>
+                    </div>
+
+                    <div class="space-y-6 text-sm p-8 bg-white border-2 border-slate-200 rounded-2xl shadow-sm">
+                        <p class="border-b border-slate-100 pb-2"><span class="font-bold text-blue-600">11.</span> Segala sesuatu yang ada di sekitar rumah dan sekolah kita disebut .........................</p>
+                        <p class="border-b border-slate-100 pb-2"><span class="font-bold text-blue-600">12.</span> Lingkungan yang rajin dibersihkan akan membuat kita merasa ......................... (tidak sakit).</p>
+                        <p class="border-b border-slate-100 pb-2"><span class="font-bold text-blue-600">13.</span> Kita harus membuang bekas jajanan ke dalam tong .........................</p>
+                        <p class="border-b border-slate-100 pb-2"><span class="font-bold text-blue-600">14.</span> Membuang sampah di selokan saat hujan deras dapat mengakibatkan bencana .........................</p>
+                        <p class="border-b border-slate-100 pb-2"><span class="font-bold text-blue-600">15.</span> Tumpukan sampah yang bau bisa menjadi tempat sarang nyamuk dan membuat kita menjadi .........................</p>
+                        <p class="border-b border-slate-100 pb-2"><span class="font-bold text-blue-600">16.</span> Untuk membersihkan lantai dari debu, kita menggunakan alat yang bernama .........................</p>
+                        <p class="border-b border-slate-100 pb-2"><span class="font-bold text-blue-600">17.</span> Agar udara di depan rumah menjadi sejuk, kita bisa menanam .........................</p>
+                        <p class="border-b border-slate-100 pb-2"><span class="font-bold text-green-600">18.</span> Bahasa Inggris dari kata "Hijau" adalah .........................</p>
+                        <p><span class="font-bold text-blue-600">19.</span> Selalu buanglah sampah pada .........................</p>
                     </div>
                 </div>
             </section>
 
-            <!-- Kalkulator Skor -->
-            <section class="mt-20 p-10 bg-gradient-to-br from-blue-900 to-indigo-900 rounded-[3rem] text-white shadow-2xl border-4 border-blue-400">
-                <div class="text-center mb-8">
-                    <h3 class="text-2xl font-black uppercase tracking-widest text-blue-300">Hasil Belajar Kayla</h3>
-                    <p class="text-xs text-blue-100 opacity-80 mt-2 italic">Masukkan jumlah jawaban benar untuk melihat skor akhirmu!</p>
+            <!-- Kalkulator -->
+            <section class="mt-16 p-8 bg-slate-900 rounded-3xl text-white shadow-2xl border-4 border-blue-500 relative overflow-hidden">
+                <div class="absolute -right-10 -top-10 opacity-10 text-9xl">🌟</div>
+                <div class="text-center mb-6 relative z-10">
+                    <h3 class="text-xl font-black uppercase tracking-widest text-blue-400">Mesin Penghitung Nilai</h3>
+                    <p class="text-xs text-slate-400 mt-1">Isi dengan jumlah jawaban yang benar (Maksimal 19)</p>
                 </div>
-                <div class="flex flex-col items-center space-y-6">
-                    <div class="relative">
-                        <input type="number" id="inputBenar" min="0" max="16" placeholder="0" 
-                               class="w-32 h-32 rounded-full bg-blue-800 text-center text-5xl font-black border-4 border-blue-600 focus:border-yellow-400 outline-none text-yellow-300 shadow-inner">
-                        <div class="absolute -bottom-2 -right-2 bg-yellow-400 text-blue-900 p-2 rounded-full text-[10px] font-black">/ 16</div>
-                    </div>
-                    <button onclick="hitungNilai()" class="bg-yellow-400 hover:bg-yellow-300 text-blue-900 px-12 py-3 rounded-full font-black uppercase tracking-tighter transition-all hover:scale-110 active:scale-95 shadow-xl">Cek Nilai Sekarang</button>
-                    <div id="hasil" class="hidden text-center mt-4 animate-bounce">
-                        <div id="skor" class="text-7xl font-black text-white">0</div>
-                        <p id="pesan" class="text-sm mt-3 text-blue-200 font-bold uppercase tracking-widest bg-blue-800/50 px-6 py-2 rounded-full"></p>
+                <div class="flex flex-col items-center space-y-5 relative z-10">
+                    <input type="number" id="inputBenar" min="0" max="19" placeholder="0" 
+                           class="w-full max-w-[150px] p-4 rounded-xl bg-slate-700 text-center text-4xl font-black border-2 border-slate-600 focus:border-blue-500 outline-none text-white transition-colors">
+                    <button onclick="hitungNilai()" class="bg-blue-500 hover:bg-blue-400 text-slate-900 px-10 py-3 rounded-full font-black uppercase tracking-widest transition-transform transform hover:scale-105 shadow-lg">Cek Nilai Kayla</button>
+                    <div id="hasil" class="hidden text-center mt-6 p-6 bg-slate-700/50 rounded-2xl border border-slate-600 w-full max-w-sm">
+                        <p class="text-xs text-slate-300 uppercase tracking-widest mb-1">Skor Kamu:</p>
+                        <div id="skor" class="text-6xl font-black text-yellow-400 drop-shadow-md">0</div>
+                        <p id="pesan" class="text-sm mt-3 font-bold text-blue-300"></p>
                     </div>
                 </div>
             </section>
         </main>
         
-        <footer class="bg-slate-50 p-6 text-center border-t text-[11px] text-slate-400 uppercase font-black tracking-[0.4em]">
-            Kayla Zahra Safitri • 23 Februari 2026 • Semangat Belajar!
+        <footer class="bg-slate-100 p-5 text-center border-t border-slate-200 text-xs text-slate-400 uppercase font-bold tracking-widest">
+            Tahun Ajaran 2026 • Kayla Zahra Safitri
         </footer>
     </div>
 
     <script>
         function hitungNilai() {
             const b = parseInt(document.getElementById('inputBenar').value);
-            if(isNaN(b) || b < 0 || b > 16) return;
-            const n = Math.round((b/16)*100);
+            if(isNaN(b) || b < 0 || b > 19) {
+                alert('Ups! Masukkan angka dari 0 sampai 19 ya. 😊');
+                return;
+            }
+            const n = Math.round((b/19)*100);
             document.getElementById('hasil').classList.remove('hidden');
-            document.getElementById('skor').innerText = n;
             
-            let msg = "";
-            if(n >= 90) msg = "Luar Biasa, Kayla Juara!";
-            else if(n >= 75) msg = "Hebat, Tingkatkan Terus!";
-            else msg = "Ayo Belajar Lagi Bersama Lilo!";
-            
-            document.getElementById('pesan').innerText = msg;
+            // Animasi angka
+            let start = 0;
+            const step = Math.max(1, Math.floor(n / 20));
+            const interval = setInterval(() => {
+                start += step;
+                if(start >= n) {
+                    start = n;
+                    clearInterval(interval);
+                }
+                document.getElementById('skor').innerText = start;
+            }, 30);
+
+            let pesan = "";
+            if(n >= 90) pesan = "PINTAR SEKALI! Kayla pahlawan lingkungan! 🌍🦸‍♀️";
+            else if(n >= 75) pesan = "BAGUS! Kayla anak yang cinta kebersihan! 🧹✨";
+            else pesan = "JANGAN MENYERAH! Ayo belajar lagi pelan-pelan! 💪📖";
+            document.getElementById('pesan').innerText = pesan;
         }
     </script>
 </body>
