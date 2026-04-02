@@ -3,293 +3,300 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matematika Bab 6 - Pengukuran Baku - Kayla</title>
+    <title>Matematika Sesi 9 - Ayo Membilang</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
-        
-        body { font-family: 'Fredoka', sans-serif; }
-        
-        @keyframes blink { 
-            0% { opacity: 1; transform: scale(1); } 
-            50% { opacity: 0.5; transform: scale(1.05); color: #ef4444; } 
-            100% { opacity: 1; transform: scale(1); } 
+        body { font-family: 'Comic Sans MS', 'Segoe UI', sans-serif; }
+        @keyframes blink-hard { 
+            0% { opacity: 1; transform: scale(1); background-color: #000000; color: white; } 
+            50% { opacity: 0.8; transform: scale(1.05); background-color: #333333; color: #fbbf24; box-shadow: 0 0 15px rgba(0,0,0,0.5); } 
+            100% { opacity: 1; transform: scale(1); background-color: #000000; color: white; } 
         }
-        .warning-blink { animation: blink 1s infinite; }
-        
-        .math-bg {
-            background-color: #f0f9ff;
-            background-image: 
-                linear-gradient(#bae6fd 2px, transparent 2px),
-                linear-gradient(90deg, #bae6fd 2px, transparent 2px),
-                linear-gradient(#bae6fd 1px, transparent 1px),
-                linear-gradient(90deg, #bae6fd 1px, transparent 1px);
-            background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
-            background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+        .warning-blink { animation: blink-hard 1s infinite; }
+        .word-bank-item { transition: all 0.2s; cursor: pointer; }
+        .word-bank-item:hover { transform: translateY(-3px); background-color: #ffedd5; border-color: #f97316; }
+        .bounce-date { animation: bounce 2s infinite; }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0) rotate(-2deg); }
+            50% { transform: translateY(-5px) rotate(2deg); }
         }
     </style>
 </head>
-<body class="math-bg p-4 md:p-10">
-    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden border-4 border-sky-300">
+<body class="bg-orange-50 p-4 md:p-10">
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden border-2 border-orange-200">
         
-        <!-- Header -->
-        <header class="bg-gradient-to-r from-sky-500 to-blue-600 p-10 text-center text-white border-b-8 border-yellow-400">
-            <div class="inline-block bg-white text-sky-700 font-bold px-8 py-2 rounded-full text-xl mb-4 shadow-lg transform -rotate-1">
-                SENIN, 23 FEBRUARI 2026
-            </div>
-            <h1 class="text-xs font-bold tracking-[0.4em] uppercase mb-1 opacity-90">Matematika</h1>
-            <h2 class="text-4xl font-extrabold tracking-tight">BAB 6 <span class="text-yellow-300">| PENGUKURAN</span></h2>
-            <div class="mt-4 flex justify-center gap-3 text-[11px] uppercase font-bold text-sky-900">
-                <span class="bg-sky-100 px-3 py-1 rounded shadow-sm">Sesi 3</span>
-                <span class="bg-sky-100 px-3 py-1 rounded shadow-sm">Kelas 2 SD</span>
-                <span class="bg-sky-100 px-3 py-1 rounded shadow-sm">Tahap 3 dari 8</span>
+        <!-- Header Menonjol -->
+        <header class="bg-gradient-to-br from-orange-500 to-amber-600 p-8 text-center text-white border-b-8 border-yellow-300 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiLz48L3N2Zz4=')]"></div>
+            
+            <div class="relative z-10 pt-4">
+                <div class="inline-block bg-yellow-300 text-orange-900 font-black px-10 py-4 rounded-3xl text-2xl mb-6 shadow-2xl border-4 border-white bounce-date tracking-widest">
+                    🌟 KAMIS, 02 APRIL 2026 🌟
+                </div>
+                <h1 class="text-sm font-bold tracking-[0.3em] uppercase mb-1 text-orange-100">Matematika • Kelas 2 SD</h1>
+                <h2 class="text-3xl font-black tracking-tight drop-shadow-md">BAB 7 <span class="font-light">| AYO MEMBILANG SAMPAI 100</span></h2>
+                <div class="mt-5 flex justify-center gap-3 text-xs uppercase font-bold text-amber-900">
+                    <span class="bg-orange-100 px-4 py-2 rounded-full shadow-md">Sesi 9</span>
+                    <span class="bg-orange-100 px-4 py-2 rounded-full shadow-md">Tahap 1 dari 10</span>
+                </div>
             </div>
         </header>
 
         <!-- Identitas -->
-        <div class="px-8 py-5 bg-sky-50 flex justify-between items-center border-b-2 border-sky-100 text-[13px] text-sky-800">
-            <div>Nama Siswa: <span class="font-bold uppercase text-black text-sm">Kayla Zahra Safitri</span></div>
-            <div>Fokus: <span class="font-bold text-black text-sm">Satuan Berat Baku (Gram & Kilogram)</span></div>
+        <div class="px-8 py-5 bg-amber-50 flex flex-col md:flex-row justify-between items-center border-b-2 border-amber-100 text-sm text-amber-800">
+            <div>Nama Siswa: <span class="font-black uppercase text-amber-950 bg-white px-3 py-1 rounded-lg shadow-sm border border-amber-200">Kayla Zahra Safitri</span></div>
+            <div class="mt-2 md:mt-0">Fokus: <span class="font-bold text-amber-950">Bilangan 51 sampai 60 & Nilai Tempat</span></div>
         </div>
 
         <main class="p-8">
             <!-- Materi -->
-            <section class="mb-12">
-                <h3 class="text-xl font-bold text-sky-800 mb-5 border-l-4 border-sky-500 pl-4 uppercase tracking-wide">Materi: Mengenal Gram dan Kilogram</h3>
-                <div class="p-8 bg-white rounded-3xl border-2 border-sky-200 text-base leading-loose text-slate-700 space-y-5 shadow-sm">
-                    <p class="font-medium text-lg text-slate-800">Halo Kayla! Mari kita lanjutkan belajar menimbang berat benda.</p>
-                    <p>Pada pertemuan sebelumnya, kita menggunakan kelereng. Sekarang, kita akan belajar mengukur berat benda menggunakan <span class="font-bold text-sky-600">Satuan Baku</span>. Satuan baku artinya ukuran yang digunakan selalu sama di mana saja.</p>
-                    <p>Alat yang digunakan untuk mengukur berat secara baku disebut <span class="font-bold text-sky-600">Timbangan</span>.</p>
+            <section class="mb-10">
+                <h3 class="text-lg font-black text-orange-800 mb-4 flex items-center gap-2 border-b-2 border-orange-200 pb-2">
+                    <span class="text-2xl">🔢</span> RINGKASAN MATERI
+                </h3>
+                <div class="p-6 bg-white rounded-2xl border-2 border-orange-100 text-sm leading-relaxed text-slate-700 shadow-sm space-y-6">
+                    <p>Halo Kayla! Ayo kita belajar berhitung dari angka 51 sampai 60. Ingat urutannya ya!</p>
                     
-                    <div class="bg-sky-50 p-5 rounded-2xl border border-sky-100">
-                        <p class="font-bold text-sky-800 mb-2">1. Satuan Gram (disingkat: g)</p>
-                        <ul class="list-disc ml-6 space-y-2">
-                            <li>Gram digunakan untuk menimbang benda-benda yang <span class="font-bold text-sky-600">Ringan</span>.</li>
-                            <li>Contoh benda yang ditimbang dengan satuan gram: sebatang pensil, cincin emas, dan buah stroberi.</li>
-                        </ul>
+                    <!-- Angka 51-60 -->
+                    <div class="flex flex-wrap justify-center gap-2 bg-orange-50 p-4 rounded-xl border border-orange-200">
+                        <span class="bg-white font-black text-orange-600 px-3 py-2 rounded shadow-sm border border-orange-100 text-lg">51</span>
+                        <span class="bg-white font-black text-orange-600 px-3 py-2 rounded shadow-sm border border-orange-100 text-lg">52</span>
+                        <span class="bg-white font-black text-orange-600 px-3 py-2 rounded shadow-sm border border-orange-100 text-lg">53</span>
+                        <span class="bg-white font-black text-orange-600 px-3 py-2 rounded shadow-sm border border-orange-100 text-lg">54</span>
+                        <span class="bg-white font-black text-orange-600 px-3 py-2 rounded shadow-sm border border-orange-100 text-lg">55</span>
+                        <span class="bg-white font-black text-orange-600 px-3 py-2 rounded shadow-sm border border-orange-100 text-lg">56</span>
+                        <span class="bg-white font-black text-orange-600 px-3 py-2 rounded shadow-sm border border-orange-100 text-lg">57</span>
+                        <span class="bg-white font-black text-orange-600 px-3 py-2 rounded shadow-sm border border-orange-100 text-lg">58</span>
+                        <span class="bg-white font-black text-orange-600 px-3 py-2 rounded shadow-sm border border-orange-100 text-lg">59</span>
+                        <span class="bg-orange-500 font-black text-white px-3 py-2 rounded shadow-sm border border-orange-600 text-lg">60</span>
                     </div>
 
-                    <div class="bg-yellow-50 p-5 rounded-2xl border border-yellow-100">
-                        <p class="font-bold text-yellow-800 mb-2">2. Satuan Kilogram (disingkat: kg)</p>
-                        <ul class="list-disc ml-6 space-y-2">
-                            <li>Kilogram digunakan untuk menimbang benda-benda yang <span class="font-bold text-yellow-700">Lebih Berat</span>.</li>
-                            <li>Contoh benda yang ditimbang dengan satuan kilogram: semangka yang besar, sekarung beras, dan berat badan Kayla.</li>
-                        </ul>
-                    </div>
-
-                    <div class="bg-blue-600 text-white p-6 rounded-2xl shadow-md text-center">
-                        <p class="text-lg font-bold mb-3">Ingatlah Rumus Penting Ini!</p>
-                        <p class="text-2xl font-black bg-white text-blue-600 inline-block px-6 py-2 rounded-full">1 Kilogram = 1000 Gram</p>
-                        <p class="mt-4 text-sm font-medium">Jika ibu membeli 1 kg telur, itu sama dengan 1000 gram.<br>
-                        Jika 1 kilogram = 1000 gram, maka <span class="font-bold text-yellow-300">2 kilogram sama dengan 2000 gram</span>.</p>
+                    <div class="bg-amber-50 p-5 rounded-xl border border-amber-200">
+                        <h4 class="font-bold text-amber-800 mb-3 text-lg">Konsep Nilai Tempat</h4>
+                        <p class="mb-2">Setiap angka memiliki tempat dan nilai. Ada <span class="font-bold text-red-600">PULUHAN</span> (di depan) dan <span class="font-bold text-blue-600">SATUAN</span> (di belakang).</p>
+                        
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-center text-lg mt-3">
+                            <p>Angka <span class="text-3xl font-black text-slate-800">54</span></p>
+                            <p class="mt-2">
+                                Angka <span class="font-bold text-red-600 text-xl">5</span> menempati tempat <span class="font-bold text-red-600">PULUHAN</span>.<br>
+                                Angka <span class="font-bold text-blue-600 text-xl">4</span> menempati tempat <span class="font-bold text-blue-600">SATUAN</span>.
+                            </p>
+                            <p class="mt-3 font-bold text-slate-600 bg-slate-50 py-2 rounded">Jadi, 54 = 5 Puluhan + 4 Satuan</p>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <!-- English Corner -->
-            <section class="mb-12 p-8 bg-slate-800 rounded-3xl border-4 border-yellow-400 relative overflow-hidden shadow-2xl">
-                <div class="absolute top-0 right-0 bg-yellow-400 text-black text-[12px] font-black px-6 py-2 rounded-bl-2xl warning-blink uppercase tracking-widest">
-                    WAJIB DIHAFAL HARI INI!
+            <!-- English Corner (Hitam) -->
+            <section class="mb-12 relative mt-10">
+                <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 text-[11px] font-black px-8 py-3 rounded-full warning-blink z-10 border-4 border-yellow-400 shadow-xl uppercase tracking-widest text-center">
+                    🚨 WAJIB DIHAFAL HARI INI! 🚨
                 </div>
                 
-                <div class="text-center mb-8 mt-4">
-                    <h3 class="text-yellow-400 font-bold text-xl mb-3 uppercase tracking-widest">English Corner</h3>
-                    <div class="bg-white inline-block px-12 py-5 rounded-3xl shadow-lg border-b-4 border-slate-300">
-                        <p class="text-[12px] text-slate-500 uppercase font-bold mb-1 tracking-wider">Gajah</p>
-                        <p class="text-5xl font-black text-slate-800 uppercase tracking-wide">ELEPHANT</p>
-                        <p class="text-sm text-sky-600 font-bold mt-2 bg-sky-50 py-1 px-4 rounded-full inline-block">Cara Baca: /'e-le-fent/</p>
+                <div class="pt-10 pb-6 px-6 bg-slate-100 rounded-3xl border-4 border-slate-800 shadow-xl text-center relative overflow-hidden">
+                    <h3 class="text-slate-800 font-black text-2xl mb-4 uppercase tracking-widest flex justify-center items-center gap-2">
+                        <span>🇬🇧</span> ENGLISH CORNER <span>🇬🇧</span>
+                    </h3>
+                    
+                    <div class="bg-black inline-block px-16 py-6 rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300 border-4 border-slate-700 mb-8">
+                        <p class="text-xs font-bold text-slate-300 uppercase tracking-widest mb-1">Warna Hitam</p>
+                        <p class="text-6xl font-black text-white drop-shadow-md tracking-wider">BLACK</p>
                     </div>
-                </div>
 
-                <div class="border-t-2 border-slate-600 pt-6">
-                    <p class="text-slate-300 text-[11px] text-center mb-4 uppercase tracking-widest font-bold">Tetap Ingat Kata Sebelumnya:</p>
-                    <div class="flex flex-wrap justify-center gap-4">
-                        <span class="bg-slate-700 text-yellow-300 px-4 py-2 rounded-full text-sm font-bold border-2 border-slate-500 shadow-sm">Goat</span>
-                        <span class="bg-slate-700 text-yellow-300 px-4 py-2 rounded-full text-sm font-bold border-2 border-slate-500 shadow-sm">Horse</span>
-                        <span class="bg-slate-700 text-yellow-300 px-4 py-2 rounded-full text-sm font-bold border-2 border-slate-500 shadow-sm">Bird</span>
-                        <span class="bg-slate-700 text-yellow-300 px-4 py-2 rounded-full text-sm font-bold border-2 border-slate-500 shadow-sm">Fish</span>
-                        <span class="bg-slate-700 text-yellow-300 px-4 py-2 rounded-full text-sm font-bold border-2 border-slate-500 shadow-sm">Duck</span>
+                    <!-- Kosakata Sebelumnya -->
+                    <div class="mt-2 bg-white p-5 rounded-2xl border-2 border-slate-300 shadow-sm">
+                        <p class="text-slate-500 text-sm font-black mb-4 uppercase tracking-widest border-b-2 border-slate-100 pb-2">🧠 Ingat Terus Kata-Kata Ini:</p>
+                        <div class="flex flex-wrap justify-center gap-3">
+                            <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-xl text-sm font-bold shadow-sm border border-orange-200">🐔 Chicken</span>
+                            <span class="bg-slate-200 text-slate-800 px-4 py-2 rounded-xl text-sm font-bold shadow-sm border border-slate-300">🐘 Elephant</span>
+                            <span class="bg-red-100 text-red-700 px-4 py-2 rounded-xl text-sm font-bold shadow-sm border border-red-200">🔴 Red</span>
+                            <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-xl text-sm font-bold shadow-sm border border-blue-200">🔵 Blue</span>
+                            <span class="bg-yellow-100 text-yellow-700 px-4 py-2 rounded-xl text-sm font-bold shadow-sm border border-yellow-200">🟡 Yellow</span>
+                            <span class="bg-green-100 text-green-700 px-4 py-2 rounded-xl text-sm font-bold shadow-sm border border-green-200">🟢 Green</span>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!-- Latihan Soal -->
-            <section class="space-y-12">
-                <div class="text-center border-b-2 border-slate-200 pb-4">
-                    <h3 class="text-lg font-black text-slate-500 uppercase tracking-widest">Lembar Evaluasi Mandiri</h3>
-                    <p class="text-sm font-bold text-slate-400 mt-1">Total 16 Soal</p>
-                </div>
+            <section class="space-y-10">
+                <h3 class="text-xl font-black text-slate-700 uppercase tracking-widest text-center border-b-4 border-slate-200 pb-4">📝 Lembar Evaluasi (19 Soal)</h3>
                 
                 <!-- I. Pilihan Ganda -->
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
-                    <p class="text-sm font-bold text-white bg-sky-600 inline-block px-4 py-2 rounded-lg mb-8 uppercase tracking-wider shadow-sm">I. Pilihan Ganda (8 Soal)</p>
-                    <div class="text-base space-y-8 font-medium text-slate-700">
-                        
-                        <div class="space-y-3">
-                            <p>1. Satuan baku yang digunakan untuk menimbang benda-benda yang ringan adalah...</p>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
-                                <div class="bg-slate-50 p-2 rounded border border-slate-200">A. Kilogram</div>
-                                <div class="bg-slate-50 p-2 rounded border border-slate-200">B. Gram</div>
-                                <div class="bg-slate-50 p-2 rounded border border-slate-200">C. Meter</div>
-                            </div>
+                <div class="space-y-6">
+                    <div class="bg-orange-100 text-orange-800 font-black px-5 py-2 rounded-xl inline-block uppercase text-sm shadow-sm border border-orange-200">
+                        I. Pilihan Ganda (10 Soal)
+                    </div>
+                    <div class="text-sm space-y-6 bg-white p-8 rounded-3xl border-2 border-slate-100 shadow-md">
+                        <p class="font-bold text-slate-700 text-base">1. Setelah angka 54 adalah angka...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 ml-4">
+                            <span class="bg-slate-50 p-3 rounded-lg border hover:bg-orange-50 font-semibold cursor-pointer">A. 53</span>
+                            <span class="bg-slate-50 p-3 rounded-lg border hover:bg-orange-50 font-semibold cursor-pointer">B. 55</span>
+                            <span class="bg-slate-50 p-3 rounded-lg border hover:bg-orange-50 font-semibold cursor-pointer">C. 56</span>
                         </div>
 
-                        <div class="space-y-3">
-                            <p>2. Di bawah ini, tulisan singkatan yang benar untuk kata "Kilogram" adalah...</p>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
-                                <div class="bg-slate-50 p-2 rounded border border-slate-200">A. kl</div>
-                                <div class="bg-slate-50 p-2 rounded border border-slate-200">B. gr</div>
-                                <div class="bg-slate-50 p-2 rounded border border-slate-200">C. kg</div>
-                            </div>
+                        <p class="font-bold text-slate-700 text-base">2. Angka lima puluh tujuh ditulis dengan lambang bilangan...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 ml-4">
+                            <span class="bg-slate-50 p-3 rounded-lg border hover:bg-orange-50 font-semibold cursor-pointer">A. 57</span>
+                            <span class="bg-slate-50 p-3 rounded-lg border hover:bg-orange-50 font-semibold cursor-pointer">B. 75</span>
+                            <span class="bg-slate-50 p-3 rounded-lg border hover:bg-orange-50 font-semibold cursor-pointer">C. 50</span>
                         </div>
 
-                        <div class="space-y-3">
-                            <p>3. Jika Kayla ingin menimbang buah semangka yang sangat besar, satuan berat yang paling tepat digunakan adalah...</p>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
-                                <div class="bg-slate-50 p-2 rounded border border-slate-200">A. Kilogram</div>
-                                <div class="bg-slate-50 p-2 rounded border border-slate-200">B. Gram</div>
-                                <div class="bg-slate-50 p-2 rounded border border-slate-200">C. Sentimeter</div>
-                            </div>
+                        <p class="font-bold text-slate-700 text-base">3. Pada bilangan 58, angka 5 menempati tempat...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 ml-4">
+                            <span class="bg-slate-50 p-3 rounded-lg border hover:bg-orange-50 font-semibold cursor-pointer">A. Ratusan</span>
+                            <span class="bg-slate-50 p-3 rounded-lg border hover:bg-orange-50 font-semibold cursor-pointer">B. Satuan</span>
+                            <span class="bg-slate-50 p-3 rounded-lg border hover:bg-orange-50 font-semibold cursor-pointer">C. Puluhan</span>
                         </div>
 
-                        <div class="space-y-3">
-                            <p>4. Benda-benda seperti sebatang pensil dan cincin emas ditimbang menggunakan satuan...</p>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
-                                <div class="bg-slate-50 p-2 rounded border border-slate-200">A. Liter</div>
-                                <div class="bg-slate-50 p-2 rounded border border-slate-200">B. Kilogram</div>
-                                <div class="bg-slate-50 p-2 rounded border border-slate-200">C. Gram</div>
-                            </div>
+                        <p class="font-bold text-slate-700 text-base">4. Pada bilangan 52, angka 2 menempati tempat...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 ml-4">
+                            <span class="bg-slate-50 p-3 rounded-lg border hover:bg-orange-50 font-semibold cursor-pointer">A. Satuan</span>
+                            <span class="bg-slate-50 p-3 rounded-lg border hover:bg-orange-50 font-semibold cursor-pointer">B. Puluhan</span>
+                            <span class="bg-slate-50 p-3 rounded-lg border hover:bg-orange-50 font-semibold cursor-pointer">C. Belasan</span>
                         </div>
 
-                        <div class="space-y-3">
-                            <p>5. Sesuai dengan rumus, berat 1 kilogram (1 kg) itu sama ukurannya dengan...</p>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
-                                <div class="bg-slate-50 p-2 rounded border border-slate-200">A. 100 gram</div>
-                                <div class="bg-slate-50 p-2 rounded border border-slate-200">B. 1000 gram</div>
-                                <div class="bg-slate-50 p-2 rounded border border-slate-200">C. 10 gram</div>
-                            </div>
+                        <p class="font-bold text-slate-700 text-base">5. 5 puluhan + 6 satuan = ...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 ml-4">
+                            <span class="bg-slate-50 p-3 rounded-lg border hover:bg-orange-50 font-semibold cursor-pointer">A. 65</span>
+                            <span class="bg-slate-50 p-3 rounded-lg border hover:bg-orange-50 font-semibold cursor-pointer">B. 56</span>
+                            <span class="bg-slate-50 p-3 rounded-lg border hover:bg-orange-50 font-semibold cursor-pointer">C. 506</span>
                         </div>
 
-                        <div class="space-y-3">
-                            <p>6. Jika berat gula adalah 2000 gram, maka berat gula tersebut sama ukurannya dengan...</p>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
-                                <div class="bg-slate-50 p-2 rounded border border-slate-200">A. 1 kilogram</div>
-                                <div class="bg-slate-50 p-2 rounded border border-slate-200">B. 2 kilogram</div>
-                                <div class="bg-slate-50 p-2 rounded border border-slate-200">C. 3 kilogram</div>
-                            </div>
+                        <p class="font-bold text-slate-700 text-base">6. Sebelum angka 60 adalah angka...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 ml-4">
+                            <span class="bg-slate-50 p-3 rounded-lg border hover:bg-orange-50 font-semibold cursor-pointer">A. 61</span>
+                            <span class="bg-slate-50 p-3 rounded-lg border hover:bg-orange-50 font-semibold cursor-pointer">B. 58</span>
+                            <span class="bg-slate-50 p-3 rounded-lg border hover:bg-orange-50 font-semibold cursor-pointer">C. 59</span>
                         </div>
 
-                        <div class="space-y-3">
-                            <p>7. Alat yang biasa digunakan untuk mengukur berat benda secara baku disebut...</p>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
-                                <div class="bg-slate-50 p-2 rounded border border-slate-200">A. Timbangan</div>
-                                <div class="bg-slate-50 p-2 rounded border border-slate-200">B. Termometer</div>
-                                <div class="bg-slate-50 p-2 rounded border border-slate-200">C. Penggaris</div>
-                            </div>
+                        <p class="font-bold text-slate-700 text-base">7. Perhatikan urutan ini: 51, 52, 53, ..., 55. Angka yang hilang adalah...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 ml-4">
+                            <span class="bg-slate-50 p-3 rounded-lg border hover:bg-orange-50 font-semibold cursor-pointer">A. 54</span>
+                            <span class="bg-slate-50 p-3 rounded-lg border hover:bg-orange-50 font-semibold cursor-pointer">B. 56</span>
+                            <span class="bg-slate-50 p-3 rounded-lg border hover:bg-orange-50 font-semibold cursor-pointer">C. 50</span>
                         </div>
 
-                        <div class="space-y-3">
-                            <p>8. Satuan gram disingkat dengan huruf...</p>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 ml-4">
-                                <div class="bg-slate-50 p-2 rounded border border-slate-200">A. m</div>
-                                <div class="bg-slate-50 p-2 rounded border border-slate-200">B. kg</div>
-                                <div class="bg-slate-50 p-2 rounded border border-slate-200">C. g</div>
-                            </div>
+                        <p class="font-bold text-slate-700 text-base">8. Angka 59 dibaca...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 ml-4">
+                            <span class="bg-slate-50 p-3 rounded-lg border hover:bg-orange-50 font-semibold cursor-pointer">A. Lima sembilan</span>
+                            <span class="bg-slate-50 p-3 rounded-lg border hover:bg-orange-50 font-semibold cursor-pointer">B. Sembilan puluh lima</span>
+                            <span class="bg-slate-50 p-3 rounded-lg border hover:bg-orange-50 font-semibold cursor-pointer">C. Lima puluh sembilan</span>
+                        </div>
+
+                        <!-- English Corner Questions -->
+                        <p class="font-bold text-slate-800 border-t-2 border-slate-100 pt-6 text-base">9. Warna rambut yang gelap biasanya "Black". Black artinya...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 ml-4 text-slate-600">
+                            <span class="bg-slate-100 p-3 rounded-lg border border-slate-300 font-bold">A. Putih</span>
+                            <span class="bg-slate-100 p-3 rounded-lg border border-slate-300 font-bold">B. Hitam</span>
+                            <span class="bg-slate-100 p-3 rounded-lg border border-slate-300 font-bold">C. Merah</span>
+                        </div>
+
+                        <p class="font-bold text-slate-800 text-base">10. "Hitam" dalam bahasa Inggris adalah...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 ml-4 text-slate-600">
+                            <span class="bg-slate-100 p-3 rounded-lg border border-slate-300 font-bold">A. Black</span>
+                            <span class="bg-slate-100 p-3 rounded-lg border border-slate-300 font-bold">B. Blue</span>
+                            <span class="bg-slate-100 p-3 rounded-lg border border-slate-300 font-bold">C. Brown</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- II. Latihan Berpikir -->
-                <div class="bg-sky-50 p-8 rounded-3xl shadow-sm border border-sky-200">
-                    <p class="text-sm font-bold text-white bg-sky-600 inline-block px-4 py-2 rounded-lg mb-6 uppercase tracking-wider shadow-sm">II. Latihan Berpikir (3 Soal)</p>
-                    <p class="text-xs text-sky-800 font-bold mb-6 italic">*Jawablah sesuai dengan pikiranmu sendiri!</p>
+                <!-- II. Isian Singkat -->
+                <div class="mt-12">
+                    <div class="bg-amber-100 text-amber-800 font-black px-5 py-2 rounded-xl inline-block uppercase text-sm shadow-sm border border-amber-200 mb-6">
+                        II. Isian Singkat (9 Soal)
+                    </div>
                     
-                    <div class="space-y-8 text-base font-medium text-slate-700">
-                        <div class="space-y-3">
-                            <p class="font-bold text-purple-700"><span class="bg-purple-200 px-2 py-1 rounded text-xs mr-2 uppercase">Inisiatif</span>9. Jika Kayla melihat ada teman di kelas yang kesulitan membawa tumpukan buku yang sangat berat, apa yang akan Kayla lakukan?</p>
-                            <div class="border-b-2 border-dashed border-slate-400 h-8 ml-4"></div>
-                            <div class="border-b-2 border-dashed border-slate-400 h-8 ml-4"></div>
+                    <!-- Bank Soal 15 Opsi -->
+                    <div class="bg-yellow-50 p-6 rounded-3xl border-4 border-yellow-300 mb-8 shadow-md relative mt-4">
+                        <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-yellow-900 font-black px-6 py-1 rounded-full text-xs tracking-widest border-2 border-white shadow-sm">
+                            PILIHAN JAWABAN
                         </div>
-
-                        <div class="space-y-3">
-                            <p class="font-bold text-teal-700"><span class="bg-teal-200 px-2 py-1 rounded text-xs mr-2 uppercase">Logika</span>10. Seekor kucing memiliki 4 buah kaki. Jika di depan rumah ada 2 ekor kucing, berapa jumlah seluruh kaki kucing tersebut?</p>
-                            <div class="border-b-2 border-dashed border-slate-400 h-8 ml-4 w-1/2"></div>
-                        </div>
-
-                        <div class="space-y-3">
-                            <p class="font-bold text-orange-700"><span class="bg-orange-200 px-2 py-1 rounded text-xs mr-2 uppercase">Tes IQ</span>11. Gula rasanya manis, kalau garam rasanya...</p>
-                            <div class="border-b-2 border-dashed border-slate-400 h-8 ml-4 w-1/2"></div>
+                        <div class="grid grid-cols-3 md:grid-cols-5 gap-3 text-sm font-bold text-center text-slate-700 mt-2">
+                            <div class="word-bank-item bg-white py-2 rounded-xl border-2 border-slate-200 shadow-sm">51</div>
+                            <div class="word-bank-item bg-white py-2 rounded-xl border-2 border-slate-200 shadow-sm">55</div>
+                            <div class="word-bank-item bg-white py-2 rounded-xl border-2 border-slate-200 shadow-sm">Satuan</div>
+                            <div class="word-bank-item bg-white py-2 rounded-xl border-2 border-slate-200 shadow-sm">60</div>
+                            <div class="word-bank-item bg-white py-2 rounded-xl border-2 border-slate-200 shadow-sm">Puluhan</div>
+                            
+                            <div class="word-bank-item bg-white py-2 rounded-xl border-2 border-slate-200 shadow-sm">53</div>
+                            <div class="word-bank-item bg-white py-2 rounded-xl border-2 border-slate-200 shadow-sm">Black</div>
+                            <div class="word-bank-item bg-white py-2 rounded-xl border-2 border-slate-200 shadow-sm">Hitam</div>
+                            <div class="word-bank-item bg-white py-2 rounded-xl border-2 border-slate-200 shadow-sm">59</div>
+                            <div class="word-bank-item bg-white py-2 rounded-xl border-2 border-slate-200 shadow-sm">52</div>
+                            
+                            <div class="word-bank-item bg-white py-2 rounded-xl border-2 border-slate-200 shadow-sm">Ratusan</div>
+                            <div class="word-bank-item bg-white py-2 rounded-xl border-2 border-slate-200 shadow-sm">Ribuan</div>
+                            <div class="word-bank-item bg-white py-2 rounded-xl border-2 border-slate-200 shadow-sm">Putih</div>
+                            <div class="word-bank-item bg-white py-2 rounded-xl border-2 border-slate-200 shadow-sm">Merah</div>
+                            <div class="word-bank-item bg-white py-2 rounded-xl border-2 border-slate-200 shadow-sm">Biru</div>
                         </div>
                     </div>
-                </div>
 
-                <!-- III. Kosakata Bahasa Inggris -->
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
-                    <p class="text-sm font-bold text-white bg-sky-600 inline-block px-4 py-2 rounded-lg mb-6 uppercase tracking-wider shadow-sm">III. Kosakata Bahasa Inggris (3 Soal)</p>
-                    <p class="text-xs text-slate-500 font-bold mb-6 italic">*Tuliskan 3 kata Bahasa Inggris yang pernah Kayla pelajari atau yang Kayla ingat beserta artinya!</p>
-                    
-                    <div class="space-y-6 text-base font-medium text-slate-700 ml-4">
-                        <p>12. Kata: ........................................... Artinya: ...........................................</p>
-                        <p>13. Kata: ........................................... Artinya: ...........................................</p>
-                        <p>14. Kata: ........................................... Artinya: ...........................................</p>
-                    </div>
-                </div>
-
-                <!-- IV. Menulis Kalimat Motivasi -->
-                <div class="bg-yellow-50 p-8 rounded-3xl shadow-sm border border-yellow-200">
-                    <p class="text-sm font-bold text-white bg-sky-600 inline-block px-4 py-2 rounded-lg mb-6 uppercase tracking-wider shadow-sm">IV. Menulis Indah (2 Soal)</p>
-                    <p class="text-xs text-yellow-800 font-bold mb-6 italic">*Tulislah kembali kalimat di bawah ini dengan rapi dan teliti!</p>
-                    
-                    <div class="space-y-8 text-base font-medium text-slate-700 ml-4">
-                        <div class="space-y-3">
-                            <p>15. <span class="font-bold">"Aku anak yang rajin belajar dan selalu disiplin waktu."</span></p>
-                            <div class="border-b-2 border-slate-400 h-8"></div>
-                        </div>
-
-                        <div class="space-y-3">
-                            <p>16. <span class="font-bold">"Aku selalu jujur dan patuh kepada guru serta orang tuaku."</span></p>
-                            <div class="border-b-2 border-slate-400 h-8"></div>
-                        </div>
+                    <div class="space-y-6 text-base p-8 bg-white border-2 border-slate-200 rounded-3xl shadow-sm font-medium text-slate-700">
+                        <p class="border-b-2 border-slate-100 pb-3"><span class="font-black text-orange-500 text-lg mr-2">11.</span> 5 puluhan + 1 satuan = .........................</p>
+                        <p class="border-b-2 border-slate-100 pb-3"><span class="font-black text-orange-500 text-lg mr-2">12.</span> Angka lima puluh lima ditulis dengan lambang bilangan .........................</p>
+                        <p class="border-b-2 border-slate-100 pb-3"><span class="font-black text-orange-500 text-lg mr-2">13.</span> Pada bilangan 58, angka 8 menempati nilai tempat .........................</p>
+                        <p class="border-b-2 border-slate-100 pb-3"><span class="font-black text-orange-500 text-lg mr-2">14.</span> Setelah angka 59 adalah angka .........................</p>
+                        <p class="border-b-2 border-slate-100 pb-3"><span class="font-black text-orange-500 text-lg mr-2">15.</span> Angka 5 yang berada di depan pada bilangan 54 bernilai .........................</p>
+                        <p class="border-b-2 border-slate-100 pb-3"><span class="font-black text-orange-500 text-lg mr-2">16.</span> Sebelum angka 52 adalah angka .........................</p>
+                        <p class="border-b-2 border-slate-100 pb-3"><span class="font-black text-orange-500 text-lg mr-2">17.</span> 50 + 3 = .........................</p>
+                        <p class="border-b-2 border-slate-100 pb-3"><span class="font-black text-slate-800 text-lg mr-2">18.</span> Bahasa Inggris dari warna Hitam adalah .........................</p>
+                        <p><span class="font-black text-slate-800 text-lg mr-2">19.</span> Ban mobil berwarna hitam. Hitam artinya .........................</p>
                     </div>
                 </div>
             </section>
 
             <!-- Kalkulator -->
-            <section class="mt-16 p-8 bg-sky-900 rounded-3xl text-white shadow-2xl border-4 border-yellow-400">
-                <div class="text-center mb-6">
-                    <h3 class="text-xl font-black uppercase tracking-widest text-yellow-400">Nilai Kayla</h3>
-                    <p class="text-xs text-sky-200 opacity-80 mt-1 font-bold">Masukkan jumlah poin benar (Total 16 Soal)</p>
+            <section class="mt-16 p-10 bg-slate-800 rounded-[2rem] text-white shadow-2xl border-4 border-orange-500 relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 opacity-10 text-9xl">💯</div>
+                <div class="text-center mb-8 relative z-10">
+                    <h3 class="text-2xl font-black uppercase tracking-widest text-orange-400 drop-shadow-md">Kalkulator Nilai Otomatis</h3>
+                    <p class="text-sm text-slate-300 mt-2">Kayla, masukkan jumlah jawabanmu yang benar (Maksimal 19) ya!</p>
                 </div>
-                <div class="flex flex-col items-center space-y-5">
-                    <input type="number" id="inputBenar" min="0" max="16" placeholder="0" 
-                           class="w-full max-w-[150px] p-4 rounded-2xl bg-sky-800 text-center text-3xl font-black border-2 border-sky-600 focus:border-yellow-400 outline-none text-yellow-300 shadow-inner">
-                    <button onclick="hitungNilai()" class="bg-yellow-400 hover:bg-yellow-300 text-sky-900 px-10 py-3 rounded-full font-black uppercase tracking-widest transition-all shadow-lg transform hover:scale-105">Hitung Skor</button>
-                    <div id="hasil" class="hidden text-center mt-6">
-                        <div id="skor" class="text-7xl font-black text-white drop-shadow-md">0</div>
-                        <p id="pesan" class="text-sm mt-3 text-yellow-300 font-bold uppercase tracking-widest"></p>
+                <div class="flex flex-col items-center space-y-6 relative z-10">
+                    <input type="number" id="inputBenar" min="0" max="19" placeholder="0" 
+                           class="w-full max-w-[200px] p-5 rounded-2xl bg-slate-700 text-center text-5xl font-black border-4 border-slate-600 focus:border-orange-500 outline-none text-white transition-colors">
+                    <button onclick="hitungNilai()" class="bg-orange-500 hover:bg-orange-400 text-slate-900 px-12 py-4 rounded-full font-black uppercase tracking-widest text-lg transition-transform transform hover:scale-105 shadow-[0_0_15px_rgba(249,115,22,0.5)]">Lihat Skorku!</button>
+                    <div id="hasil" class="hidden text-center mt-6 p-8 bg-slate-700/80 rounded-3xl border-2 border-slate-600 w-full max-w-sm backdrop-blur-sm">
+                        <p class="text-sm text-slate-300 uppercase tracking-widest mb-2 font-bold">Skor Kayla:</p>
+                        <div id="skor" class="text-8xl font-black text-yellow-400 drop-shadow-[0_0_10px_rgba(250,204,21,0.5)]">0</div>
+                        <p id="pesan" class="text-lg mt-4 font-bold text-orange-300"></p>
                     </div>
                 </div>
             </section>
         </main>
         
-        <footer class="bg-sky-100 p-5 text-center border-t border-sky-200 text-[11px] text-sky-700 uppercase font-black tracking-widest">
-            Kayla Zahra Safitri • 23 Februari 2026 • Semangat Belajar!
+        <footer class="bg-slate-100 p-6 text-center border-t-2 border-slate-200 text-xs text-slate-400 uppercase font-black tracking-widest">
+            Tahun Ajaran 2026 • Kayla Zahra Safitri
         </footer>
     </div>
 
     <script>
         function hitungNilai() {
             const b = parseInt(document.getElementById('inputBenar').value);
-            if(isNaN(b) || b < 0 || b > 16) return;
-            const n = Math.round((b/16)*100);
+            if(isNaN(b) || b < 0 || b > 19) {
+                alert('Tolong masukkan angka dari 0 sampai 19 ya, Kayla! 😊');
+                return;
+            }
+            const n = Math.round((b/19)*100);
             document.getElementById('hasil').classList.remove('hidden');
-            document.getElementById('skor').innerText = n;
             
+            let start = 0;
+            const step = Math.max(1, Math.floor(n / 15));
+            const interval = setInterval(() => {
+                start += step;
+                if(start >= n) {
+                    start = n;
+                    clearInterval(interval);
+                }
+                document.getElementById('skor').innerText = start;
+            }, 40);
+
             let pesan = "";
-            if(n >= 90) pesan = "Luar Biasa Hebat!";
-            else if(n >= 75) pesan = "Bagus Sekali Kayla!";
-            else pesan = "Tetap Semangat & Belajar Lagi!";
-            
+            if(n >= 90) pesan = "LUAR BIASA! Kayla jago berhitung! 🌟🎉";
+            else if(n >= 75) pesan = "BAGUS SEKALI! Kayla sudah paham puluhan! 👍";
+            else pesan = "AYO SEMANGAT! Belajar berhitung lagi ya! 💪📚";
             document.getElementById('pesan').innerText = pesan;
         }
     </script>
